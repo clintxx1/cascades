@@ -50,7 +50,7 @@ export default function Navbar() {
             )}
             {...props}
           >
-            <div className=" font-semibold text-white hover:text-[#ff6900]">{title}</div>
+            <div className=" font-semibold text-white hover:text-customOrange">{title}</div>
           </a>
         </NavigationMenuLink>
       </li>
@@ -94,6 +94,7 @@ export default function Navbar() {
                         {ABOUT_ITEMS.map((item, index) => (
                           <>
                             <ListItem
+                              key={index}
                               title={item.label}
                               href={item.page}
                             ></ListItem>

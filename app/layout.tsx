@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local"
-
-const inter = Inter({ subsets: ["latin"] });
 
 const josefinSans = localFont({
   src: [
@@ -15,7 +12,13 @@ const josefinSans = localFont({
       path: "../font/JosefinSans-VariableFont_wght.ttf",
       style: "normal"
     },
-  ]
+  ],
+  variable: "--font-josefin"
+});
+
+export const lato = localFont({
+  src: "../font/Lato-Regular.ttf",
+  variable: "--font-lato"
 })
 
 export const metadata: Metadata = {
