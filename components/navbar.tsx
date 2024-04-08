@@ -59,7 +59,7 @@ export default function Navbar() {
   ListItem.displayName = "ListItem"
 
   return (
-    <header className="m-auto w-[calc(100%_-_16rem)] px-4 md:px-24">
+    <header className="m-auto w-[calc(100%_-_16rem)] px-4 md:px-32">
       <div className="justify-between flex md:items-center">
         <div>
           <div
@@ -69,7 +69,7 @@ export default function Navbar() {
               <Image
                 src={cascadesLogo}
                 alt="cascades logo"
-                className="object-cover dark:invert"
+                className="customImage"
               />
             </Link>
             <div className="md:hidden">

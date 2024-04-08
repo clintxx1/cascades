@@ -85,4 +85,12 @@ body {
 
 .customNavbar:hover {
   color: #6da6b5 !important;
+  border: none;
+  background-color: transparent !important;
+}
+
+.customImage {
+  width: 345px;
+  height: 89px;
+  aspect-ratio: auto 345/89;
 }
