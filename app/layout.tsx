@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
+import localFont from "next/font/local"
 
 const inter = Inter({ subsets: ["latin"] });
+
+const josefinSans = localFont({
+  src: [
+    {
+      path: "../font/JosefinSans-Italic-VariableFont_wght.ttf",
+      style: "italic"
+    },
+    {
+      path: "../font/JosefinSans-VariableFont_wght.ttf",
+      style: "normal"
+    },
+  ]
+})
 
 export const metadata: Metadata = {
   title: "Cascades International School",
@@ -17,12 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="use-credentials" />
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
-      </Head>
-      <body>{children}</body>
+      <body className={josefinSans.className}>{children}</body>
     </html>
   );
 }

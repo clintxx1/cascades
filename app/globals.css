@@ -78,3 +78,11 @@
 body {
   font-family: "Josefin Sans", sans-serif;
 }
+
+.customNavbar {
+  font-size: 17px;
+}
+
+.customNavbar:hover {
+  color: #6da6b5 !important;
+}
