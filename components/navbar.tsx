@@ -5,8 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify, X } from "lucide-react";
 import { Button } from "./ui/button";
-import cascadesLogo from "@/public/headerlogo_1x.png"
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "./ui/navigation-menu";
+import cascadesLogo from "@/public/headerlogo_1x.png";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "./ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
@@ -30,7 +38,7 @@ const ABOUT_ITEMS: Array<NavItem> = [
   {
     label: "Community",
     page: "/community",
-  }
+  },
 ];
 
 export default function Navbar() {
@@ -50,13 +58,15 @@ export default function Navbar() {
             )}
             {...props}
           >
-            <div className=" font-semibold text-white hover:text-customOrange">{title}</div>
+            <div className=" font-semibold text-white hover:text-customOrange">
+              {title}
+            </div>
           </a>
         </NavigationMenuLink>
       </li>
-    )
-  })
-  ListItem.displayName = "ListItem"
+    );
+  });
+  ListItem.displayName = "ListItem";
 
   return (
     <header className="m-auto w-[calc(100%_-_16rem)] px-4 md:px-32">
@@ -81,14 +91,17 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${navbar ? "block" : "hidden"
-              }`}
+            className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="customNavbar">About</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="customNavbar">
+                      About
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="bg-[#ebaf3c]">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         {ABOUT_ITEMS.map((item, index) => (
@@ -98,13 +111,18 @@ export default function Navbar() {
                               title={item.label}
                               href={item.page}
                             ></ListItem>
-                            {index < ABOUT_ITEMS.length - 1 && <div className="w-full bg-white h-[2px] p-0 m-0"></div>}</>
+                            {index < ABOUT_ITEMS.length - 1 && (
+                              <div className="w-full bg-white h-[2px] p-0 m-0"></div>
+                            )}
+                          </>
                         ))}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="customNavbar">Programs</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="customNavbar">
+                      Programs
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="bg-[#ebaf3c]">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px] relative">
                         <ListItem
@@ -121,13 +139,17 @@ export default function Navbar() {
                   </NavigationMenuItem>
                   <NavigationMenuItem>
                     <Link href="/features" legacyBehavior passHref>
-                      <NavigationMenuLink className={`${navigationMenuTriggerStyle()} customNavbar`}>
+                      <NavigationMenuLink
+                        className={`${navigationMenuTriggerStyle()} customNavbar`}
+                      >
                         Features
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="customNavbar">Admissions</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="customNavbar">
+                      Admissions
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="bg-[#ebaf3c]">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         <ListItem
@@ -144,13 +166,17 @@ export default function Navbar() {
                   </NavigationMenuItem>
                   <NavigationMenuItem>
                     <Link href="/contact" legacyBehavior passHref>
-                      <NavigationMenuLink className={`${navigationMenuTriggerStyle()} customNavbar`}>
+                      <NavigationMenuLink
+                        className={`${navigationMenuTriggerStyle()} customNavbar`}
+                      >
                         Contact
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="customNavbar">More</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="customNavbar">
+                      More
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="bg-[#ebaf3c]">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         <ListItem
@@ -158,10 +184,7 @@ export default function Navbar() {
                           href={"/calendar"}
                         ></ListItem>
                         <div className="w-full bg-white h-[2px] p-0 m-0"></div>
-                        <ListItem
-                          title={"FAQs"}
-                          href={"/faqs"}
-                        ></ListItem>
+                        <ListItem title={"FAQs"} href={"/faqs"}></ListItem>
                         <div className="w-full bg-white h-[2px] p-0 m-0"></div>
                         <ListItem
                           title={"Careers"}
