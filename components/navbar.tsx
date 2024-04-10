@@ -16,11 +16,7 @@ import {
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
 import { cn } from "@/lib/utils";
-
-interface NavItem {
-  label: string;
-  page: string;
-}
+import { NavItem } from "@/types";
 
 const ABOUT_ITEMS: Array<NavItem> = [
   {

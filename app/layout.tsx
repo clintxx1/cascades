@@ -3,7 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const josefinSans = localFont({
+export const josefinSans = localFont({
   src: [
     {
       path: "../font/JosefinSans-Italic-VariableFont_wght.ttf",

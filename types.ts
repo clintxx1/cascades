@@ -12,3 +12,8 @@ export interface InfoCardProps {
   description: string;
   descriptionCN?: string;
 }
+
+export interface NavItem {
+  label: string;
+  page: string;
+}
