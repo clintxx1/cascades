@@ -16,7 +16,7 @@ export default function InfoCard({
       </p>
       <p
         className={cn(
-          `${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`,
+          `${lato.className} text-[20px] leading-[36px] text-customDark w-[500px]`,
           descriptionCN
         )}
       >

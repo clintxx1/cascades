@@ -49,18 +49,22 @@ export default function Philosophy() {
           </h2>
           <InfoCard
             title="View of the child."
-            descriptionCN="w-[500px]"
-            description="Every child is an artist, an explorer, a creator, and a competent learner. Every child is viewed as strong, passionate, and resilient. Each one a contributing member of the community and given equal rights."
+            description="Every child is an artist, an explorer, a creator, and a competent learner. 
+            Every child is viewed as strong, passionate, and resilient. Each one a contributing 
+            member of the community and given equal rights."
           />
           <InfoCard
             title="Collaboration and Interaction."
-            descriptionCN="w-[500px]"
-            description="The Reggio inspired classroom setting is designed for children to interact, be connected, and build relationships. Self-directed manipulatives and materials allow the children to be more open and flexible in the different ways of learning."
+            description="The Reggio inspired classroom setting is designed for children to interact, 
+            be connected, and build relationships. Self-directed manipulatives and materials allow 
+            the children to be more open and flexible in the different ways of learning."
           />
           <InfoCard
             title="Environment as the third teacher."
-            descriptionCN="w-[500px]"
-            description="The layout of the physical space fosters encounters, communication, and relationships. The environment is designed to encourage kids to learn independently. The environment will teach the children that each individual is an important part of a bigger community."
+            description="The layout of the physical space fosters encounters, communication, and 
+            relationships. The environment is designed to encourage kids to learn independently. 
+            The environment will teach the children that each individual is an important part of 
+            a bigger community."
           />
         </div>
         <div>
@@ -70,18 +74,23 @@ export default function Philosophy() {
           <InfoCard
             title="Teachers and children are partners in learning"
             titleCN="w-[500px]"
-            descriptionCN="w-[500px]"
-            description="Teachers are seen as researchers learning along with the children through exchanges and negotiations. Teachers will use the inquiry-based approach to bring out the interest of the children, and motivate them to discover more."
+            description="Teachers are seen as researchers learning along with the children through 
+            exchanges and negotiations. Teachers will use the inquiry-based approach to bring out 
+            the interest of the children, and motivate them to discover more."
           />
           <InfoCard
             title="Documentation is powerful."
-            descriptionCN="w-[500px]"
-            description="Activities are compiled in albums for each program which guides teachers and caregivers on the children’s level and skill. The exhibits and portfolios put together by the children makes them feel that their works are appreciated when displayed and shared."
+            description="Activities are compiled in albums for each program which guides teachers 
+            and caregivers on the children’s level and skill. The exhibits and portfolios put 
+            together by the children makes them feel that their works are appreciated when 
+            displayed and shared."
           />
           <InfoCard
             title="Children has “hundred languages”."
-            descriptionCN="w-[500px]"
-            description="Every child has hundred different ways of learning with numerous ways of showing the cognitive and symbolic expressions of their learning processes. Instead of prepackaged knowledge, their hundred languages will be tapped and utilized in their education."
+            description="Every child has hundred different ways of learning with numerous ways of 
+            showing the cognitive and symbolic expressions of their learning processes. Instead of 
+            prepackaged knowledge, their hundred languages will be tapped and utilized in their 
+            education."
           />
         </div>
       </div>

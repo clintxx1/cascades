@@ -7,6 +7,7 @@ import Image from "next/image";
 import divider from "@/public/header_copy_divider_XL_teal-2.png";
 import longDiv from "@/public/divider-XL-red-long-1024x7.png";
 import Link from "next/link";
+import InfoCard from "@/components/infoCard";
 
 export default function Approach() {
   return (
@@ -29,28 +30,22 @@ export default function Approach() {
             can learn.{" "}
           </p>
           <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
-          <p className="text-[28px] font-semibold text-customDark">Mixed Age</p>
-          <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`}
-          >
-            All children (2.5-5.5 years old) will be in one classroom. This
+          <InfoCard
+            title="Mixed Age"
+            description="All children (2.5-5.5 years old) will be in one classroom. This
             gives them the opportunity to adjust to different types and levels
             of students in terms of understanding, maturity and capacity to
             move. This also allows them the experience of depending and being
-            depended on.
-          </p>
-          <p className="text-[28px] font-semibold text-customDark mt-28">
-            Co-teaching
-          </p>
-          <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`}
-          >
-            Experienced artists and professionals from different occupations are
+            depended on."
+          />
+          <InfoCard
+            title="Co-teaching"
+            description="Experienced artists and professionals from different occupations are
             invited to share their knowledge and skills. They collaborate with
             our teachers to plan enjoyable activities that will introduce the
             children to different professional fields in line with concepts
-            being taught.
-          </p>
+            being taught."
+          />
         </div>
         <div className="mt-28">
           <Image src={image1} alt="image 1" />
@@ -61,51 +56,35 @@ export default function Approach() {
           <Image src={image2} alt="image 2" />
         </div>
         <div className="grid gap-5 mt-28">
-          <p className="text-[28px] font-semibold text-customDark">
-            Individualized Tracking
-          </p>
-          <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`}
-          >
-            Teachers will document the progress of each child by tracking the
+          <InfoCard
+            title="Individualized Tracking"
+            description="Teachers will document the progress of each child by tracking the
             skills and concepts acquired, which will then be shared to the
             parents. The tracking will show what skills and concepts are already
             mastered, needs improvement, or not yet introduced. The target
             skills are based on DepEd requirements, and guided by
-            age-appropriate developmental milestones of a child.
-          </p>
-          <p className="text-[28px] font-semibold text-customDark mt-28">
-            Celebrating Creativity
-          </p>
-          <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`}
-          >
-            The children will document their work in portfolios which will be
+            age-appropriate developmental milestones of a child."
+          />
+          <InfoCard
+            title="Celebrating Creativity"
+            description="The children will document their work in portfolios which will be
             showcased on a yearly exhibit, giving them the chance to earn or
-            donate to the school’s supported charities.
-          </p>
-          <p className="text-[28px] font-semibold text-customDark mt-28">
-            Parents -Teacher Collab
-          </p>
-          <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`}
-          >
-            Parents are encouraged to be involved in the Cascades community.
+            donate to the school’s supported charities."
+          />
+          <InfoCard
+            title="Parents -Teacher Collab"
+            description="Parents are encouraged to be involved in the Cascades community.
             Parents and guardians are introduced to the school’s unique teaching
             approach through programs that involves the entire school and the
-            participating families.
-          </p>
-          <p className="text-[28px] font-semibold text-customDark mt-28">
-            Spiral Progression
-          </p>
-          <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`}
-          >
-            The Reggio-Emilia approach is further anchored through spiral
+            participating families."
+          />
+          <InfoCard
+            title="Spiral Progression"
+            description="The Reggio-Emilia approach is further anchored through spiral
             progression of discovery based learning. Instead of learning in a
             linear process, concepts and skills on different subjects are
-            revisited at each level with increasing depth and complexity.
-          </p>
+            revisited at each level with increasing depth and complexity."
+          />
         </div>
       </div>
       <Image src={longDiv} alt="longDiv" className="w-full h-[6px] my-12" />
