@@ -5,3 +5,10 @@ export interface CardProps {
   title: string;
   description: string;
 }
+
+export interface InfoCardProps {
+  title: string;
+  titleCN?: string;
+  description: string;
+  descriptionCN?: string;
+}
