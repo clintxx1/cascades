@@ -17,3 +17,25 @@ export interface NavItem {
   label: string;
   page: string;
 }
+
+export interface CommunityCardProps {
+  className?: string;
+  firstImage: StaticImageData;
+  firstTitle: string;
+  firstName: string;
+  firstDescription?: string;
+  hasDivider?: boolean;
+  hasSecondData?: boolean;
+  isReversed?: boolean;
+  secondImage?: StaticImageData;
+  secondTitle?: string;
+  secondName?: string;
+  secondDescription?: string;
+}
+
+export interface CommunityDataUIProps {
+  image?: StaticImageData;
+  title: string;
+  name: string;
+  description?: string;
+}
