@@ -26,7 +26,7 @@ export default function Philosophy() {
             Cascades International School aims to produce independent learners
             by promoting
           </p>
-          <h2 className="text-[#ebaf3c] font-semibold text-[42px] w-[500px] leading-[1.2em]">
+          <h2 className="text-customOrange2 font-semibold text-[42px] w-[500px] leading-[1.2em]">
             diverse methods of learning, problem solving through different
             approaches and discovery
           </h2>

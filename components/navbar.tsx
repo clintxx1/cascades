@@ -98,7 +98,7 @@ export default function Navbar() {
                     <NavigationMenuTrigger className="customNavbar">
                       About
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="bg-[#ebaf3c]">
+                    <NavigationMenuContent className="bg-customOrange2">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         {ABOUT_ITEMS.map((item, index) => (
                           <>
@@ -119,7 +119,7 @@ export default function Navbar() {
                     <NavigationMenuTrigger className="customNavbar">
                       Programs
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="bg-[#ebaf3c]">
+                    <NavigationMenuContent className="bg-customOrange2">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px] relative">
                         <ListItem
                           title={"Primary Program"}
@@ -146,7 +146,7 @@ export default function Navbar() {
                     <NavigationMenuTrigger className="customNavbar">
                       Admissions
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="bg-[#ebaf3c]">
+                    <NavigationMenuContent className="bg-customOrange2">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         <ListItem
                           title={"Enrollment Process"}
@@ -173,7 +173,7 @@ export default function Navbar() {
                     <NavigationMenuTrigger className="customNavbar">
                       More
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="bg-[#ebaf3c]">
+                    <NavigationMenuContent className="bg-customOrange2">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         <ListItem
                           title={"Calendar"}

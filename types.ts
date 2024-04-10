@@ -7,10 +7,13 @@ export interface CardProps {
 }
 
 export interface InfoCardProps {
+  className?: string;
   title: string;
   titleCN?: string;
   description: string;
   descriptionCN?: string;
+  hasHeader?: boolean;
+  headerImage?: StaticImageData;
 }
 
 export interface NavItem {

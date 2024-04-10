@@ -23,6 +23,7 @@ const config = {
         customBlue: "#6da6b5",
         customOrange: "#ff6900",
         customRed: "#c04545",
+        customOrange2: "#ebaf3c",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
