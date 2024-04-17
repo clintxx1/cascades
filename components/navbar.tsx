@@ -65,33 +65,24 @@ export default function Navbar() {
   ListItem.displayName = "ListItem";
 
   return (
-    <header className="m-auto w-[calc(100%_-_16rem)] px-4 md:px-32">
-      <div className="justify-between flex md:items-center">
-        <div>
-          <div
-            className={`flex items-center justify-between py-3 md:block md:py-5`}
-          >
-            <Link href={"/"}>
-              <Image
-                src={cascadesLogo}
-                alt="cascades logo"
-                className="customImage"
-              />
-            </Link>
-            <div className="md:hidden">
-              <Button onClick={() => setNavbar(!navbar)}>
-                {navbar ? <X size={30} /> : <AlignJustify size={30} />}
-              </Button>
-            </div>
-          </div>
+    <header className="m-auto w-[calc(100%_-_16rem)] px-4 lg:px-32">
+      <div className="justify-between flex lg:items-center">
+        <div className={`flex-shrink-0 py-3 lg:block lg:py-5`}>
+          <Link href={"/"}>
+            <Image
+              src={cascadesLogo}
+              alt="cascades logo"
+              className="customImage flex-shrink-0"
+            />
+          </Link>
         </div>
         <div>
           <div
-            className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${
+            className={`mt-8 flex items-center justify-center pb-3 lg:mt-0 lg:block lg:pb-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
-            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <div className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
@@ -192,6 +183,11 @@ export default function Navbar() {
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
+          </div>
+          <div className="lg:hidden">
+            <Button onClick={() => setNavbar(!navbar)}>
+              {navbar ? <X size={30} /> : <AlignJustify size={30} />}
+            </Button>
           </div>
         </div>
       </div>

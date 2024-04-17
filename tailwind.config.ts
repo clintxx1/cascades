@@ -24,6 +24,7 @@ const config = {
         customOrange: "#ff6900",
         customRed: "#c04545",
         customOrange2: "#ebaf3c",
+        customBrown: "#9a5600",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
