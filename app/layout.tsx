@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Toaster } from "@/components/ui/toaster";
 
 export const josefinSans = localFont({
   src: [
@@ -35,7 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <SpeedInsights />
-      <body className={josefinSans.className}>{children}</body>
+      <body className={josefinSans.className}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

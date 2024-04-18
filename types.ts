@@ -42,3 +42,12 @@ export interface CommunityDataUIProps {
   name: string;
   description?: string;
 }
+
+export interface DetailsProps {
+  mainCN?: string;
+  labelCN?: string;
+  valueCN?: string;
+  label: string;
+  value: string;
+  onClick?: () => void;
+}
