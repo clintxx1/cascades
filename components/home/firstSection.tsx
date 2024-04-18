@@ -28,7 +28,7 @@ export default function FirstSection() {
         <Image src={image1} alt="Image 1" width={612} height={663} />
         <div className="w-full space-y-8">
           <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
-          <p className="text-[42px] font-semibold text-[#6da6b5]">
+          <p className="text-[42px] font-semibold text-crystalBlue">
             The environment is
             <br />
             the third teacher.
