@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import React from "react";
 import { SchoolMap } from "./_components/map";
 import { lato } from "../layout";
-import { Details } from "./_components/details";
 import divider from "@/public/divider-XL-red-long-Copy-10.png";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -14,6 +13,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import InquiryForm from "./_components/inquiryForm";
+import { Details } from "../_components/details";
 
 export const metadata: Metadata = {
   title: "Contact Us | Cascades.ph",
