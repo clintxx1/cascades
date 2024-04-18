@@ -55,7 +55,10 @@ export default function Contact() {
             <br />
             <a href='tel:+63-2-8253-1910'>+63 (02) 8253-1910 (landline)</a>"
           />
-          <Details label="Viber / Messenger" value="+63 927-029-3996" />
+          <Details
+            label="Viber / Messenger"
+            value="<a href='tel:+63-927-029-3996'>+63 927-029-3996</a>"
+          />
           <div className="py-8">
             <Image src={divider} alt="divider" />
           </div>
