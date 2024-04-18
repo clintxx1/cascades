@@ -6,6 +6,11 @@ import image2 from "@/public/philosophy_principles_2x-1024x1016.png";
 import divider from "@/public/header_copy_divider_XL_teal-2-1.png";
 import InfoCard from "@/components/infoCard";
 import longDiv from "@/public/divider-XL-red-long-1024x7.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Mission Vision | Cascades.ph",
+};
 
 export default function Philosophy() {
   return (

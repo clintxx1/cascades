@@ -6,7 +6,11 @@ import primaryLogo from "@/public/Group-3-1.png";
 import image1 from "@/public/secondary_banner_2x-1024x521.jpg";
 import divider from "@/public/header_copy_divider-copy-2.png";
 import { lato } from "../layout";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Special Education | Cascades.ph",
+};
 export default function SpecialPrograms() {
   return (
     <section className="w-full">

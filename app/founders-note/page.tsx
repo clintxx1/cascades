@@ -2,7 +2,11 @@ import React from "react";
 import image1 from "@/public/Group-Copy.png";
 import Image from "next/image";
 import { josefinSans, lato } from "../layout";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Our Founder | Cascades.ph",
+};
 export default function FoundersNote() {
   return (
     <section className="w-full">

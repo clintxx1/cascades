@@ -8,7 +8,11 @@ import Image from "next/image";
 import image1 from "@/public/features_lunch.jpg";
 import image2 from "@/public/features_safety_2x-768x901.jpg";
 import longDiv from "@/public/divider-XL-red-long-Copy-4-1024x7.png";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "School Features | Cascades.ph",
+};
 export default function Features() {
   return (
     <section className="w-full h-full">

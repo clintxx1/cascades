@@ -23,7 +23,7 @@ export const lato = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cascades International School",
+  title: "Cascades International",
   description: "cascades.ph",
 };
 

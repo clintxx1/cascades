@@ -8,6 +8,11 @@ import divider from "@/public/header_copy_divider_XL_teal-2.png";
 import longDiv from "@/public/divider-XL-red-long-1024x7.png";
 import Link from "next/link";
 import InfoCard from "@/components/infoCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Framework | Cascades.ph",
+};
 
 export default function Approach() {
   return (

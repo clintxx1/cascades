@@ -7,6 +7,11 @@ import bren from "@/public/bren_2x.jpg";
 import zenith from "@/public/zenith_2x.jpg";
 import fatima from "@/public/dalynn_2x.jpg";
 import randolph from "@/public/budjok_2x.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Cascades Community | Cascades.ph",
+};
 
 export default function Community() {
   return (

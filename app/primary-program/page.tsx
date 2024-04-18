@@ -7,7 +7,11 @@ import image2 from "@/public/home_experience@2x.jpg";
 import { josefinSans, lato } from "../layout";
 import Link from "next/link";
 import PromoSection from "@/components/promoSection";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Our Curriculum | Cascades.ph",
+};
 export default function PrimaryProgram() {
   return (
     <section className="w-full">
