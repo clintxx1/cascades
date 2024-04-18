@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function PrimaryProgram() {
   return (
     <section className="w-full">
-      <p className="text-[28px] italic font-semibold text-customDark mt-16">
+      <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
         Programs
       </p>
       <div className="grid lg:grid-cols-2 grid-cols-1">
@@ -26,7 +26,7 @@ export default function PrimaryProgram() {
               alt={"primaryLogo"}
               className="h-16 w-16 object-contain"
             />
-            <p className="text-[42px] leading-[1.2em] font-semibold text-customBlue">
+            <p className="text-[42px] leading-[1.2em] font-semibold text-crystalBlue">
               Primary Program
             </p>
           </div>
@@ -59,11 +59,11 @@ export default function PrimaryProgram() {
       <div className="flex items-center justify-start w-full gap-12 pb-20">
         <Image src={image2} alt="Image 1" width={388} height={388} />
         <div className="space-y-8">
-          <p className="text-[42px] font-semibold text-customOrange2">
+          <p className="text-[42px] font-semibold text-meatBrown">
             Experience Cascades.
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[500px]`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[500px]`}
           >
             We are more than happy to welcome you to our home. Come see our
             first class facilities and see for yourself why this school is the
@@ -72,17 +72,17 @@ export default function PrimaryProgram() {
           <div className="flex items-center justify-center w-[600px] gap-5">
             <Link
               href={"/contact"}
-              className="w-1/3 hover:text-customOrange2 hover:bg-transparent text-white bg-customOrange2 transition-colors duration-300 text-[28px] px-4 py-4 border-customOrange2 rounded-lg border-[3px] italic"
+              className="w-1/3 hover:text-meatBrown hover:bg-transparent text-white bg-meatBrown transition-colors duration-300 text-[28px] px-4 py-4 border-meatBrown rounded-lg border-[3px] italic"
             >
               Book a tour!
             </Link>
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-customDark w-2/3`}
+              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-2/3`}
             >
               or read the &nbsp;
               <a
                 href="/enrollment"
-                className={`text-customDark italic cursor-pointer underline ${josefinSans.className}`}
+                className={`text-darkLiver italic cursor-pointer underline ${josefinSans.className}`}
               >
                 enrollment process
               </a>

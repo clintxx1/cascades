@@ -16,12 +16,12 @@ export default function SecondSection() {
             <br />
             and Well-being a Priority.
           </p>
-          <p className="text-[28px] italic font-semibold text-customDark">
+          <p className="text-[28px] italic font-semibold text-darkLiver">
             School Features
           </p>
           <div className="flex items-center justify-center w-[600px]">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-customDark`}
+              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
             >
               The school safeguards its students to explore and learn in a risk
               free environment. The facilities and services are constantly

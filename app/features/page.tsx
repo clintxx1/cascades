@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Features() {
   return (
     <section className="w-full h-full">
-      <p className="text-[28px] italic font-semibold text-customDark my-16">
+      <p className="text-[28px] italic font-semibold text-darkLiver my-16">
         Features
       </p>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-20 mb-20">
@@ -28,7 +28,7 @@ export default function Features() {
             Aesthetically appealing and unique physical structure.
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[500px] text-justify`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[500px] text-justify`}
           >
             The school is built as a “house” with child-sized furniture and
             tools. Repurposed furniture and small interactive installations will
@@ -52,12 +52,12 @@ export default function Features() {
       <div className="flex items-center justify-between w-full gap-3">
         <div className="space-y-8 w-full">
           <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
-          <p className="text-[42px] leading-[52px] font-semibold text-customOrange2 w-[500px]">
+          <p className="text-[42px] leading-[52px] font-semibold text-meatBrown w-[500px]">
             Healthy Lunch and Snacks are being served in the school.
           </p>
           <div className="flex items-center justify-center w-[600px]">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-customDark`}
+              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
             >
               Children guided by care givers will prepare their own food for
               lunch and snacks. They will have a first-hand experience in the
@@ -77,12 +77,12 @@ export default function Features() {
         </div>
         <div className="space-y-8 w-full">
           <Image src={divider2} alt="divider2" className="w-[208px] h-[6px]" />
-          <p className="text-[42px] leading-[52px] font-semibold text-customBlue w-[500px]">
+          <p className="text-[42px] leading-[52px] font-semibold text-crystalBlue w-[500px]">
             The school ensures the safety and welfare of each child.
           </p>
           <div className="flex items-center justify-center w-[600px]">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-customDark`}
+              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
             >
               This is done through a tracking bracelet that notifies parents
               when the child enters or leaves the school. This is further

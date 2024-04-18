@@ -33,11 +33,11 @@ export default function FirstSection() {
             <br />
             the third teacher.
           </p>
-          <p className="text-[28px] italic font-semibold text-customDark">
+          <p className="text-[28px] italic font-semibold text-darkLiver">
             Programs Offered
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-customDark w-[611px]`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[611px]`}
           >
             Adhering to the teaching principles of Reggio Emilia, the school is
             built like a ‘house’, with child-sized furniture and tools made from
@@ -63,7 +63,7 @@ export default function FirstSection() {
         </div>
         <Link
           href={"/primary-program"}
-          className="text-customBlue hover:text-white hover:bg-customBlue transition-colors duration-300 text-[28px] px-7 py-5 border-customBlue rounded-lg border-[3px] italic"
+          className="text-crystalBlue hover:text-white hover:bg-crystalBlue transition-colors duration-300 text-[28px] px-7 py-5 border-crystalBlue rounded-lg border-[3px] italic"
         >
           Check our programs
         </Link>

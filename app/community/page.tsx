@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 export default function Community() {
   return (
     <section className="w-full h-full">
-      <p className="text-[28px] italic font-semibold text-customDark mt-16">
+      <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
         Community
       </p>
       <p
-        className={`${lato.className} text-customDark text-[20px] leading-[36px] w-[520px] mb-28`}
+        className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px] mb-28`}
       >
         Our child-centered community is shaped by experts in child rearing and
         education dedicated to providing support for families and instilling

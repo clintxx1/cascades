@@ -13,6 +13,9 @@ export default function InfoCard({
   hasHeader = false,
   headerImage,
 }: InfoCardProps) {
+  const createMarkup = (htmlContent: string) => {
+    return { __html: htmlContent };
+  };
   return (
     <div className={cn("py-8", className)}>
       {hasHeader && headerImage ? (
@@ -20,21 +23,20 @@ export default function InfoCard({
       ) : null}
       <p
         className={cn(
-          "text-[28px] font-semibold text-customDark",
+          "text-[28px] font-semibold text-darkLiver",
           titleCN,
           `${hasHeader && "mt-8"}`
         )}
       >
         {title}
       </p>
-      <p
+      <div
         className={cn(
-          `${lato.className} text-[20px] leading-[36px] text-customDark w-[500px]`,
+          `${lato.className} text-[20px] leading-[36px] text-darkLiver w-[500px]`,
           descriptionCN
         )}
-      >
-        {description}
-      </p>
+        dangerouslySetInnerHTML={createMarkup(description)}
+      ></div>
     </div>
   );
 }

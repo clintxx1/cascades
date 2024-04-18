@@ -17,7 +17,7 @@ export default function Philosophy() {
     <section className="w-full h-full">
       <div className="grid lg:grid-cols-2 grid-cols-1">
         <div>
-          <p className="text-[28px] italic font-semibold text-customDark mt-16">
+          <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
             Philosophy
           </p>
           <div className="mt-8">
@@ -26,17 +26,17 @@ export default function Philosophy() {
         </div>
         <div className="mt-36">
           <p
-            className={`${lato.className} text-customDark text-[20px] leading-[36px] w-[520px]`}
+            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px]`}
           >
             Cascades International School aims to produce independent learners
             by promoting
           </p>
-          <h2 className="text-customOrange2 font-semibold text-[42px] w-[500px] leading-[1.2em]">
+          <h2 className="text-meatBrown font-semibold text-[42px] w-[500px] leading-[1.2em]">
             diverse methods of learning, problem solving through different
             approaches and discovery
           </h2>
           <p
-            className={`${lato.className} text-customDark text-[20px] leading-[36px] w-[520px] mb-28`}
+            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px] mb-28`}
           >
             An educational philosophy wherein there are three educators; the
             teacher, the child and the environment. Children are active
@@ -49,7 +49,7 @@ export default function Philosophy() {
       <div className="grid lg:grid-cols-2 grid-cols-1">
         <div>
           <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
-          <h2 className="text-customRed font-semibold text-[42px]">
+          <h2 className="text-watermelonRed font-semibold text-[42px]">
             Guiding Principles
           </h2>
           <InfoCard

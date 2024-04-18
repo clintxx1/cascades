@@ -19,14 +19,14 @@ export default function Approach() {
     <section className="w-full h-full">
       <div className="grid lg:grid-cols-2 grid-cols-1">
         <div className="grid gap-5">
-          <p className="text-[28px] italic font-semibold text-customDark mt-16">
+          <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
             Approach
           </p>
-          <h2 className="text-customRed font-semibold text-[42px]">
+          <h2 className="text-watermelonRed font-semibold text-[42px]">
             Reggio-Emilia Approach
           </h2>
           <p
-            className={`${lato.className} text-customDark text-[20px] leading-[36px] w-[520px] mb-28`}
+            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px] mb-28`}
           >
             An educational philosophy wherein there are three educators; the
             teacher, the child and the environment. Children are active
@@ -101,7 +101,7 @@ export default function Approach() {
           </p>
           <div className="flex items-center justify-center w-[700px] gap-4">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-customDark`}
+              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
             >
               Cascades International School prides itself in providing a
               modified Reggio curriculum that aims to instill a lifelong love

@@ -12,11 +12,11 @@ export default function FoundersNote() {
     <section className="w-full">
       <div className="flex items-start justify-center gap-8 w-full pb-24">
         <div className="space-y-8">
-          <p className="text-[28px] italic font-semibold text-customDark mt-16">
+          <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
             Founder&apos;s Note
           </p>
           <Image src={image1} alt="image 1" />
-          <div className="text-customDark text-[20px]">
+          <div className="text-darkLiver text-[20px]">
             <p>
               Irene Theresa
               <br />
@@ -27,13 +27,13 @@ export default function FoundersNote() {
           </div>
         </div>
         <div
-          className={`${lato.className} text-[20px] text-customDark w-[550px] mt-32 text-justify`}
+          className={`${lato.className} text-[20px] text-darkLiver w-[550px] mt-32 text-justify`}
         >
           “Hello there,
           <br />
           <br />
           <p
-            className={`${josefinSans.className} text-[42px] leading-[1.2em] text-customBlue w-[550px] font-semibold`}
+            className={`${josefinSans.className} text-[42px] leading-[1.2em] text-crystalBlue w-[550px] font-semibold`}
           >
             My name is Irene, a teacher and a mother to two beautiful children,
             Aeon and Sage.

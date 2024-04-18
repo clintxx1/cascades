@@ -32,7 +32,7 @@ export default function CommunityCard({
             className={`${hasSecondData ? "w-[190px] h-[200px]" : "w-[340px] h-[350px"}`}
           />
         ) : null}
-        <div className="text-customDark space-y-2 w-[500px]">
+        <div className="text-darkLiver space-y-2 w-[500px]">
           <p className="text-[28px] leading-[36px] w-[200px]">{title}</p>
           <p className={`${lato.className} text-[20px] leading-[36px]`}>
             {name}

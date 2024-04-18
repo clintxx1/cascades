@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function SpecialPrograms() {
   return (
     <section className="w-full">
-      <p className="text-[28px] italic font-semibold text-customDark mt-16">
+      <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
         Programs
       </p>
       <div className="grid lg:grid-cols-2 grid-cols-1">
@@ -25,12 +25,12 @@ export default function SpecialPrograms() {
               alt={"primaryLogo"}
               className="h-16 w-16 object-contain"
             />
-            <p className="text-[42px] leading-[1.2em] font-semibold text-customOrange2">
+            <p className="text-[42px] leading-[1.2em] font-semibold text-meatBrown">
               Special Programs
             </p>
           </div>
           <p
-            className={`${lato.className} text-[20px] italic leading-[36px] text-customDark w-[470px] pt-5 pb-12`}
+            className={`${lato.className} text-[20px] italic leading-[36px] text-darkLiver w-[470px] pt-5 pb-12`}
           >
             Enrolled students in the Basic Programs can avail the 5% discount to
             these special classes
