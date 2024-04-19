@@ -65,7 +65,7 @@ export default function CommunityCard({
           })}
         </div>
         {hasDivider ? (
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full flex items-center justify-center mx-5">
             <div className="h-[200px] w-[1px] p bg-black"></div>
           </div>
         ) : null}

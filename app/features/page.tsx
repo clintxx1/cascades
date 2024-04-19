@@ -49,7 +49,7 @@ export default function Features() {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full gap-3">
+      <div className="flex items-center justify-between w-full gap-8 mt-14">
         <div className="space-y-8 w-full">
           <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
           <p className="text-[42px] leading-[52px] font-semibold text-meatBrown w-[500px]">
@@ -71,7 +71,7 @@ export default function Features() {
           <Image src={image1} alt="Image 1" width={443} height={442} />
         </div>
       </div>
-      <div className="flex items-center justify-between w-full gap-3">
+      <div className="flex items-center justify-between w-full gap-8 mt-14">
         <div className="w-full">
           <Image src={image2} alt="Image 2" width={443} height={442} />
         </div>

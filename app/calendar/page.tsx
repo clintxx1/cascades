@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 export default function Calendar() {
   return (
-    <section className="w-full px-24">
+    <section className="w-full">
       <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
         Calendar
       </p>

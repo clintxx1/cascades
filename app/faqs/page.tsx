@@ -15,7 +15,7 @@ export default function Faqs() {
       <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
         FAQs
       </p>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 gap-20">
         <div>
           <InfoCard
             title="1. What is the schedule for enrollment?"

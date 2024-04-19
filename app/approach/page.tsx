@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Approach() {
   return (
     <section className="w-full h-full">
-      <div className="grid lg:grid-cols-2 grid-cols-1">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div className="grid gap-5">
           <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
             Approach
@@ -93,7 +93,7 @@ export default function Approach() {
         </div>
       </div>
       <Image src={longDiv} alt="longDiv" className="w-full h-[6px] my-12" />
-      <div className="flex items-center justify-around pb-24">
+      <div className="flex items-center justify-around pb-24 gap-14">
         <Image src={image3} alt="image 3" width={304} height={304} />
         <div className="mt-12 space-y-8">
           <p className="text-[42px] leading-[1.2em] font-semibold text-[#1c6a88]">

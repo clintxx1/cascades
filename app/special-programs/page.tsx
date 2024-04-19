@@ -17,7 +17,7 @@ export default function SpecialPrograms() {
       <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
         Programs
       </p>
-      <div className="grid lg:grid-cols-2 grid-cols-1">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div className="mt-24">
           <div className="flex items-end justify-start gap-5">
             <Image

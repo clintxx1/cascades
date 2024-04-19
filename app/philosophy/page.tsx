@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Philosophy() {
   return (
     <section className="w-full h-full">
-      <div className="grid lg:grid-cols-2 grid-cols-1">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div>
           <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
             Philosophy
@@ -46,7 +46,7 @@ export default function Philosophy() {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div>
           <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
           <h2 className="text-watermelonRed font-semibold text-[42px]">

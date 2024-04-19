@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify, X } from "lucide-react";
 import { Button } from "./ui/button";
-import cascadesLogo from "@/public/headerlogo_1x.png";
+import cascadesLogo from "@/public/headerlogo_2x.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -113,11 +113,13 @@ export default function Navbar() {
                     <NavigationMenuContent className="bg-meatBrown">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px] relative">
                         <ListItem
+                          key={"primaryProgram"}
                           title={"Primary Program"}
                           href={"/primary-program"}
                         ></ListItem>
                         <div className="w-full bg-white h-[2px] p-0 m-0"></div>
                         <ListItem
+                          key={"specialPrograms"}
                           title={"Special Programs"}
                           href={"/special-programs"}
                         ></ListItem>
@@ -140,11 +142,13 @@ export default function Navbar() {
                     <NavigationMenuContent className="bg-meatBrown">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         <ListItem
+                          key={"enrollmentProcess"}
                           title={"Enrollment Process"}
                           href={"/enrollment"}
                         ></ListItem>
                         <div className="w-full bg-white h-[2px] p-0 m-0"></div>
                         <ListItem
+                          key={"scholarships"}
                           title={"Scholarships"}
                           href={"/scholarship"}
                         ></ListItem>
@@ -167,13 +171,19 @@ export default function Navbar() {
                     <NavigationMenuContent className="bg-meatBrown">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         <ListItem
+                          key={"calendar"}
                           title={"Calendar"}
                           href={"/calendar"}
                         ></ListItem>
                         <div className="w-full bg-white h-[2px] p-0 m-0"></div>
-                        <ListItem title={"FAQs"} href={"/faqs"}></ListItem>
+                        <ListItem
+                          key={"faqs"}
+                          title={"FAQs"}
+                          href={"/faqs"}
+                        ></ListItem>
                         <div className="w-full bg-white h-[2px] p-0 m-0"></div>
                         <ListItem
+                          key={"careers"}
                           title={"Careers"}
                           href={"/cascade-careers"}
                         ></ListItem>
