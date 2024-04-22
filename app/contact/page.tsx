@@ -2,16 +2,7 @@ import { Metadata } from "next";
 import React from "react";
 import { SchoolMap } from "./_components/map";
 import { lato } from "../layout";
-import divider from "@/public/divider-XL-red-long-Copy-10.png";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import InquiryForm from "./_components/inquiryForm";
 import { Details } from "../_components/details";
 
@@ -60,7 +51,14 @@ export default function Contact() {
             value="<a href='tel:+63-927-029-3996'>+63 927-029-3996</a>"
           />
           <div className="py-8">
-            <Image src={divider} alt="divider" />
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
+              }
+              width={490}
+              height={8}
+              alt="divider"
+            />
           </div>
           <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
             Accounting

@@ -1,15 +1,17 @@
 import React from "react";
 import InfoCard from "./infoCard";
 import Image from "next/image";
-import longDiv1 from "@/public/Group-5-1024x6.png";
-import longDiv2 from "@/public/divider-XL-red-long-Copy-4-1024x7.png";
 
 export default function PromoSection({ classname }: { classname?: string }) {
   return (
     <div className={classname}>
       <Image
-        src={longDiv1}
+        src={
+          "https://ik.imagekit.io/cascades/cascades/Group-5-1024x6.png?updatedAt=1713776075118"
+        }
         alt="longDiv1"
+        width={1024}
+        height={6}
         className="w-full h-[6px] my-12 px-12"
       />
       <div className="flex items-start justify-center gap-8">
@@ -44,8 +46,12 @@ export default function PromoSection({ classname }: { classname?: string }) {
         </div>
       </div>
       <Image
-        src={longDiv2}
+        src={
+          "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png?updatedAt=1713776162507"
+        }
         alt="longDiv2"
+        width={1024}
+        height={6}
         className="w-full h-[6px] my-12 px-12"
       />
     </div>

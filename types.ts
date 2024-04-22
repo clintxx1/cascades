@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface CardProps {
-  icon: StaticImageData;
+  icon: string;
   title: string;
   description: string;
 }
@@ -13,7 +13,7 @@ export interface InfoCardProps {
   description: string;
   descriptionCN?: string;
   hasHeader?: boolean;
-  headerImage?: StaticImageData;
+  headerImage?: string;
 }
 
 export interface NavItem {
@@ -23,21 +23,21 @@ export interface NavItem {
 
 export interface CommunityCardProps {
   className?: string;
-  firstImage: StaticImageData;
+  firstImage: string;
   firstTitle: string;
   firstName: string;
   firstDescription?: string;
   hasDivider?: boolean;
   hasSecondData?: boolean;
   isReversed?: boolean;
-  secondImage?: StaticImageData;
+  secondImage?: string;
   secondTitle?: string;
   secondName?: string;
   secondDescription?: string;
 }
 
 export interface CommunityDataUIProps {
-  image?: StaticImageData;
+  image?: string;
   title: string;
   name: string;
   description?: string;

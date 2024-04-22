@@ -1,11 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { lato } from "../layout";
-import image1 from "@/public/philosophy_banner_2x-861x1024.jpg";
-import image2 from "@/public/philosophy_principles_2x-1024x1016.png";
-import divider from "@/public/header_copy_divider_XL_teal-2-1.png";
 import InfoCard from "@/components/infoCard";
-import longDiv from "@/public/divider-XL-red-long-1024x7.png";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,7 +17,14 @@ export default function Philosophy() {
             Philosophy
           </p>
           <div className="mt-8">
-            <Image src={image1} alt="image 1" width={500} height={500} />
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/philosophy_banner_2x-861x1024.jpg"
+              }
+              alt="image 1"
+              width={500}
+              height={500}
+            />
           </div>
         </div>
         <div className="mt-36">
@@ -48,7 +51,15 @@ export default function Philosophy() {
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div>
-          <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2-1.png"
+            }
+            alt="divider"
+            width={208}
+            height={6}
+            className="w-[208px] h-[6px]"
+          />
           <h2 className="text-watermelonRed font-semibold text-[42px]">
             Guiding Principles
           </h2>
@@ -74,7 +85,14 @@ export default function Philosophy() {
         </div>
         <div>
           <div className="-mt-28">
-            <Image src={image2} alt="image 2" width={550} height={550} />
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/philosophy_principles_2x-1024x1016.png"
+              }
+              alt="image 2"
+              width={550}
+              height={550}
+            />
           </div>
           <InfoCard
             title="Teachers and children are partners in learning"
@@ -100,7 +118,15 @@ export default function Philosophy() {
         </div>
       </div>
       <div className="py-9">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px]" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px]"
+        />
       </div>
     </section>
   );

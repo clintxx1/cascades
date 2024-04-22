@@ -2,9 +2,6 @@ import InfoCard from "@/components/infoCard";
 import PromoSection from "@/components/promoSection";
 import Image from "next/image";
 import React from "react";
-import primaryLogo from "@/public/Group-3-1.png";
-import image1 from "@/public/secondary_banner_2x-1024x521.jpg";
-import divider from "@/public/header_copy_divider-copy-2.png";
 import { lato } from "../layout";
 import { Metadata } from "next";
 
@@ -21,8 +18,10 @@ export default function SpecialPrograms() {
         <div className="mt-24">
           <div className="flex items-end justify-start gap-5">
             <Image
-              src={primaryLogo}
+              src={"https://ik.imagekit.io/cascades/cascades/Group-3-1.png"}
               alt={"primaryLogo"}
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
             <p className="text-[42px] leading-[1.2em] font-semibold text-meatBrown">
@@ -44,24 +43,38 @@ export default function SpecialPrograms() {
             title="2. Play-area Membership"
             description="A membership will be given to the child and their accompanying adult to have a full access to the play area of the school. The child is requested to bring a pair of extra clothes, and their hygiene kit."
             hasHeader
-            headerImage={divider}
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
             descriptionCN="w-[450px]"
           />
         </div>
         <div className="relative">
-          <Image src={image1} alt={"image1"} className="object-contain" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/secondary_banner_2x-1024x521.jpg"
+            }
+            alt={"image1"}
+            width={1024}
+            height={521}
+            className="object-contain"
+          />
           <InfoCard
             title="3. Parent and Child Classes"
             description="(Children 6 mos to 2.5 yrs old)"
             hasHeader
-            headerImage={divider}
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
             descriptionCN="w-[450px]"
           />
           <InfoCard
             title="4. Special Classes"
             description="Special classes are offered to children every afternoon of Fridays and whole day of Saturdays. Children not enrolled to the school are also welcome."
             hasHeader
-            headerImage={divider}
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
             descriptionCN="w-[450px]"
           />
         </div>

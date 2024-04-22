@@ -3,8 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { lato } from "../layout";
 import InfoCard from "@/components/infoCard";
-import divider from "@/public/header_copy_divider-copy-2.png";
-import longDiv from "@/public/divider-XL-red-long-Copy-4-1024x7.png";
 
 export const metadata: Metadata = {
   title: "Admissions | Cascades.ph",
@@ -30,34 +28,43 @@ export default function Enrollment() {
           </p>
         </div>
         <div className="relative">
-          {/* <Image src={image1} alt={"image1"} className="object-contain" /> */}
           <InfoCard
             title="1. Visit the School"
             description="Schedule a visit to the school by contacting or emailing us at <strong>+63 927 029 3396</strong> or <strong><i>cascadesinternational@gmail.com</i></strong>. Visits are usually scheduled Monday to Friday, 4:00PM. All required forms will be given after the visit.”"
             hasHeader
-            headerImage={divider}
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
             descriptionCN="w-[450px]"
           />
           <InfoCard
             title="2. Forms and Payment of Fees"
             description="Submit the Enrollment, Authorization, and Tuition Agreement together with the required fees. A separate form will be given for those who want to have the 4-week trial. Please fill out the form and submit it together with the 4-week trial fee."
             hasHeader
-            headerImage={divider}
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
             descriptionCN="w-[450px]"
           />
           <InfoCard
             title="3. Orientation"
             description="After submission of forms and payment, instructions on what needs to be prepared for the first day of class will be sent via email as well as the schedule of the Parents’/Guardians’ Orientation."
             hasHeader
-            headerImage={divider}
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
             descriptionCN="w-[450px]"
           />
         </div>
       </div>
       <div className="py-5">
         <Image
-          src={longDiv}
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
+          }
           alt="longDiv"
+          width={1024}
+          height={6}
           className="w-full h-[6px] my-12 px-8"
         />
       </div>

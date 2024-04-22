@@ -1,5 +1,4 @@
 import React from "react";
-import longDiv from "@/public/divider-XL-red-long-Copy-4-1024x7.png";
 import Image from "next/image";
 import { CommunityCardProps, CommunityDataUIProps } from "@/types";
 import { lato } from "@/app/layout";
@@ -29,6 +28,8 @@ export default function CommunityCard({
           <Image
             src={image}
             alt="image 3"
+            height={350}
+            width={340}
             className={`${hasSecondData ? "w-[190px] h-[200px]" : "w-[340px] h-[350px"}`}
           />
         ) : null}
@@ -49,8 +50,12 @@ export default function CommunityCard({
   return (
     <div className="py-6">
       <Image
-        src={longDiv}
+        src={
+          "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
+        }
         alt="longDiv"
+        height={6}
+        width={1024}
         className="w-full h-[6px] my-12 mx-8"
       />
       <div

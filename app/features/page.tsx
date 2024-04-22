@@ -2,12 +2,7 @@ import React from "react";
 import { lato } from "../layout";
 import CustomCarousel from "@/components/carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import divider from "@/public/header_copy_divider-copy-2.png";
-import divider2 from "@/public/header_copy_divider_XL_teal-2.png";
 import Image from "next/image";
-import image1 from "@/public/features_lunch.jpg";
-import image2 from "@/public/features_safety_2x-768x901.jpg";
-import longDiv from "@/public/divider-XL-red-long-Copy-4-1024x7.png";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -51,7 +46,15 @@ export default function Features() {
       </div>
       <div className="flex items-center justify-between w-full gap-8 mt-14">
         <div className="space-y-8 w-full">
-          <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
+            width={208}
+            height={6}
+            alt="divider"
+            className="w-[208px] h-[6px]"
+          />
           <p className="text-[42px] leading-[52px] font-semibold text-meatBrown w-[500px]">
             Healthy Lunch and Snacks are being served in the school.
           </p>
@@ -68,15 +71,35 @@ export default function Features() {
           </div>
         </div>
         <div className="w-full">
-          <Image src={image1} alt="Image 1" width={443} height={442} />
+          <Image
+            src={"https://ik.imagekit.io/cascades/cascades/features_lunch.jpg"}
+            alt="Image 1"
+            width={443}
+            height={442}
+          />
         </div>
       </div>
       <div className="flex items-center justify-between w-full gap-8 mt-14">
         <div className="w-full">
-          <Image src={image2} alt="Image 2" width={443} height={442} />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/features_safety_2x-768x901.jpg"
+            }
+            alt="Image 2"
+            width={443}
+            height={442}
+          />
         </div>
         <div className="space-y-8 w-full">
-          <Image src={divider2} alt="divider2" className="w-[208px] h-[6px]" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
+            }
+            width={208}
+            height={6}
+            alt="divider2"
+            className="w-[208px] h-[6px]"
+          />
           <p className="text-[42px] leading-[52px] font-semibold text-crystalBlue w-[500px]">
             The school ensures the safety and welfare of each child.
           </p>
@@ -96,8 +119,12 @@ export default function Features() {
       </div>
       <div className="py-5">
         <Image
-          src={longDiv}
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
+          }
           alt="longDiv"
+          width={1024}
+          height={8}
           className="w-full h-[6px] my-12 px-8"
         />
       </div>

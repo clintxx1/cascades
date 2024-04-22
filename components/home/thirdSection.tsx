@@ -1,17 +1,29 @@
-import image1 from "@/public/home_experience@2x.jpg";
-import divider from "@/public/header_copy_divider_XL_teal-2-1.png";
 import Image from "next/image";
 import { lato } from "@/app/layout";
-import { Button } from "../ui/button";
 import Link from "next/link";
 
 export default function ThirdSection() {
   return (
     <section>
       <div className="flex items-center justify-between w-full gap-12">
-        <Image src={image1} alt="Image 1" width={612} height={663} />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/home_experience@2x.jpg"
+          }
+          alt="Image 1"
+          width={612}
+          height={663}
+        />
         <div className="space-y-8">
-          <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2-1.png"
+            }
+            height={6}
+            width={208}
+            alt="divider"
+            className="w-[208px] h-[6px]"
+          />
           <p className="text-[42px] font-semibold text-watermelonRed">
             Experience Cascades.
           </p>

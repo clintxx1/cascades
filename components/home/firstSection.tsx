@@ -1,22 +1,18 @@
-import image1 from "@/public/home_programs_2x-944x1024.jpg";
-import divider from "@/public/header_copy_divider_XL_teal-2.png";
 import Image from "next/image";
 import { lato } from "@/app/layout";
-import primaryLogo from "@/public/Group-1-o9huxdwud2prv6i94n374a0uhto5mn9pg7eokvt8lq.png";
-import specialLogo from "@/public/Group-3-o9huxfshw1n8peuwrodcqzfx85dovxlztnciniyv40.png";
 import { Card } from "../card";
 import Link from "next/link";
 
 export default function FirstSection() {
   const programItems = [
     {
-      icon: primaryLogo,
+      icon: "https://ik.imagekit.io/cascades/cascades/Group-1-o9huxdwud2prv6i94n374a0uhto5mn9pg7eokvt8lq.png",
       title: "Primary Program",
       description:
         "Programs that are progressive and developmentally appropriate for children ages 0-5.",
     },
     {
-      icon: specialLogo,
+      icon: "https://ik.imagekit.io/cascades/cascades/Group-3-o9huxfshw1n8peuwrodcqzfx85dovxlztnciniyv40.png",
       title: "Special Programs",
       description:
         "Additional programs and skillset development that further scaffolds the primary programs.",
@@ -25,9 +21,24 @@ export default function FirstSection() {
   return (
     <section className="flex flex-col items-center mb-20">
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-20">
-        <Image src={image1} alt="Image 1" width={612} height={663} />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/home_programs_2x-944x1024.jpg"
+          }
+          alt="Image 1"
+          width={612}
+          height={663}
+        />
         <div className="w-full space-y-8">
-          <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
+            }
+            height={6}
+            width={208}
+            alt="divider"
+            className="w-[208px] h-[6px]"
+          />
           <p className="text-[42px] font-semibold text-crystalBlue">
             The environment is
             <br />

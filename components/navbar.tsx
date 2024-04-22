@@ -70,9 +70,11 @@ export default function Navbar() {
         <div className={`flex-shrink-0 py-3 lg:block lg:py-5`}>
           <Link href={"/"}>
             <Image
-              src={cascadesLogo}
+              src={"https://ik.imagekit.io/cascades/cascades/headerlogo_2x.png"}
               alt="cascades logo"
               className="customImage flex-shrink-0"
+              width={345}
+              height={89}
             />
           </Link>
         </div>

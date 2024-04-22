@@ -19,7 +19,13 @@ export default function InfoCard({
   return (
     <div className={cn("py-8", className)}>
       {hasHeader && headerImage ? (
-        <Image src={headerImage} alt="divider" className="w-[208px] h-[6px]" />
+        <Image
+          src={headerImage}
+          alt="divider"
+          width={208}
+          height={6}
+          className="w-[208px] h-[6px]"
+        />
       ) : null}
       <p
         className={cn(

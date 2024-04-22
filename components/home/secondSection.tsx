@@ -1,8 +1,5 @@
-import image1 from "@/public/homepage_features_2x-1-1024x950.jpg";
-import divider from "@/public/header_copy_divider_XL_teal-1-1.png";
 import Image from "next/image";
 import { lato } from "@/app/layout";
-import { Button } from "../ui/button";
 import Link from "next/link";
 
 export default function SecondSection() {
@@ -10,7 +7,15 @@ export default function SecondSection() {
     <section>
       <div className="flex items-center justify-between w-full gap-3">
         <div className="space-y-8 w-3/4">
-          <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-1-1.png"
+            }
+            width={208}
+            height={6}
+            alt="divider"
+            className="w-[208px] h-[6px]"
+          />
           <p className="text-[42px] font-semibold text-[#9a5600]">
             Student Health, Safety
             <br />
@@ -36,7 +41,14 @@ export default function SecondSection() {
             </Link>
           </div>
         </div>
-        <Image src={image1} alt="Image 1" width={612} height={663} />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/homepage_features_2x-1-1024x950.jpg"
+          }
+          alt="Image 1"
+          width={612}
+          height={663}
+        />
       </div>
     </section>
   );

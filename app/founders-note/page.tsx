@@ -1,5 +1,4 @@
 import React from "react";
-import image1 from "@/public/Group-Copy.png";
 import Image from "next/image";
 import { josefinSans, lato } from "../layout";
 import { Metadata } from "next";
@@ -15,7 +14,12 @@ export default function FoundersNote() {
           <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
             Founder&apos;s Note
           </p>
-          <Image src={image1} alt="image 1" />
+          <Image
+            src={"https://ik.imagekit.io/cascades/cascades/Group-Copy.png"}
+            width={189}
+            height={216}
+            alt="image 1"
+          />
           <div className="text-darkLiver text-[20px]">
             <p>
               Irene Theresa

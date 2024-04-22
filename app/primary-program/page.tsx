@@ -1,9 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import primaryLogo from "@/public/Group-3-Copy.png";
 import InfoCard from "@/components/infoCard";
-import image1 from "@/public/primary_banner_2x-1024x502.jpg";
-import image2 from "@/public/home_experience@2x.jpg";
 import { josefinSans, lato } from "../layout";
 import Link from "next/link";
 import PromoSection from "@/components/promoSection";
@@ -22,8 +19,10 @@ export default function PrimaryProgram() {
         <div className="mt-24">
           <div className="flex items-end justify-start gap-5">
             <Image
-              src={primaryLogo}
+              src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
               alt={"primaryLogo"}
+              width={64}
+              height={64}
               className="h-16 w-16 object-contain"
             />
             <p className="text-[42px] leading-[1.2em] font-semibold text-crystalBlue">
@@ -44,7 +43,15 @@ export default function PrimaryProgram() {
           />
         </div>
         <div>
-          <Image src={image1} alt={"image1"} className="object-contain" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/primary_banner_2x-1024x502.jpg"
+            }
+            alt={"image1"}
+            width={1024}
+            height={502}
+            className="object-contain"
+          />
           <InfoCard
             title="Tell-A-Tale"
             description="Children listen to different stories and retell them in interesting ways through drawings, picture-story, puppetry,mini-movies, slide shows, and shadow plays based on how theyunderstand and remember it."
@@ -57,7 +64,14 @@ export default function PrimaryProgram() {
       </div>
       <PromoSection />
       <div className="flex items-center justify-start w-full gap-12 pb-20">
-        <Image src={image2} alt="Image 1" width={388} height={388} />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/home_experience@2x.jpg"
+          }
+          alt="Image 1"
+          width={388}
+          height={388}
+        />
         <div className="space-y-8">
           <p className="text-[42px] font-semibold text-meatBrown">
             Experience Cascades.

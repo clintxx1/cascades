@@ -1,11 +1,6 @@
 import React from "react";
 import { lato } from "../layout";
-import image1 from "@/public/approach_banner_2x-858x1024.jpg";
-import image2 from "@/public/approach_celebrate_2x-1024x850.jpg";
-import image3 from "@/public/path_programs_2x.jpg";
 import Image from "next/image";
-import divider from "@/public/header_copy_divider_XL_teal-2.png";
-import longDiv from "@/public/divider-XL-red-long-1024x7.png";
 import Link from "next/link";
 import InfoCard from "@/components/infoCard";
 import { Metadata } from "next";
@@ -34,7 +29,15 @@ export default function Approach() {
             initiated activities. Learning is done through multiple ways a child
             can learn.{" "}
           </p>
-          <Image src={divider} alt="divider" className="w-[208px] h-[6px]" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
+            }
+            width={208}
+            height={6}
+            alt="divider"
+            className="w-[208px] h-[6px]"
+          />
           <InfoCard
             title="Mixed Age"
             description="All children (2.5-5.5 years old) will be in one classroom. This
@@ -53,12 +56,26 @@ export default function Approach() {
           />
         </div>
         <div className="mt-28">
-          <Image src={image1} alt="image 1" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/approach_banner_2x-858x1024.jpg"
+            }
+            alt="image 1"
+            width={858}
+            height={1024}
+          />
         </div>
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
         <div className="mt-8">
-          <Image src={image2} alt="image 2" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/approach_celebrate_2x-1024x850.jpg"
+            }
+            alt="image 2"
+            width={1024}
+            height={850}
+          />
         </div>
         <div className="grid gap-5 mt-28">
           <InfoCard
@@ -92,9 +109,22 @@ export default function Approach() {
           />
         </div>
       </div>
-      <Image src={longDiv} alt="longDiv" className="w-full h-[6px] my-12" />
+      <Image
+        src={
+          "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
+        }
+        width={1024}
+        height={6}
+        alt="longDiv"
+        className="w-full h-[6px] my-12"
+      />
       <div className="flex items-center justify-around pb-24 gap-14">
-        <Image src={image3} alt="image 3" width={304} height={304} />
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/path_programs_2x.jpg"}
+          alt="image 3"
+          width={304}
+          height={304}
+        />
         <div className="mt-12 space-y-8">
           <p className="text-[42px] leading-[1.2em] font-semibold text-[#1c6a88]">
             Check our programs

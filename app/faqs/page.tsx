@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { lato } from "../layout";
-import longDiv1 from "@/public/divider-XL-red-long-1024x7.png";
 
 export const metadata: Metadata = {
   title: "FAQs | Cascades.ph",
@@ -51,7 +50,15 @@ export default function Faqs() {
         </div>
       </div>
       <div className="my-16">
-        <Image src={longDiv1} alt="longDiv1" className="w-full h-[6px]" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
+          }
+          width={1024}
+          height={6}
+          alt="longDiv1"
+          className="w-full h-[6px]"
+        />
       </div>
       <div className="flex items-end justify-start pb-24 w-full px-36">
         <div className="mt-4 space-y-8">

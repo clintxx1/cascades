@@ -1,12 +1,6 @@
 import React from "react";
 import { lato } from "../layout";
 import CommunityCard from "@/components/communityCard";
-import irene from "@/public/irene_2x.jpg";
-import gian from "@/public/gian_2x.jpg";
-import bren from "@/public/bren_2x.jpg";
-import zenith from "@/public/zenith_2x.jpg";
-import fatima from "@/public/dalynn_2x.jpg";
-import randolph from "@/public/budjok_2x.jpg";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,34 +22,34 @@ export default function Community() {
       </p>
       <CommunityCard
         className="w-full"
-        firstImage={irene}
+        firstImage={"https://ik.imagekit.io/cascades/cascades/irene_2x.jpg"}
         firstTitle="Founder/Directress"
         firstName="Irene Theresa M. Mawo"
         firstDescription="Irene is a graduate of Secondary Education major in Biological Science. After graduating magna cum laude she immediately took her Master’s in teaching General Science then pursued her Master’s in Early Childhood Education. She has been teaching for over a decade now in both local and international schools, having spent years as head teacher before deciding to build Cascades International School."
       />
       <CommunityCard
-        firstImage={gian}
+        firstImage={"https://ik.imagekit.io/cascades/cascades/gian_2x.jpg"}
         firstTitle="Vice President / Art Director"
         firstName="Gian V. Mawo"
         hasDivider
         hasSecondData
-        secondImage={bren}
+        secondImage={"https://ik.imagekit.io/cascades/cascades/bren_2x.jpg"}
         secondTitle="Head of KAI Foundation / Project Development Officer"
         secondName="Bren Cezar C. Valenciano"
       />
       <CommunityCard
-        firstImage={zenith}
+        firstImage={"https://ik.imagekit.io/cascades/cascades/zenith_2x.jpg"}
         firstTitle="Finance Officer"
         firstName="Zenith O. Pascual"
         hasDivider
         hasSecondData
         isReversed
-        secondImage={fatima}
+        secondImage={"https://ik.imagekit.io/cascades/cascades/dalynn_2x.jpg"}
         secondTitle="Secretary"
         secondName="Fatima Dalynn S. Mendoza"
       />
       <CommunityCard
-        firstImage={randolph}
+        firstImage={"https://ik.imagekit.io/cascades/cascades/budjok_2x.jpg"}
         firstTitle="Atelierista"
         firstName="Randolph Maribojoc"
         hasDivider

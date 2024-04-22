@@ -2,8 +2,6 @@ import { Metadata } from "next";
 import React from "react";
 import { Details } from "../_components/details";
 import Image from "next/image";
-import longDiv from "@/public/divider-XL-red-long-Copy-2-1024x8.png";
-import longDiv1 from "@/public/Group-5-1024x6.png";
 import { lato } from "../layout";
 import Link from "next/link";
 
@@ -29,7 +27,15 @@ export default function Calendar() {
       (depending on slots availability)"
         />
         <div className="py-8">
-          <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+          <Image
+            src={
+              "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+            }
+            alt="longDiv"
+            width={1024}
+            height={6}
+            className="w-full h-[6px] px-4"
+          />
         </div>
       </div>
       <Details
@@ -40,7 +46,15 @@ export default function Calendar() {
         value="Aug 26 - 30, 2019"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex items-center justify-between"
@@ -50,7 +64,15 @@ export default function Calendar() {
         value="Oct 14 - Dec 20"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex flex-col items-center justify-center gap-6"
@@ -61,7 +83,15 @@ export default function Calendar() {
         value="Dec 16 - 20"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex flex-col items-center justify-center gap-6"
@@ -71,7 +101,15 @@ export default function Calendar() {
         value="Dec 21, 2019 - Jan 3, 2020"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex items-center justify-between"
@@ -81,7 +119,15 @@ export default function Calendar() {
         value="Jan 4 - Mar 13, 2020"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex flex-col items-center justify-center gap-6"
@@ -91,7 +137,15 @@ export default function Calendar() {
         value="Feb 2020 (to be finalized)"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex items-center justify-between"
@@ -101,7 +155,15 @@ export default function Calendar() {
         value="Mar 14 - Jun 12, 2020"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex items-center justify-between"
@@ -111,7 +173,15 @@ export default function Calendar() {
         value="Jun 13 - Aug 28, 2020"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <Details
         mainCN="w-full flex flex-col items-center justify-center gap-6"
@@ -121,10 +191,24 @@ export default function Calendar() {
         value="Aug 29, 2020"
       />
       <div className="py-8">
-        <Image src={longDiv} alt="longDiv" className="w-full h-[6px] px-4" />
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="divider"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
       </div>
       <div className="my-16">
-        <Image src={longDiv1} alt="longDiv1" className="w-full h-[6px]" />
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/Group-5-1024x6.png"}
+          width={1024}
+          height={6}
+          alt="longDiv1"
+          className="w-full h-[6px]"
+        />
       </div>
       <div className="flex items-end justify-start pb-24 w-full px-36">
         <div className="mt-4 space-y-8">
