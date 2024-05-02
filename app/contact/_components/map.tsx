@@ -10,7 +10,7 @@ const containerStyle = {
 
 export function SchoolMap() {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: process.env.GOOGLE_API_KEY || "",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || "",
   });
   const options = {
     mapTypeControl: false,
