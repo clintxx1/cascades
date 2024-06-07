@@ -1,5 +1,5 @@
+import { lato } from "@/lib/fonts";
 import Image from "next/image";
-import { lato } from "@/app/layout";
 import Link from "next/link";
 
 export default function ThirdSection() {

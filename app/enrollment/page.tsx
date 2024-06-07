@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
-import { lato } from "../layout";
+import { lato } from "@/lib/fonts";
 import InfoCard from "@/components/infoCard";
+import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Admissions | Cascades.ph",
@@ -29,8 +30,11 @@ export default function Enrollment() {
         </div>
         <div className="relative">
           <InfoCard
-            title="1. Visit the School"
-            description="Schedule a visit to the school by contacting or emailing us at <strong>+63 927 029 3396</strong> or <strong><i>cascadesinternational@gmail.com</i></strong>. Visits are usually scheduled Monday to Friday, 4:00PM. All required forms will be given after the visit.”"
+            title="1. Message us your inquiry and details"
+            description={`
+            &check; Child’s Name, Nick Name, Birthday, Age<br />
+            &check; Parents Name, Viber/SMS Number, Email Address
+            `}
             hasHeader
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
@@ -38,8 +42,8 @@ export default function Enrollment() {
             descriptionCN="w-[450px]"
           />
           <InfoCard
-            title="2. Forms and Payment of Fees"
-            description="Submit the Enrollment, Authorization, and Tuition Agreement together with the required fees. A separate form will be given for those who want to have the 4-week trial. Please fill out the form and submit it together with the 4-week trial fee."
+            title="2. Schedule a Campus Tour and Free 1-day Trial Class"
+            description=""
             hasHeader
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
@@ -47,8 +51,34 @@ export default function Enrollment() {
             descriptionCN="w-[450px]"
           />
           <InfoCard
-            title="3. Orientation"
-            description="After submission of forms and payment, instructions on what needs to be prepared for the first day of class will be sent via email as well as the schedule of the Parents’/Guardians’ Orientation."
+            title="3. Submit and fill out the following forms by email: "
+            description={`
+              <span style="padding-left: 30px;">3.1 New Student Requirements:</span><br />
+              <span style="padding-left: 60px;">Enrollment Form</span><br />
+              <span style="padding-left: 60px;">Fetcher’s Form and ID Picture</span><br />
+              <span style="padding-left: 60px;">Photocopy of Birth Certificate</span><br />
+              <span style="padding-left: 30px;">3.2 Transfering Student Requirements:</span><br />
+              <span style="padding-left: 60px;">Recommendation Form accomplished by the previous center/school</span><br />
+              <span style="padding-left: 60px;">Report Card</span><br />
+            `}
+            hasHeader
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
+            descriptionCN="w-[650px]"
+          />
+          <InfoCard
+            title="4. Assessment and Payment Process and Verification"
+            description=""
+            hasHeader
+            headerImage={
+              "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
+            }
+            descriptionCN="w-[450px]"
+          />
+          <InfoCard
+            title="5. Parents Circle Time (Orientation)"
+            description=""
             hasHeader
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"

@@ -1,4 +1,4 @@
-import { lato } from "@/app/layout";
+import { lato } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { DetailsProps } from "@/types";
 import React from "react";

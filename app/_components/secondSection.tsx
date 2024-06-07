@@ -1,10 +1,10 @@
+import { lato } from "@/lib/fonts";
 import Image from "next/image";
-import { lato } from "@/app/layout";
 import Link from "next/link";
 
 export default function SecondSection() {
   return (
-    <section>
+    <section className="py-20">
       <div className="flex items-center justify-between w-full gap-3">
         <div className="space-y-8 w-3/4">
           <Image

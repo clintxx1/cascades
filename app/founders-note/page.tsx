@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { josefinSans, lato } from "../layout";
 import { Metadata } from "next";
+import { josefinSans, lato } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Our Founder | Cascades.ph",
@@ -51,8 +51,7 @@ export default function FoundersNote() {
           As children, we develop our early sensibilities towards the world from
           home. As an educator, I realized the school’s role in the development
           of these sensibilities. This became the key inspiration to build
-          Cascades International School by merging the elements of a house,
-          school and home.
+          Cascades School by merging the elements of a house, school and home.
           <br />
           <br />
           <br />
@@ -65,7 +64,7 @@ export default function FoundersNote() {
           <br />
           <br />
           We have so much to offer and we are so proud to welcome you at
-          Cascades International School!
+          Cascades School!
           <br />
           <br />
           <br />
@@ -86,8 +85,8 @@ export default function FoundersNote() {
           <br />
           <br />
           <br />
-          At Cascades International School, you will find a second home, the
-          kind of school I want my own children to be in. “
+          At Cascades School, you will find a second home, the kind of school I
+          want my own children to be in. “
         </div>
       </div>
     </section>

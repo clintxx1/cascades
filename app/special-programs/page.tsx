@@ -2,7 +2,7 @@ import InfoCard from "@/components/infoCard";
 import PromoSection from "@/components/promoSection";
 import Image from "next/image";
 import React from "react";
-import { lato } from "../layout";
+import { lato } from "@/lib/fonts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify, X } from "lucide-react";
 import { Button } from "./ui/button";
-import cascadesLogo from "@/public/headerlogo_2x.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -70,7 +69,9 @@ export default function Navbar() {
         <div className={`flex-shrink-0 py-3 lg:block lg:py-5`}>
           <Link href={"/"}>
             <Image
-              src={"https://ik.imagekit.io/cascades/cascades/headerlogo_2x.png"}
+              src={
+                "https://ik.imagekit.io/cascades/cascades/Cascades%20School.png"
+              }
               alt="cascades logo"
               className="customImage flex-shrink-0"
               width={345}
@@ -94,7 +95,7 @@ export default function Navbar() {
                     <NavigationMenuContent className="bg-meatBrown">
                       <ul className="grid lg:grid-cols-1 gap-x-1 w-[200px]">
                         {ABOUT_ITEMS.map((item, index) => (
-                          <>
+                          <li key={index}>
                             <ListItem
                               key={index}
                               title={item.label}
@@ -103,7 +104,7 @@ export default function Navbar() {
                             {index < ABOUT_ITEMS.length - 1 && (
                               <div className="w-full bg-white h-[2px] p-0 m-0"></div>
                             )}
-                          </>
+                          </li>
                         ))}
                       </ul>
                     </NavigationMenuContent>
@@ -134,6 +135,15 @@ export default function Navbar() {
                         className={`${navigationMenuTriggerStyle()} customNavbar`}
                       >
                         Features
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link href="/branches" legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={`${navigationMenuTriggerStyle()} customNavbar`}
+                      >
+                        Branches
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>

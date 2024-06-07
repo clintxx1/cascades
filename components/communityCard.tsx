@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { CommunityCardProps, CommunityDataUIProps } from "@/types";
-import { lato } from "@/app/layout";
 import { cn } from "@/lib/utils";
+import { lato } from "@/lib/fonts";
 
 export default function CommunityCard({
   className,

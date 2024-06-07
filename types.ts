@@ -6,6 +6,12 @@ export interface CardProps {
   description: string;
 }
 
+export interface ProgramContentProps {
+  value: string;
+  label: string;
+  description: string;
+}
+
 export interface InfoCardProps {
   className?: string;
   title: string;
@@ -14,6 +20,8 @@ export interface InfoCardProps {
   descriptionCN?: string;
   hasHeader?: boolean;
   headerImage?: string;
+  isDropdown?: boolean;
+  dropdownData?: ProgramContentProps[] | [];
 }
 
 export interface NavItem {

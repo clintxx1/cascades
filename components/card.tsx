@@ -1,4 +1,4 @@
-import { lato } from "@/app/layout";
+import { lato } from "@/lib/fonts";
 import { CardProps } from "@/types";
 import Image from "next/image";
 

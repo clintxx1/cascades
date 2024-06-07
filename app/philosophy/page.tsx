@@ -1,20 +1,33 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import { lato } from "../layout";
 import InfoCard from "@/components/infoCard";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Our Mission Vision | Cascades.ph",
-};
+import { lato } from "@/lib/fonts";
 
 export default function Philosophy() {
   return (
     <section className="w-full h-full">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div>
-          <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
-            Philosophy
+          <p className="text-[28px] italic font-semibold text-darkLiver mt-16 mb-8">
+            Cascades HIRAYA Curriculum
+          </p>
+          <p
+            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-full`}
+          >
+            The HIRAYA Curriculum is centered around equipping students with the
+            knowledge and understanding of sustainable development. Our students
+            are exposed to hands-on experiences that encourage them to build,
+            innovate, and create. By emphasizing the value of work, resources,
+            money, and time, our curriculum instills a sense of responsibility
+            and purpose in our students.
+            <br />
+            <br />
+            The Curriculum will emphasize collaboration and community
+            involvement. Our students engage in real-world projects that make a
+            tangible impact on our local community through inclusive and
+            collaborative learning environments, we aim to nurture active
+            citizenship and social responsibility.
           </p>
           <div className="mt-8">
             <Image
@@ -31,8 +44,7 @@ export default function Philosophy() {
           <p
             className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px]`}
           >
-            Cascades International School aims to produce independent learners
-            by promoting
+            Cascades School aims to produce independent learners by promoting
           </p>
           <h2 className="text-meatBrown font-semibold text-[42px] w-[500px] leading-[1.2em]">
             diverse methods of learning, problem solving through different
@@ -50,16 +62,18 @@ export default function Philosophy() {
         </div>
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
-        <div>
-          <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2-1.png"
-            }
-            alt="divider"
-            width={208}
-            height={6}
-            className="w-[208px] h-[6px]"
-          />
+        <div className="space-y-2">
+          <div className="pt-14">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2-1.png"
+              }
+              alt="divider"
+              width={208}
+              height={6}
+              className="w-[208px] h-[6px]"
+            />
+          </div>
           <h2 className="text-watermelonRed font-semibold text-[42px]">
             Guiding Principles
           </h2>
@@ -115,6 +129,62 @@ export default function Philosophy() {
             prepackaged knowledge, their hundred languages will be tapped and utilized in their 
             education."
           />
+        </div>
+      </div>
+      <div className="py-9">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px]"
+        />
+      </div>
+      <div className="space-y-8">
+        <p className="text-[#1C5D5B] text-center text-5xl font-semibold">
+          Cascades Pillar
+        </p>
+        <div className="flex items-center justify-around">
+          <div className="w-[200px]">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/hiraya-curriculum.png"
+              }
+              alt="longDiv"
+              width={1206}
+              height={2075}
+            />
+          </div>
+          <div className="w-[200px]">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/sustainable-wellness.png"
+              }
+              alt="longDiv"
+              width={1206}
+              height={1950}
+            />
+          </div>
+          <div className="w-[200px]">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/active-citizenship.png"
+              }
+              alt="longDiv"
+              width={1206}
+              height={1941}
+            />
+          </div>
+          <div className="w-[200px]">
+            <Image
+              src={"https://ik.imagekit.io/cascades/cascades/batang-pinoy.png"}
+              alt="longDiv"
+              width={1206}
+              height={2022}
+            />
+          </div>
         </div>
       </div>
       <div className="py-9">

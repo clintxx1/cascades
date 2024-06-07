@@ -1,20 +1,92 @@
 import Image from "next/image";
 import React from "react";
 import InfoCard from "@/components/infoCard";
-import { josefinSans, lato } from "../layout";
 import Link from "next/link";
 import PromoSection from "@/components/promoSection";
 import { Metadata } from "next";
+import { josefinSans, lato } from "@/lib/fonts";
+import { ProgramContentProps } from "@/types";
 
 export const metadata: Metadata = {
   title: "Our Curriculum | Cascades.ph",
 };
+
+const CURRENT_OFFERED: ProgramContentProps[] = [
+  {
+    label: "Wanderers Program (16 Months - 3 Years Old)",
+    value: "wanderer",
+    description: `Wanderers Program empowers children to show what they know, can know, see, hear, and feel.<br />
+      The program will give our little wanderers opportunities to explore their environment joyfully.
+    `,
+  },
+  {
+    label: "Explorers Program (3 years old until Kinder 2)",
+    value: "explorer",
+    description: `The program will allow the Cascadians to understand that their talents and skills are also tools for creating ways to show kindness. The exposure to inspiring individuals and groups with diverse backgrounds will open their hearts and minds to the excitement of celebrating self, home, and community through meaningful projects and events. The experiences will be their driving force to focus, learn, expand, and connect to the process of creating. `,
+  },
+  {
+    label: "Navigators Program (Grade 1 - Grade 2)",
+    value: "navigators",
+    description: `The Projects in the Navigators Program will lead to children understanding the challenges and issues in their community and doing something about it.`,
+  },
+];
+
+const OPENSY26: ProgramContentProps[] = [
+  {
+    label: "Discovers Program (Grade 3 - 4)",
+    value: "discoverer",
+    description: `The Program will help the children be mindful of the materials and products they will create. They will learn how to use their skills and talents to communicate, earn, and solve some issues in the community.
+    `,
+  },
+  {
+    label: "Validators Program (Grade 5 - 6)",
+    value: "validator",
+    description: `The Program will allow the children to understand the importance of research and guided works to create a more meaningful output or projects. They will be exposed to different inspiring mentors and consultants to guide them in their chosen project.`,
+  },
+];
+
+const OPENSY27: ProgramContentProps[] = [
+  {
+    label: "Groundbreakers (Grade 7 -8)",
+    value: "groundbreaker",
+    description: `The Program will allow the children to understand the importance of research and guided works to create a more meaningful output or projects. They will be exposed to different inspiring mentors and consultants to guide them in their chosen project.`,
+  },
+  {
+    label: "Trailblazers (Grade 9 -10)",
+    value: "trailblazer",
+    description: `The Program will highlight the children's ability to lead and inspire others to design, create, and run sustainable projects or creations.`,
+  },
+];
+
 export default function PrimaryProgram() {
   return (
     <section className="w-full">
       <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
-        Programs
+        Cascades Programs
       </p>
+      <p
+        className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-full mt-8 mb-20`}
+      >
+        Cascades Approach has aligned learning programs from infancy through age
+        18.
+        <br />
+        It will ensure that the learning gains in an early childhood setting
+        will develop as they grow.
+        <br />
+        The children will be given proper guidance and mentoring to have a
+        higher chance of getting a career they truly want to pursue.
+      </p>
+      <div className="pb-20 m-0">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
+      </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div className="mt-24">
           <div className="flex items-end justify-start gap-5">
@@ -30,35 +102,34 @@ export default function PrimaryProgram() {
             </p>
           </div>
           <InfoCard
-            title="Gaining Independence"
-            description="Children are taught different life skills that will help them be more independent. Simple chores will give them a sense of accountability and care for their surroundings. Life Skill will encourage self-discipline to the children."
+            title="Currently Offered:"
+            description=""
+            isDropdown
+            dropdownData={CURRENT_OFFERED}
           />
           <InfoCard
-            title="Explore, Discover, and Share"
-            description="Concepts are taught through activities that involves sensory observations allowing the children to collaborate and share what they observed and discovered."
-          />
-          <InfoCard
-            title="Inventor’s Time"
-            description="Children are guided by a professional to work on projects that may last for weeks or more depending on the time needed for the children to finish it."
+            title="Opens SY 25-26"
+            description=""
+            isDropdown
+            dropdownData={OPENSY26}
           />
         </div>
-        <div>
-          <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/primary_banner_2x-1024x502.jpg"
-            }
-            alt={"image1"}
-            width={1024}
-            height={502}
-            className="object-contain"
-          />
+        <div className="space-y-14">
+          <div className="w-[700px] bg-red-300 object-cover">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/primary_banner_2x-1024x502.jpg"
+              }
+              alt={"image1"}
+              width={1024}
+              height={502}
+            />
+          </div>
           <InfoCard
-            title="Tell-A-Tale"
-            description="Children listen to different stories and retell them in interesting ways through drawings, picture-story, puppetry,mini-movies, slide shows, and shadow plays based on how theyunderstand and remember it."
-          />
-          <InfoCard
-            title="Mentorship"
-            description="Professionals in different fields of Art (Visual Arts, Music, Dance and Theater) will help children create their own art work or performances exposing them to real tools and unique processes of the artists."
+            title="Opens SY 26-27"
+            description=""
+            isDropdown
+            dropdownData={OPENSY27}
           />
         </div>
       </div>

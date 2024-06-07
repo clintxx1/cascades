@@ -1,4 +1,4 @@
-Cascades International School
+Cascades School
 
 Commercial Website
 

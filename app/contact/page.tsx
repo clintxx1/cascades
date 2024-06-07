@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import React from "react";
 import { SchoolMap } from "./_components/map";
-import { lato } from "../layout";
 import Image from "next/image";
 import InquiryForm from "./_components/inquiryForm";
 import { Details } from "../_components/details";
+import { lato } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Contact Us | Cascades.ph",
@@ -25,30 +25,28 @@ export default function Contact() {
       <div className="flex items-start justify-start gap-20 px-4">
         <div className="pb-20">
           <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
-            General Inquiries
+            Admission Department Information
           </h2>
           <Details
-            label="Email at us"
-            value="cascadesinternational @gmail.com"
+            label="Pre-school Campus Address:"
+            value="6 Silangan St. Barangka Drive Mandaluyong City"
           />
           <Details
-            label="School Address"
-            value="#6 Silangan Street, Barangay Barangka, Mandaluyong City,
-            Philippines"
+            label="Elementary Campus Address:"
+            value="286 Sto. Rosario Plainview, Mandaluyong City"
           />
-          <Details label="Office Time" value="8:00 AM to 6:00 PM" />
+          <br />
+          <br />
+          <Details label="Office Hours:" value="9:00am to 5:00pm" />
+          <br />
+          <br />
           <Details
-            label="Call us at"
-            value="
-            <a href='tel:+63-927-029-3996'>+63 927-029-3996 (Globe)</a>
-            <br />
-            <a href='tel:+63-919-581-9862'>+63 919-581-9862 (Smart)</a>
-            <br />
-            <a href='tel:+63-2-8253-1910'>+63 (02) 8253-1910 (landline)</a>"
-          />
-          <Details
-            label="Viber / Messenger"
+            label="Viber/SMS Contact Number:"
             value="<a href='tel:+63-927-029-3996'>+63 927-029-3996</a>"
+          />
+          <Details
+            label="Email Address:"
+            value="<a href='mailto:admission@cascades.ph'>admission@cascades.ph</a>"
           />
           <div className="py-8">
             <Image
@@ -61,15 +59,22 @@ export default function Contact() {
             />
           </div>
           <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
-            Accounting
+            Finance Department Information
           </h2>
           <Details
-            label="Email at us"
-            value="cascadesinternational @gmail.com"
+            label="Viber/SMS Contact Number:"
+            value="<a href='tel:+63-960-375-5852'>+63 960-375-5852</a>"
           />
           <Details
-            label="Call us at"
-            value="<a href='tel:+63-927-029-3996'>+63 927-029-3996</a>"
+            label="Email Address:"
+            value="<a href='mailto:finance@cascades.ph'>finance@cascades.ph</a>"
+          />
+          <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
+            Human Resource Department Information
+          </h2>
+          <Details
+            label="Email Address:"
+            value="<a href='mailto:careers@cascades.ph'>careers@cascades.ph</a>"
           />
         </div>
         <div className="w-full">

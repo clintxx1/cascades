@@ -1,5 +1,5 @@
 import React from "react";
-import { lato } from "../layout";
+import { lato } from "@/lib/fonts";
 import CustomCarousel from "@/components/carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
@@ -62,11 +62,15 @@ export default function Features() {
             <p
               className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
             >
-              Children guided by care givers will prepare their own food for
-              lunch and snacks. They will have a first-hand experience in the
-              preparation of the meal. They will also learn to clean after
-              themselves. This is a way to make each child appreciate the
-              process.
+              In Cascades School, we prioritize serving healthy lunches and
+              snacks to our students. In line with this commitment to nutritious
+              eating, our Wanderers and Whole Day Kids actively participate in
+              preparing their own meals. This hands-on approach not only fosters
+              a sense of ownership and responsibility but also promotes a
+              positive attitude towards healthy eating habits. By involving the
+              students in meal preparation, we aim to instill valuable life
+              skills and encourage a lifelong appreciation for wholesome and
+              balanced nutrition.
             </p>
           </div>
         </div>
@@ -79,7 +83,7 @@ export default function Features() {
           />
         </div>
       </div>
-      <div className="flex items-center justify-between w-full gap-8 mt-14">
+      {/* <div className="flex items-center justify-between w-full gap-8 mt-14">
         <div className="w-full">
           <Image
             src={
@@ -116,7 +120,7 @@ export default function Features() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="py-5">
         <Image
           src={

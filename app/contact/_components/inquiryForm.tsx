@@ -21,35 +21,55 @@ import { toast } from "@/components/ui/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import moment from "moment";
+import emailjs from "@emailjs/browser";
+import { fetchFormList, submitFormDetails } from "@/lib/form";
+import { Form as PrismaFormSchema } from "@prisma/client";
+import { useState } from "react";
+import { LoaderCircle } from "lucide-react";
 
 const FormSchema = z.object({
-  categories: z.string({
-    required_error: "Please select a category.",
-  }),
-  name: z.string({
-    required_error: "Please enter a name.",
-  }),
-  email: z
+  categories: z
+    .string({
+      required_error: "Please select a category.",
+    })
+    .min(1),
+  name: z
+    .string({
+      required_error: "Please enter a name.",
+    })
+    .min(1),
+  from_email: z
     .string({
       required_error: "Please enter an email address.",
     })
-    .email(),
-  contact: z.string({
-    required_error: "Please enter a contact number.",
-  }),
-  title: z.string(),
-  message: z.string({
-    required_error: "Please enter add a message.",
-  }),
+    .email()
+    .min(1),
+  contact: z
+    .string({
+      required_error: "Please enter a contact number.",
+    })
+    .min(1),
+  title: z
+    .string({
+      required_error: "Please enter a title.",
+    })
+    .min(1),
+  message: z
+    .string({
+      required_error: "Please enter add a message.",
+    })
+    .min(1),
 });
 
 export default function InquiryForm() {
+  const [loading, setLoading] = useState<boolean>(false);
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      categories: undefined,
+      categories: "",
       name: "",
-      email: "",
+      from_email: "",
       contact: "",
       title: "",
       message: "",
@@ -57,36 +77,78 @@ export default function InquiryForm() {
   });
 
   const onSubmit = async (data: z.infer<typeof FormSchema>) => {
-    console.log(data);
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
+    try {
+      setLoading(true);
+      let entry_id = 1;
+      const formEntry = (await fetchFormList()) as PrismaFormSchema[];
+      if (formEntry.length) {
+        entry_id = Number(formEntry[0].entry_id + 1);
+      }
+      const date = moment().format("LL");
+      const time = moment().format("hh:mm a");
+      const payload = {
+        ...data,
+        date,
+        time,
+        entry_id,
+        url: `${window.location.href}`,
+        form_name: "Contact Form",
+      };
+      const res = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        payload,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
+      );
+      if (res.status == 200) {
+        //@ts-ignore
+        await submitFormDetails(payload);
+        form.reset({
+          categories: "",
+          name: "",
+          from_email: "",
+          contact: "",
+          title: "",
+          message: "",
+        });
+        toast({
+          title: "Contact Form",
+          description: "Inquiry submitted successfully",
+        });
+        setLoading(false);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="w-full space-y-6"
+        id="myForm"
+      >
         <FormField
           control={form.control}
           name="categories"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Categories</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
+              <Select onValueChange={field.onChange} value={field.value}>
                 <FormControl>
                   <SelectTrigger className="w-full text-[20px] leading-[36px]">
                     <SelectValue placeholder="Select a category for your inquiry" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="general">General Inquiry</SelectItem>
-                  <SelectItem value="programs">Programs Offered</SelectItem>
-                  <SelectItem value="admissions">Admissions</SelectItem>
-                  <SelectItem value="tour">Book a Tour</SelectItem>
+                  <SelectItem value="General Inquiry">
+                    General Inquiry
+                  </SelectItem>
+                  <SelectItem value="Programs Offered">
+                    Programs Offered
+                  </SelectItem>
+                  <SelectItem value="Admissions">Admissions</SelectItem>
+                  <SelectItem value="Book a Tour">Book a Tour</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -112,7 +174,7 @@ export default function InquiryForm() {
         />
         <FormField
           control={form.control}
-          name="email"
+          name="from_email"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Email</FormLabel>
@@ -185,7 +247,9 @@ export default function InquiryForm() {
             className="text-watermelonRed hover:text-watermelonRed transition-colors duration-300 text-[28px] py-8 border-watermelonRed rounded-2xl border-[2px] italic"
             size={"lg"}
             variant={"outline"}
+            disabled={loading}
           >
+            {loading && <LoaderCircle className="h-7 w-7 animate-spin mr-4" />}
             Submit
           </Button>
         </div>

@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
-import { lato } from "../layout";
 import Link from "next/link";
+import { lato } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Work With Us | Cascades.ph",
@@ -24,14 +24,16 @@ export default function CascadeCareers() {
         />
         <div className="w-full space-y-8">
           <p className="text-[42px] font-semibold text-crystalBlue w-[470px]">
-            Cascades International School is seeking professionals who believe
-            in the value of emergent curriculum
+            Cascades School is seeking professionals who believe in the value of
+            emergent curriculum
           </p>
           <p
             className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[470px]`}
           >
             and believe that they and the children are both teachers and
-            lifelong learners in a constant changing environment.
+            lifelong learners in a constant changing environment. Kindly send
+            your resume to{" "}
+            <a href="mailto:careers@cascades.ph">careers@cascades.ph</a>
           </p>
           <div className="flex gap-20 flex-col py-16">
             <Image

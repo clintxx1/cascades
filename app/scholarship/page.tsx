@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import React from "react";
-import { lato } from "../layout";
 import Image from "next/image";
 import Link from "next/link";
+import { lato } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Scholarships | Cascades.ph",
@@ -32,9 +32,9 @@ export default function Scholarship() {
           <p
             className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[580px]`}
           >
-            Cascades International School supports its own foundation, Kids and
-            Ideas, which gives a Reggio Emilia quality education to children
-            from underprivileged families.
+            Cascades School supports its own foundation, Kids and Ideas, which
+            gives a Reggio Emilia quality education to children from
+            underprivileged families.
             <br />
             <br />
             We give the kids special programs, training and educational

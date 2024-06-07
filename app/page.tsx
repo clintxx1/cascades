@@ -1,8 +1,8 @@
-import FirstSection from "@/components/home/firstSection";
-import SecondSection from "@/components/home/secondSection";
-import ThirdSection from "@/components/home/thirdSection";
+import FirstSection from "@/app/_components/firstSection";
+import SecondSection from "@/app/_components/secondSection";
+import ThirdSection from "@/app/_components/thirdSection";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-5 text-darkLiver">
       <FirstSection />

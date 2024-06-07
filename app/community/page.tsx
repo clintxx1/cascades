@@ -1,7 +1,7 @@
 import React from "react";
-import { lato } from "../layout";
 import CommunityCard from "@/components/communityCard";
 import { Metadata } from "next";
+import { lato } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "The Cascades Community | Cascades.ph",
@@ -25,7 +25,7 @@ export default function Community() {
         firstImage={"https://ik.imagekit.io/cascades/cascades/irene_2x.jpg"}
         firstTitle="Founder/Directress"
         firstName="Irene Theresa M. Mawo"
-        firstDescription="Irene is a graduate of Secondary Education major in Biological Science. After graduating magna cum laude she immediately took her Master’s in teaching General Science then pursued her Master’s in Early Childhood Education. She has been teaching for over a decade now in both local and international schools, having spent years as head teacher before deciding to build Cascades International School."
+        firstDescription="Irene is a graduate of Secondary Education major in Biological Science. After graduating magna cum laude she immediately took her Master’s in teaching General Science then pursued her Master’s in Early Childhood Education. She has been teaching for over a decade now in both local and international schools, having spent years as head teacher before deciding to build Cascades School."
       />
       <CommunityCard
         firstImage={"https://ik.imagekit.io/cascades/cascades/gian_2x.jpg"}

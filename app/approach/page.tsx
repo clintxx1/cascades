@@ -1,33 +1,55 @@
+"use client";
 import React from "react";
-import { lato } from "../layout";
 import Image from "next/image";
 import Link from "next/link";
 import InfoCard from "@/components/infoCard";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Our Framework | Cascades.ph",
-};
+import { lato } from "@/lib/fonts";
 
 export default function Approach() {
   return (
     <section className="w-full h-full">
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
-        <div className="grid gap-5">
-          <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
-            Approach
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
+        <div className="space-y-14">
+          {/* <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
+            About Cascades
+          </p> */}
+          <h2 className="text-darkLiver font-semibold text-[42px]">
+            About Cascades
+          </h2>
+          <p
+            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px] mb-14`}
+          >
+            {`Cascades School merged the elements of a school and a home. This home is more than just a concept;
+            it is a place where children will feel accepted, acknowledged and validated.`}
+            <br />
+            <br />
+            <br />
+            {`Cascades School shows genuine care and respect for the needs and capabilities of the child and their
+            family. A relationship similar to home where the child will feel accepted, acknowledged, and validated.
+            The school's core is practical, innovative, and accepting of the changes and needs of everyone in the
+            "community." The school is viewed as a support or a solution so children can genuinely find joy in
+            learning and see themselves as valuable active citizens in their communities. They will become more
+            than prepared for whatever is next in their lives: grade school, high school, college, workforce, or community service.`}
           </p>
           <h2 className="text-watermelonRed font-semibold text-[42px]">
-            Reggio-Emilia Approach
+            Hiraya Curriculum
           </h2>
           <p
             className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px] mb-28`}
           >
-            An educational philosophy wherein there are three educators; the
-            teacher, the child and the environment. Children are active
-            participators in their own learning and teachers encourage child
-            initiated activities. Learning is done through multiple ways a child
-            can learn.{" "}
+            The HIRAYA Curriculum is centered around equipping students with the
+            knowledge and understanding of sustainable development. Our students
+            are exposed to hands-on experiences that encourage them to build,
+            innovate, and create. By emphasizing the value of work, resources,
+            money, and time, our curriculum instills a sense of responsibility
+            and purpose in our students.
+            <br />
+            <br />
+            The Curriculum will emphasize collaboration and community
+            involvement. Our students engage in real-world projects that make a
+            tangible impact on our local community through inclusive and
+            collaborative learning environments, we aim to nurture active
+            citizenship and social responsibility.
           </p>
           <Image
             src={
@@ -38,24 +60,19 @@ export default function Approach() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
+          {/* <InfoCard
+              title="Classroom Groupings"
+              description="
+              Wanderers (16 months to 3 years old) and Explorers (3 to 5 years old) classes are mixed age. In a mixed-age group class for children aged 3 to 5 years old, students from different age brackets learn and play together in the same space. This arrangement can provide several benefits, such as fostering a sense of community and collaboration, promoting non-competitive social interactions, and allowing younger children to learn from older peers while providing older children opportunities to develop leadership skills. Moreover, mixed age groups allow for personalized learning experiences, as children can progress at their own pace and are exposed to a wider range of social and emotional development.
+              <br /><br />
+              For students in Kindergarten 2 to Elementary, while they typically have separate subject area classes based on their grade level, they have the opportunity to work in mixed-age groups during big projects or school events. This setup allows them to collaborate with peers from different grades, facilitating the development of teamwork, communication, and problem-solving skills. Working on these joint initiatives also creates a sense of community and camaraderie across different age groups within the school, promoting a positive and inclusive school environment."
+            /> */}
           <InfoCard
-            title="Mixed Age"
-            description="All children (2.5-5.5 years old) will be in one classroom. This
-            gives them the opportunity to adjust to different types and levels
-            of students in terms of understanding, maturity and capacity to
-            move. This also allows them the experience of depending and being
-            depended on."
-          />
-          <InfoCard
-            title="Co-teaching"
-            description="Experienced artists and professionals from different occupations are
-            invited to share their knowledge and skills. They collaborate with
-            our teachers to plan enjoyable activities that will introduce the
-            children to different professional fields in line with concepts
-            being taught."
+            title="Co-teaching and Co-learning"
+            description="Co-teaching and co-learning are essential in providing a well-rounded and collaborative learning experience for students. The weekly meetings among teachers at Cascades Academy allow for open communication and sharing of ideas, ensuring that all children's interests are incorporated into lesson plans. Furthermore, the designated Fridays where teachers teach other teachers provide an opportunity for continuous professional development, encouraging teachers to learn from one another and improve their instructional techniques. Through this collaborative effort, teachers can ensure that each student receives a comprehensive education that caters to their unique learning needs and preferences."
           />
         </div>
-        <div className="mt-28">
+        <div className="mt-28 space-y-28">
           <Image
             src={
               "https://ik.imagekit.io/cascades/cascades/approach_banner_2x-858x1024.jpg"
@@ -64,6 +81,28 @@ export default function Approach() {
             width={858}
             height={1024}
           />
+          <div>
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
+              }
+              width={208}
+              height={6}
+              alt="divider"
+              className="w-[208px] h-[6px]"
+            />
+            <InfoCard
+              title="Classroom Groupings"
+              description="
+              Wanderers (16 months to 3 years old) and Explorers (3 to 5 years old) classes are mixed age. In a mixed-age group class for children aged 3 to 5 years old, students from different age brackets learn and play together in the same space. This arrangement can provide several benefits, such as fostering a sense of community and collaboration, promoting non-competitive social interactions, and allowing younger children to learn from older peers while providing older children opportunities to develop leadership skills. Moreover, mixed age groups allow for personalized learning experiences, as children can progress at their own pace and are exposed to a wider range of social and emotional development.
+              <br /><br />
+              For students in Kindergarten 2 to Elementary, while they typically have separate subject area classes based on their grade level, they have the opportunity to work in mixed-age groups during big projects or school events. This setup allows them to collaborate with peers from different grades, facilitating the development of teamwork, communication, and problem-solving skills. Working on these joint initiatives also creates a sense of community and camaraderie across different age groups within the school, promoting a positive and inclusive school environment."
+            />
+            {/* <InfoCard
+              title="Co-teaching and Co-learning"
+              description="Co-teaching and co-learning are essential in providing a well-rounded and collaborative learning experience for students. The weekly meetings among teachers at Cascades Academy allow for open communication and sharing of ideas, ensuring that all children's interests are incorporated into lesson plans. Furthermore, the designated Fridays where teachers teach other teachers provide an opportunity for continuous professional development, encouraging teachers to learn from one another and improve their instructional techniques. Through this collaborative effort, teachers can ensure that each student receives a comprehensive education that caters to their unique learning needs and preferences."
+            /> */}
+          </div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
@@ -102,10 +141,43 @@ export default function Approach() {
           />
           <InfoCard
             title="Spiral Progression"
-            description="The Reggio-Emilia approach is further anchored through spiral
+            description="The Cascades HIRAYA Curriculum is further anchored through spiral
             progression of discovery based learning. Instead of learning in a
             linear process, concepts and skills on different subjects are
             revisited at each level with increasing depth and complexity."
+          />
+        </div>
+      </div>
+      <Image
+        src={
+          "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
+        }
+        width={1024}
+        height={6}
+        alt="longDiv"
+        className="w-full h-[6px] my-12"
+      />
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
+        <div className="space-y-14">
+          <p
+            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px]`}
+          >
+            <strong>Digital Literacy in the HIRAYA Approach</strong> refers to
+            the development of skills and competencies in using digital
+            technologies to further research and find the connection between
+            self and the environment. The technology will help the children
+            recognize potential and links around them. It helps them engage and
+            interact with the natural environment and find solutions and
+            meanings to help them innovate or create sustainable products or
+            development.
+          </p>
+        </div>
+        <div className="mt-28 space-y-28 w-[75%]">
+          <Image
+            src={"https://ik.imagekit.io/cascades/cascades/pointing.png"}
+            alt="image 1"
+            width={2402}
+            height={2400}
           />
         </div>
       </div>
@@ -133,13 +205,13 @@ export default function Approach() {
             <p
               className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
             >
-              Cascades International School prides itself in providing a
-              modified Reggio curriculum that aims to instill a lifelong love
-              for learning to its students.
+              Cascades School prides itself in providing a modified Reggio
+              curriculum that aims to instill a lifelong love for learning to
+              its students.
             </p>
             <Link
               href={"/primary-program"}
-              className="text-[#1c6a88] hover:text-white hover:bg-[#1c6a88] transition-colors duration-300 text-[28px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic w-[520px]"
+              className="text-[#1c6a88] text-center hover:text-white hover:bg-[#1c6a88] transition-colors duration-300 text-[28px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic w-[520px]"
             >
               See the offers
             </Link>

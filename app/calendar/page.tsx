@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import React from "react";
 import { Details } from "../_components/details";
 import Image from "next/image";
-import { lato } from "../layout";
+import { lato } from "@/lib/fonts";
 import Link from "next/link";
+import { BiSolidFilePdf } from "react-icons/bi";
 
 export const metadata: Metadata = {
   title: "Academic Calendar | Cascades.ph",
@@ -15,9 +16,51 @@ export default function Calendar() {
         Calendar
       </p>
       <h2 className="text-meatBrown italic font-semibold text-[42px]">
-        School Year 2019 - 2020
+        School Year 2024 - 2025
       </h2>
-      <div className="w-full">
+      <div className="py-8">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
+      </div>
+      <div className="mx-auto px-5 w-full space-y-5">
+        <a
+          className="flex flex-1 items-center gap-3"
+          href="https://ik.imagekit.io/cascades/Files/CASCADES%20PRESCHOOL%20CALENDAR-ACADEMIC%20YEAR%202024-2025.pdf"
+          download={"cascades-preschool-calendar.pdf"}
+          target="_blank"
+        >
+          Cascades Preschool Calendar - Academic Year 2024-2025{" "}
+          <BiSolidFilePdf className="text-watermelonRed h-6 w-6" />
+        </a>
+        <a
+          className="flex items-center gap-3"
+          href="https://ik.imagekit.io/cascades/Files/CASCADES%20ELEMENTARY%20CALENDAR-%20ACADEMIC%20YEAR%202024-2025.pdf"
+          download={"cascades-elementary-calendar.pdf"}
+          target="_blank"
+        >
+          Cascades Elementary Calendar - Academic Year 2024-2025{" "}
+          <BiSolidFilePdf className="text-watermelonRed h-6 w-6" />
+        </a>
+      </div>
+      <div className="py-8">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={6}
+          className="w-full h-[6px] px-4"
+        />
+      </div>
+      {/* <div className="w-full">
         <Details
           mainCN="w-full flex items-center justify-between"
           labelCN="w-[550px] text-[28px] leading-[36px]"
@@ -209,8 +252,8 @@ export default function Calendar() {
           alt="longDiv1"
           className="w-full h-[6px]"
         />
-      </div>
-      <div className="flex items-end justify-start pb-24 w-full px-36">
+      </div> */}
+      <div className="flex items-end justify-start pb-24 w-full">
         <div className="mt-4 space-y-8">
           <p className="text-[42px] leading-[1.2em] font-semibold text-customBrown">
             Have questions?
