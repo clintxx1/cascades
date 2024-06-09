@@ -36,6 +36,7 @@ export default function CustomCarousel() {
       showStatus={false}
       animationHandler={"fade"}
       transitionTime={1000}
+      showThumbs={false}
     >
       {data.map((item) => (
         <Image

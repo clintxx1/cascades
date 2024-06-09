@@ -16,6 +16,7 @@ import {
 } from "./ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { NavItem } from "@/types";
+import MobileNavbar from "./mobileNavbar";
 
 const ABOUT_ITEMS: Array<NavItem> = [
   {
@@ -37,7 +38,7 @@ const ABOUT_ITEMS: Array<NavItem> = [
 ];
 
 export default function Navbar() {
-  const [navbar, setNavbar] = useState(false);
+  const [collapsed, setCollapse] = useState(false);
   const ListItem = React.forwardRef<
     React.ElementRef<"a">,
     React.ComponentPropsWithoutRef<"a">
@@ -64,8 +65,11 @@ export default function Navbar() {
   ListItem.displayName = "ListItem";
 
   return (
-    <header className="m-auto w-[calc(100%_-_16rem)] px-4 lg:px-32">
-      <div className="justify-between flex lg:items-center">
+    <header className="m-auto w-[calc(100%_-_5rem)] lg:w-[calc(100%_-_16rem)] pb-6 relative z-50">
+      {collapsed ? (
+        <MobileNavbar open={collapsed} setIsOpen={setCollapse} />
+      ) : null}
+      <div className="justify-between flex items-center ">
         <div className={`flex-shrink-0 py-3 lg:block lg:py-5`}>
           <Link href={"/"}>
             <Image
@@ -73,16 +77,23 @@ export default function Navbar() {
                 "https://ik.imagekit.io/cascades/cascades/Cascades%20School.png"
               }
               alt="cascades logo"
-              className="customImage flex-shrink-0"
+              className="customImage flex-shrink-0 hidden lg:block"
               width={345}
               height={89}
+            />
+            <Image
+              src={"https://ik.imagekit.io/cascades/header_logo_large.png"}
+              alt="cascades logo"
+              className="block flex-shrink-0 h-12 w-12 lg:hidden object-contain"
+              width={1272}
+              height={1209}
             />
           </Link>
         </div>
         <div>
           <div
             className={`mt-8 flex items-center justify-center pb-3 lg:mt-0 lg:block lg:pb-0 ${
-              navbar ? "block" : "hidden"
+              collapsed ? "block" : "hidden"
             }`}
           >
             <div className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
@@ -164,6 +175,12 @@ export default function Navbar() {
                           title={"Scholarships"}
                           href={"/scholarship"}
                         ></ListItem>
+                        <div className="w-full bg-white h-[2px] p-0 m-0"></div>
+                        <ListItem
+                          key={"tuition"}
+                          title={"Tuition Fee"}
+                          href={"/tuition-fee"}
+                        ></ListItem>
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -207,8 +224,8 @@ export default function Navbar() {
             </div>
           </div>
           <div className="lg:hidden">
-            <Button onClick={() => setNavbar(!navbar)}>
-              {navbar ? <X size={30} /> : <AlignJustify size={30} />}
+            <Button onClick={() => setCollapse(!collapsed)} variant={"ghost"}>
+              {collapsed ? null : <AlignJustify size={30} />}
             </Button>
           </div>
         </div>

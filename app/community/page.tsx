@@ -34,10 +34,10 @@ export default function Community() {
         hasDivider
         hasSecondData
         secondImage={"https://ik.imagekit.io/cascades/cascades/bren_2x.jpg"}
-        secondTitle="Head of KAI Foundation / Project Development Officer"
+        secondTitle="Corporate Secretary / Executive Director of Kids and Ideas Foundation"
         secondName="Bren Cezar C. Valenciano"
       />
-      <CommunityCard
+      {/* <CommunityCard
         firstImage={"https://ik.imagekit.io/cascades/cascades/zenith_2x.jpg"}
         firstTitle="Finance Officer"
         firstName="Zenith O. Pascual"
@@ -47,7 +47,7 @@ export default function Community() {
         secondImage={"https://ik.imagekit.io/cascades/cascades/dalynn_2x.jpg"}
         secondTitle="Secretary"
         secondName="Fatima Dalynn S. Mendoza"
-      />
+      /> */}
       <CommunityCard
         firstImage={"https://ik.imagekit.io/cascades/cascades/budjok_2x.jpg"}
         firstTitle="Atelierista"
