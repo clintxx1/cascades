@@ -16,7 +16,7 @@ export default function Contact() {
         Get in Touch
       </p>
       <p
-        className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[470px] pt-5 pb-12 px-4`}
+        className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[470px] pt-5 pb-12 px-4`}
       >
         Schedule a visit or inquire now!
       </p>

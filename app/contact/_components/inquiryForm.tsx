@@ -136,7 +136,7 @@ export default function InquiryForm() {
               <FormLabel>Categories</FormLabel>
               <Select onValueChange={field.onChange} value={field.value}>
                 <FormControl>
-                  <SelectTrigger className="w-full text-[20px] leading-[36px]">
+                  <SelectTrigger className="w-full lg:text-[20px] lg:leading-[36px] leading-8">
                     <SelectValue placeholder="Select a category for your inquiry" />
                   </SelectTrigger>
                 </FormControl>
@@ -165,7 +165,7 @@ export default function InquiryForm() {
                 <Input
                   {...field}
                   placeholder="Full Name"
-                  className="w-full text-[20px] leading-[36px]"
+                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                 />
               </FormControl>
               <FormMessage />
@@ -183,7 +183,7 @@ export default function InquiryForm() {
                   type="email"
                   {...field}
                   placeholder="Email"
-                  className="w-full text-[20px] leading-[36px]"
+                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                 />
               </FormControl>
               <FormMessage />
@@ -200,7 +200,7 @@ export default function InquiryForm() {
                 <Input
                   {...field}
                   placeholder="Contact Number"
-                  className="w-full text-[20px] leading-[36px]"
+                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                 />
               </FormControl>
               <FormMessage />
@@ -217,7 +217,7 @@ export default function InquiryForm() {
                 <Input
                   {...field}
                   placeholder="Title"
-                  className="w-full text-[20px] leading-[36px]"
+                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                 />
               </FormControl>
               <FormMessage />
@@ -234,7 +234,7 @@ export default function InquiryForm() {
                 <Textarea
                   {...field}
                   placeholder="Message"
-                  className="w-full text-[20px] leading-[36px]"
+                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                 />
               </FormControl>
               <FormMessage />

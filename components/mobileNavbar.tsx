@@ -15,9 +15,8 @@ export default function MobileNavbar({
   const pathname = usePathname();
   return (
     <Sheet open={open} onOpenChange={(e) => setIsOpen(e)}>
-      <SheetContent className="w-full !m-0 !max-w-full min-h-screen bg-blueSapphire">
-        {/* <div className="grid gap-4 py-4"> */}
-        <div className="grid grid-cols-1 md:lg:text-[28px] text-[24px] text-[20px] h-max">
+      <SheetContent className="w-full !m-0 !max-w-full min-h-screen bg-blueSapphire border-none">
+        <div className="grid grid-cols-1 lg:text-[28px] text-[24px] h-max">
           <LinkDropdown
             dropdownData={[
               {
@@ -64,14 +63,14 @@ export default function MobileNavbar({
           />
           <Link
             href="/features"
-            className={`${pathname === "/features" && "text-white"} py-8`}
+            className={`${pathname === "/features" && "text-white"} py-7`}
           >
             <span>Features</span>
           </Link>
           <Separator />
           <Link
             href="/branches"
-            className={`${pathname === "/branches" && "text-white"} py-8`}
+            className={`${pathname === "/branches" && "text-white"} py-7`}
           >
             <span>Branches</span>
           </Link>
@@ -100,7 +99,7 @@ export default function MobileNavbar({
           />
           <Link
             href="/contact"
-            className={`${pathname === "/contact" && "text-white"} py-8`}
+            className={`${pathname === "/contact" && "text-white"} py-7`}
           >
             <span>Contact</span>
           </Link>
@@ -129,7 +128,6 @@ export default function MobileNavbar({
             hasSeparator={false}
           />
         </div>
-        {/* </div> */}
       </SheetContent>
     </Sheet>
   );

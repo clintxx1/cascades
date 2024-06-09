@@ -29,7 +29,7 @@ export default function ThirdSection() {
             Experience Cascades.
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:w-[500px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:w-[500px] w-full lg:text-start text-justify`}
           >
             We are more than happy to welcome you to our home. Come see our
             first class facilities and see for yourself why this school is the
@@ -43,7 +43,7 @@ export default function ThirdSection() {
               Book a tour!
             </Link>
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:w-2/3 w-full`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:w-2/3 w-full`}
             >
               or read the{" "}
               <a

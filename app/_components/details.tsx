@@ -21,14 +21,14 @@ export function Details({
     >
       <div
         className={cn(
-          `text-[20px] leading-[36px] text-darkLiver font-semibold w-[470px] px-4`,
+          `lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver font-semibold w-[470px] px-4`,
           labelCN
         )}
         dangerouslySetInnerHTML={createMarkup(label)}
       ></div>
       <div
         className={cn(
-          `${lato.className} text-[20px] leading-[36px] text-darkLiver w-full px-4`,
+          `${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-full px-4`,
           valueCN
         )}
         dangerouslySetInnerHTML={createMarkup(value)}

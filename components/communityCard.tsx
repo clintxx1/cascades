@@ -22,7 +22,7 @@ export default function CommunityCard({
     const { image, title, name, description = "" } = data;
     return (
       <div
-        className={`flex items-center justify-center w-full gap-8 ${isReversed && "flex-row-reverse"}`}
+        className={`flex lg:flex-row md:flex-row flex-col items-center justify-center w-full gap-8 ${isReversed && "flex-row-reverse"}`}
       >
         {image ? (
           <Image
@@ -30,18 +30,22 @@ export default function CommunityCard({
             alt="image 3"
             height={350}
             width={340}
-            className={`${hasSecondData ? "w-[190px] h-[200px]" : "w-[340px] h-[350px"}`}
+            className={`${hasSecondData ? "w-[190px] h-[200px]" : "w-[340px] h-[350px]"}`}
           />
         ) : null}
-        <div className="text-darkLiver space-y-2 w-[500px]">
-          <p className="lg:text-[28px] text-[24px] leading-[36px] w-[200px]">
+        <div className="text-darkLiver space-y-2 lg:w-[500px] w-full lg:text-start md:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] leading-[36px] lg:w-[200px] w-full">
             {title}
           </p>
-          <p className={`${lato.className} text-[20px] leading-[36px]`}>
+          <p
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8`}
+          >
             {name}
           </p>
           {description ? (
-            <p className={`${lato.className} text-[20px] leading-[36px]`}>
+            <p
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8`}
+            >
               {description}
             </p>
           ) : null}
@@ -58,7 +62,7 @@ export default function CommunityCard({
         alt="longDiv"
         height={6}
         width={1024}
-        className="w-full h-[6px] my-12 mx-8"
+        className="w-full h-[6px] my-12"
       />
       <div
         className={`flex items-center justify-center ${hasSecondData && "px-28"}`}

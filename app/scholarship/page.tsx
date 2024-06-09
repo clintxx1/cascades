@@ -30,7 +30,7 @@ export default function Scholarship() {
             Kids & Ideas
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[580px]`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[580px]`}
           >
             Cascades School supports its own foundation, Kids and Ideas, which
             gives a Reggio Emilia quality education to children from
@@ -61,7 +61,7 @@ export default function Scholarship() {
           </p>
           <div className="flex items-center justify-center w-[500px] gap-4">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
               To learn more about how you can be a part of Kids & Ideas, visit
               our Contact Us page:

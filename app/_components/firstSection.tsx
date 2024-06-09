@@ -74,7 +74,7 @@ export default function FirstSection() {
             The Third Teacher
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             &apos;The environment is the third teacher&apos; emphasizes the
             crucial role of physical surroundings in education. By designing
@@ -91,7 +91,7 @@ export default function FirstSection() {
             The Fourth Teacher
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             Plants and animals into the classroom environment can serve as the
             "fourth teacher" for students. By incorporating living organisms,

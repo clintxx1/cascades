@@ -28,7 +28,7 @@ export default function CascadeCareers() {
             emergent curriculum
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[470px]`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[470px]`}
           >
             and believe that they and the children are both teachers and
             lifelong learners in a constant changing environment. Kindly send
@@ -75,7 +75,7 @@ export default function CascadeCareers() {
           </p>
           <div className="flex items-center justify-start w-[500px] gap-4">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
               For more information, visit our Contact Us page:
             </p>

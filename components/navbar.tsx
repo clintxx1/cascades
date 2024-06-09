@@ -44,7 +44,7 @@ export default function Navbar() {
     React.ComponentPropsWithoutRef<"a">
   >(({ className, title, children, ...props }, ref) => {
     return (
-      <li>
+      <li className="z-[999]">
         <NavigationMenuLink asChild>
           <a
             ref={ref}

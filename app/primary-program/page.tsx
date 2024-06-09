@@ -65,7 +65,7 @@ export default function PrimaryProgram() {
         Cascades Programs
       </p>
       <p
-        className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-full mt-8 mb-20`}
+        className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 w-full mt-8 mb-20`}
       >
         Cascades Approach has aligned learning programs from infancy through age
         18.
@@ -148,7 +148,7 @@ export default function PrimaryProgram() {
             Experience Cascades.
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[500px]`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[500px]`}
           >
             We are more than happy to welcome you to our home. Come see our
             first class facilities and see for yourself why this school is the
@@ -162,7 +162,7 @@ export default function PrimaryProgram() {
               Book a tour!
             </Link>
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-2/3`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-2/3`}
             >
               or read the &nbsp;
               <a

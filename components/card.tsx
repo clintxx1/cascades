@@ -14,7 +14,7 @@ export const Card = ({ icon, title, description }: CardProps) => {
       />
       <p className="text-3xl font-semibold">{title}</p>
       <p
-        className={`${lato.className} text-[20px] leading-[36px] h-[144px] lg:text-start text-center`}
+        className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 h-[144px] lg:text-start text-center`}
       >
         {description}
       </p>

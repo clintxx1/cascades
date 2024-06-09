@@ -23,7 +23,7 @@ export default function Features() {
             Aesthetically appealing and unique physical structure.
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[500px] text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[500px] text-justify`}
           >
             The school is built as a “house” with child-sized furniture and
             tools. Repurposed furniture and small interactive installations will
@@ -60,7 +60,7 @@ export default function Features() {
           </p>
           <div className="flex items-center justify-center w-[600px]">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
               In Cascades School, we prioritize serving healthy lunches and
               snacks to our students. In line with this commitment to nutritious
@@ -109,7 +109,7 @@ export default function Features() {
           </p>
           <div className="flex items-center justify-center w-[600px]">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
               This is done through a tracking bracelet that notifies parents
               when the child enters or leaves the school. This is further

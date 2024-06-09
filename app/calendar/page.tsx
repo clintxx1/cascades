@@ -260,7 +260,7 @@ export default function Calendar() {
           </p>
           <div className="flex items-center justify-start w-[500px] gap-4">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
               For more information, visit our Contact Us page:
             </p>

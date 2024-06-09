@@ -9,33 +9,35 @@ export default function Approach() {
   return (
     <section className="w-full h-full">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
-        <div className="space-y-14">
-          {/* <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
-            About Cascades
-          </p> */}
+        <div className="space-y-14 grid lg:place-items-start place-items-center">
           <h2 className="text-darkLiver font-semibold lg:text-[42px] text-4xl">
             About Cascades
           </h2>
           <p
-            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px] mb-14`}
+            className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full lg:px-0 px-4 mb-14 lg:text-start text-justify`}
           >
-            {`Cascades School merged the elements of a school and a home. This home is more than just a concept;
-            it is a place where children will feel accepted, acknowledged and validated.`}
+            Cascades School merged the elements of a school and a home. This
+            home is more than just a concept; it is a place where children will
+            feel accepted, acknowledged and validated.
             <br />
             <br />
             <br />
-            {`Cascades School shows genuine care and respect for the needs and capabilities of the child and their
-            family. A relationship similar to home where the child will feel accepted, acknowledged, and validated.
-            The school's core is practical, innovative, and accepting of the changes and needs of everyone in the
-            "community." The school is viewed as a support or a solution so children can genuinely find joy in
-            learning and see themselves as valuable active citizens in their communities. They will become more
-            than prepared for whatever is next in their lives: grade school, high school, college, workforce, or community service.`}
+            Cascades School shows genuine care and respect for the needs and
+            capabilities of the child and their family. A relationship similar
+            to home where the child will feel accepted, acknowledged, and
+            validated. The school's core is practical, innovative, and accepting
+            of the changes and needs of everyone in the "community." The school
+            is viewed as a support or a solution so children can genuinely find
+            joy in learning and see themselves as valuable active citizens in
+            their communities. They will become more than prepared for whatever
+            is next in their lives: grade school, high school, college,
+            workforce, or community service.
           </p>
           <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-4xl">
             Hiraya Curriculum
           </h2>
           <p
-            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px] mb-28`}
+            className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full mb-28 lg:px-0 px-4 lg:text-start text-justify`}
           >
             The HIRAYA Curriculum is centered around equipping students with the
             knowledge and understanding of sustainable development. Our students
@@ -72,7 +74,7 @@ export default function Approach() {
             description="Co-teaching and co-learning are essential in providing a well-rounded and collaborative learning experience for students. The weekly meetings among teachers at Cascades Academy allow for open communication and sharing of ideas, ensuring that all children's interests are incorporated into lesson plans. Furthermore, the designated Fridays where teachers teach other teachers provide an opportunity for continuous professional development, encouraging teachers to learn from one another and improve their instructional techniques. Through this collaborative effort, teachers can ensure that each student receives a comprehensive education that caters to their unique learning needs and preferences."
           />
         </div>
-        <div className="mt-28 space-y-28">
+        <div className="mt-28 space-y-28 grid lg:place-items-start place-items-center">
           <Image
             src={
               "https://ik.imagekit.io/cascades/cascades/approach_banner_2x-858x1024.jpg"
@@ -80,6 +82,7 @@ export default function Approach() {
             alt="image 1"
             width={858}
             height={1024}
+            className="object-contain lg:w-full lg:h-full md:w-[758px] md:h-[924px] w-[658px] h-[824px]"
           />
           <div>
             <Image
@@ -89,7 +92,7 @@ export default function Approach() {
               width={208}
               height={6}
               alt="divider"
-              className="w-[208px] h-[6px]"
+              className="lg:w-[208px] w-full h-[6px]"
             />
             <InfoCard
               title="Classroom Groupings"
@@ -114,6 +117,7 @@ export default function Approach() {
             alt="image 2"
             width={1024}
             height={850}
+            className="object-contain lg:w-full lg:h-full md:w-[924px] md:h-[750px] w-[824px] h-[650px]"
           />
         </div>
         <div className="grid gap-5 mt-28">
@@ -160,7 +164,7 @@ export default function Approach() {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
         <div className="space-y-14">
           <p
-            className={`${lato.className} text-darkLiver text-[20px] leading-[36px] w-[520px]`}
+            className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full lg:text-start text-justify`}
           >
             <strong>Digital Literacy in the HIRAYA Approach</strong> refers to
             the development of skills and competencies in using digital
@@ -172,12 +176,13 @@ export default function Approach() {
             development.
           </p>
         </div>
-        <div className="mt-28 space-y-28 w-[75%]">
+        <div className="lg:mt-28 space-y-28 lg:w-[75%] grid lg:place-items-start place-items-end w-full">
           <Image
             src={"https://ik.imagekit.io/cascades/cascades/pointing.png"}
             alt="image 1"
             width={2402}
             height={2400}
+            className="object-contain lg:w-[75%] md:w-[60%] w-[50%]"
           />
         </div>
       </div>
@@ -190,7 +195,7 @@ export default function Approach() {
         alt="longDiv"
         className="w-full h-[6px] my-12"
       />
-      <div className="flex items-center justify-around pb-24 gap-14">
+      <div className="flex lg:flex-row flex-col items-center justify-around pb-24 lg:gap-14 gap-2">
         <Image
           src={"https://ik.imagekit.io/cascades/cascades/path_programs_2x.jpg"}
           alt="image 3"
@@ -198,12 +203,12 @@ export default function Approach() {
           height={304}
         />
         <div className="mt-12 space-y-8">
-          <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-[#1c6a88]">
+          <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-[#1c6a88] lg:text-start text-center">
             Check our programs
           </p>
-          <div className="flex items-center justify-center w-[700px] gap-4">
+          <div className="flex lg:flex-row md:flex-row flex-col items-center justify-center lg:w-[700px] w-full gap-4">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
               Cascades School prides itself in providing a modified Reggio
               curriculum that aims to instill a lifelong love for learning to
@@ -211,7 +216,7 @@ export default function Approach() {
             </p>
             <Link
               href={"/primary-program"}
-              className="text-[#1c6a88] text-center hover:text-white hover:bg-[#1c6a88] transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic w-[520px]"
+              className="text-[#1c6a88] text-center hover:text-white hover:bg-[#1c6a88] transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic lg:w-[520px] md:w-[520px]"
             >
               See the offers
             </Link>

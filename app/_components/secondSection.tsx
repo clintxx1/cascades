@@ -26,7 +26,7 @@ export default function SecondSection() {
           </p>
           <div className="flex lg:flex-row flex-col items-center justify-center lg:w-[600px] w-full lg:text-start text-justify lg:gap-0 gap-10">
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
               The school safeguards its students to explore and learn in a risk
               free environment. The facilities and services are constantly

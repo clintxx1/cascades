@@ -9,35 +9,37 @@ export const metadata: Metadata = {
 export default function FoundersNote() {
   return (
     <section className="w-full">
-      <div className="flex items-start justify-center gap-8 w-full pb-24">
-        <div className="space-y-8">
+      <div className="flex lg:flex-row flex-col items-start justify-center gap-8 w-full pb-24">
+        <div className="space-y-8 ">
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
             Founder&apos;s Note
           </p>
-          <Image
-            src={"https://ik.imagekit.io/cascades/cascades/Group-Copy.png"}
-            width={189}
-            height={216}
-            alt="image 1"
-          />
-          <div className="text-darkLiver text-[20px]">
-            <p>
-              Irene Theresa
-              <br />
-              M. Mawo
-              <br />
-              Founder/Directress
-            </p>
+          <div className="flex lg:flex-col flex-row lg:items-center items-end gap-5">
+            <Image
+              src={"https://ik.imagekit.io/cascades/cascades/Group-Copy.png"}
+              width={189}
+              height={216}
+              alt="image 1"
+            />
+            <div className="text-darkLiver text-[20px]">
+              <p>
+                Irene Theresa&nbsp;
+                <br className="hidden lg:block" />
+                M. Mawo
+                <br />
+                Founder/Directress
+              </p>
+            </div>
           </div>
         </div>
         <div
-          className={`${lato.className} text-[20px] text-darkLiver w-[550px] mt-32 text-justify`}
+          className={`${lato.className} lg:text-[20px] text-base text-darkLiver lg:w-[550px] w-full mt-32 text-justify`}
         >
           “Hello there,
           <br />
           <br />
           <p
-            className={`${josefinSans.className} lg:text-[42px] text-4xl leading-[1.2em] text-crystalBlue w-[550px] font-semibold`}
+            className={`${josefinSans.className} lg:text-[42px] text-4xl leading-[1.2em] text-crystalBlue lg:w-[550px] w-full font-semibold`}
           >
             My name is Irene, a teacher and a mother to two beautiful children,
             Aeon and Sage.
