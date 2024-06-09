@@ -48,28 +48,28 @@ export default function PromoSection({ classname }: { classname?: string }) {
               className="flex gap-8 pl-10"
               title="Annual Payment"
               titleCN="w-[300px]"
-              description="5% Discount for Annual Payment"
+              description="5% Discount"
               descriptionCN="w-[330px]"
             />
             <InfoCard
               className="flex gap-8 pl-10"
               title="Semi-Annual Payment"
               titleCN="w-[300px]"
-              description="3% Discount for Semi-Annual Payment"
+              description="3% Discount"
               descriptionCN="w-[330px]"
             />
             <InfoCard
               className="flex gap-8 pl-10"
               title="Bi-monthly Payment"
               titleCN="w-[300px]"
-              description="1.5% Discount for Bi-monthly Payment"
+              description="1.5% Discount"
               descriptionCN="w-[330px]"
             />
             <InfoCard
               className="flex gap-8 pl-10"
               title="Monthly Payment"
               titleCN="w-[300px]"
-              description="No Discount for Monthly Payment"
+              description="No Discount"
               descriptionCN="w-[330px]"
             />
           </div>
