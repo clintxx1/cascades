@@ -19,8 +19,8 @@ export default function FirstSection() {
     },
   ];
   return (
-    <section className="space-y-20">
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-20">
+    <section className="space-y-20 lg:w-fit w-full">
+      <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:gap-20 gap-10">
         <Image
           src={
             "https://ik.imagekit.io/cascades/cascades/home_programs_2x-944x1024.jpg"
@@ -28,8 +28,9 @@ export default function FirstSection() {
           alt="Image 1"
           width={612}
           height={663}
+          className="lg:w-full lg:h-full md:w-[512px] md:h-[563px] w-[412px] h-[463px] flex-shrink-0 object-contain"
         />
-        <div className="w-full space-y-8">
+        <div className="w-full space-y-8 grid lg:place-items-start place-items-center">
           <Image
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
@@ -42,11 +43,11 @@ export default function FirstSection() {
           <p className="text-[42px] font-semibold text-crystalBlue">
             Cascades Four Teachers
           </p>
-          <p className="text-[28px] italic font-semibold text-darkLiver">
+          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
             The First and Second Teachers
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[611px]`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-14 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             As an expert educator for young children, I firmly believe in the
             concept of adults serving as the first teacher in the classroom, and
@@ -67,13 +68,13 @@ export default function FirstSection() {
           </p>
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-20">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div className="w-full space-y-8">
-          <p className="text-[28px] italic font-semibold text-darkLiver">
+          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
             The Third Teacher
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[611px]`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-14 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             &apos;The environment is the third teacher&apos; emphasizes the
             crucial role of physical surroundings in education. By designing
@@ -86,11 +87,11 @@ export default function FirstSection() {
           </p>
         </div>
         <div className="w-full space-y-8">
-          <p className="text-[28px] italic font-semibold text-darkLiver">
+          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
             The Fourth Teacher
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[611px]`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-14 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             Plants and animals into the classroom environment can serve as the
             "fourth teacher" for students. By incorporating living organisms,
@@ -110,7 +111,7 @@ export default function FirstSection() {
         </div>
       </div>
       <div className="mt-5 w-[590px] mx-auto space-y-14">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid place-items-center lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6">
           {programItems.map((item) => (
             <Card
               key={item.title}
@@ -120,7 +121,7 @@ export default function FirstSection() {
             />
           ))}
         </div>
-        <div>
+        <div className="flex lg:justify-start justify-center">
           <Link
             href={"/primary-program"}
             className="text-crystalBlue hover:text-white hover:bg-crystalBlue transition-colors duration-300 text-[28px] px-7 py-5 border-crystalBlue rounded-lg border-[3px] italic"

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ThirdSection() {
   return (
     <section>
-      <div className="flex items-center justify-between w-full gap-12">
+      <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full gap-12">
         <Image
           src={
             "https://ik.imagekit.io/cascades/cascades/home_experience@2x.jpg"
@@ -13,6 +13,7 @@ export default function ThirdSection() {
           alt="Image 1"
           width={612}
           height={663}
+          className="lg:w-full lg:h-full md:w-[512px] md:h-[563] w-[412px] h-[463px] flex-shrink-0 object-contain"
         />
         <div className="space-y-8">
           <Image
@@ -28,16 +29,16 @@ export default function ThirdSection() {
             Experience Cascades.
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-[500px]`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:w-[500px] w-full lg:text-start text-justify`}
           >
             We are more than happy to welcome you to our home. Come see our
             first class facilities and see for yourself why this school is the
             best fit for your child.
           </p>
-          <div className="flex items-center justify-center w-[600px] gap-5">
+          <div className="flex items-center justify-center lg:w-[600px] w-full gap-5">
             <Link
               href={"/contact"}
-              className="w-1/3 hover:text-watermelonRed hover:bg-transparent text-white bg-[#c04545] transition-colors duration-300 text-[28px] px-4 py-4 border-[#c04545] rounded-lg border-[3px] italic"
+              className="w-1/3 hover:text-watermelonRed hover:bg-transparent text-center text-white bg-[#c04545] transition-colors duration-300 text-[28px] px-4 py-4 border-[#c04545] rounded-lg border-[3px] italic"
             >
               Book a tour!
             </Link>

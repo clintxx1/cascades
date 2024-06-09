@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function SecondSection() {
   return (
     <section className="py-20">
-      <div className="flex items-center justify-between w-full gap-3">
+      <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full lg:gap-20 gap-10">
         <div className="space-y-8 w-3/4">
           <Image
             src={
@@ -21,10 +21,10 @@ export default function SecondSection() {
             <br />
             and Well-being a Priority.
           </p>
-          <p className="text-[28px] italic font-semibold text-darkLiver">
+          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
             School Features
           </p>
-          <div className="flex items-center justify-center w-[600px]">
+          <div className="flex lg:flex-row flex-col items-center justify-center lg:w-[600px] w-full lg:text-start text-justify lg:gap-0 gap-10">
             <p
               className={`${lato.className} text-[20px] leading-[36px] text-darkLiver`}
             >
@@ -35,7 +35,7 @@ export default function SecondSection() {
             </p>
             <Link
               href={"/features"}
-              className="text-[#1c6a88] hover:text-white hover:bg-[#1c6a88] transition-colors duration-300 text-[28px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic w-[600px]"
+              className="text-[#1c6a88] hover:text-white text-center hover:bg-[#1c6a88] transition-colors duration-300 text-[28px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic lg:w-[600px]"
             >
               Read more
             </Link>
@@ -48,6 +48,7 @@ export default function SecondSection() {
           alt="Image 1"
           width={612}
           height={663}
+          className="lg:w-full lg:h-full md:w-[512px] md:h-[563px] w-[412px] h-[463px] flex-shrink-0 object-contain"
         />
       </div>
     </section>
