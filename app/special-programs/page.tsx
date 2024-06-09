@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function SpecialPrograms() {
   return (
     <section className="w-full">
-      <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
+      <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
         Programs
       </p>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
@@ -24,7 +24,7 @@ export default function SpecialPrograms() {
               height={64}
               className="h-16 w-16 object-contain"
             />
-            <p className="text-[42px] leading-[1.2em] font-semibold text-meatBrown">
+            <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-meatBrown">
               Special Programs
             </p>
           </div>

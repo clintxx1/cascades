@@ -10,10 +10,10 @@ export default function Approach() {
     <section className="w-full h-full">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
         <div className="space-y-14">
-          {/* <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
+          {/* <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
             About Cascades
           </p> */}
-          <h2 className="text-darkLiver font-semibold text-[42px]">
+          <h2 className="text-darkLiver font-semibold lg:text-[42px] text-4xl">
             About Cascades
           </h2>
           <p
@@ -31,7 +31,7 @@ export default function Approach() {
             learning and see themselves as valuable active citizens in their communities. They will become more
             than prepared for whatever is next in their lives: grade school, high school, college, workforce, or community service.`}
           </p>
-          <h2 className="text-watermelonRed font-semibold text-[42px]">
+          <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-4xl">
             Hiraya Curriculum
           </h2>
           <p
@@ -198,7 +198,7 @@ export default function Approach() {
           height={304}
         />
         <div className="mt-12 space-y-8">
-          <p className="text-[42px] leading-[1.2em] font-semibold text-[#1c6a88]">
+          <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-[#1c6a88]">
             Check our programs
           </p>
           <div className="flex items-center justify-center w-[700px] gap-4">
@@ -211,7 +211,7 @@ export default function Approach() {
             </p>
             <Link
               href={"/primary-program"}
-              className="text-[#1c6a88] text-center hover:text-white hover:bg-[#1c6a88] transition-colors duration-300 text-[28px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic w-[520px]"
+              className="text-[#1c6a88] text-center hover:text-white hover:bg-[#1c6a88] transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic w-[520px]"
             >
               See the offers
             </Link>

@@ -244,7 +244,7 @@ export default function InquiryForm() {
         <div className="flex items-center justify-end pt-4">
           <Button
             type="submit"
-            className="text-watermelonRed hover:text-watermelonRed transition-colors duration-300 text-[28px] py-8 border-watermelonRed rounded-2xl border-[2px] italic"
+            className="text-watermelonRed hover:text-watermelonRed transition-colors duration-300 lg:text-[28px] text-[24px] py-8 border-watermelonRed rounded-2xl border-[2px] italic"
             size={"lg"}
             variant={"outline"}
             disabled={loading}

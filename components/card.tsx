@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Card = ({ icon, title, description }: CardProps) => {
   return (
-    <div className="grid lg:place-items-start place-items-center gap-3 w-full">
+    <div className="grid lg:place-items-start place-items-center gap-3">
       <Image
         src={icon}
         alt={title}
@@ -13,7 +13,9 @@ export const Card = ({ icon, title, description }: CardProps) => {
         className="h-16 w-16 object-contain"
       />
       <p className="text-3xl font-semibold">{title}</p>
-      <p className={`${lato.className} text-[20px] leading-[36px] h-[144px]`}>
+      <p
+        className={`${lato.className} text-[20px] leading-[36px] h-[144px] lg:text-start text-center`}
+      >
         {description}
       </p>
     </div>

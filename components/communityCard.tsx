@@ -34,7 +34,9 @@ export default function CommunityCard({
           />
         ) : null}
         <div className="text-darkLiver space-y-2 w-[500px]">
-          <p className="text-[28px] leading-[36px] w-[200px]">{title}</p>
+          <p className="lg:text-[28px] text-[24px] leading-[36px] w-[200px]">
+            {title}
+          </p>
           <p className={`${lato.className} text-[20px] leading-[36px]`}>
             {name}
           </p>

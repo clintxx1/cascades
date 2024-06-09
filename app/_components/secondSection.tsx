@@ -6,7 +6,7 @@ export default function SecondSection() {
   return (
     <section className="py-20">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full lg:gap-20 gap-10">
-        <div className="space-y-8 w-3/4">
+        <div className="space-y-8 lg:w-3/4 w-full">
           <Image
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-1-1.png"
@@ -16,12 +16,12 @@ export default function SecondSection() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          <p className="text-[42px] font-semibold text-[#9a5600]">
+          <p className="lg:text-[42px] text-4xl font-semibold text-[#9a5600]">
             Student Health, Safety
             <br />
             and Well-being a Priority.
           </p>
-          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             School Features
           </p>
           <div className="flex lg:flex-row flex-col items-center justify-center lg:w-[600px] w-full lg:text-start text-justify lg:gap-0 gap-10">
@@ -35,7 +35,7 @@ export default function SecondSection() {
             </p>
             <Link
               href={"/features"}
-              className="text-[#1c6a88] hover:text-white text-center hover:bg-[#1c6a88] transition-colors duration-300 text-[28px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic lg:w-[600px]"
+              className="text-[#1c6a88] hover:text-white text-center hover:bg-[#1c6a88] transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic lg:w-[600px]"
             >
               Read more
             </Link>

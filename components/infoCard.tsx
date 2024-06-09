@@ -37,7 +37,7 @@ export default function InfoCard({
       ) : null}
       <p
         className={cn(
-          "text-[28px] font-semibold text-darkLiver",
+          "lg:text-[28px] text-[24px] font-semibold text-darkLiver",
           titleCN,
           `${hasHeader && "mt-8"}`
         )}

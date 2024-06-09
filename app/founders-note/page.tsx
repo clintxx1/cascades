@@ -11,7 +11,7 @@ export default function FoundersNote() {
     <section className="w-full">
       <div className="flex items-start justify-center gap-8 w-full pb-24">
         <div className="space-y-8">
-          <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
+          <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
             Founder&apos;s Note
           </p>
           <Image
@@ -37,7 +37,7 @@ export default function FoundersNote() {
           <br />
           <br />
           <p
-            className={`${josefinSans.className} text-[42px] leading-[1.2em] text-crystalBlue w-[550px] font-semibold`}
+            className={`${josefinSans.className} lg:text-[42px] text-4xl leading-[1.2em] text-crystalBlue w-[550px] font-semibold`}
           >
             My name is Irene, a teacher and a mother to two beautiful children,
             Aeon and Sage.

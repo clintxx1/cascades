@@ -29,7 +29,7 @@ export default function LinkDropdown({
       {dropdownData.map((item) => (
         <AccordionItem value={item.value} key={item.value}>
           <AccordionTrigger
-            className={`flex justify-start gap-5 items-center font-normal md:text-[28px] text-[20px] data-[state=open]:no-underline hover:font-normal`}
+            className={`flex justify-start gap-5 items-center font-normal md:lg:text-[28px] text-[24px] text-[20px] data-[state=open]:no-underline hover:font-normal`}
           >
             {item.label}
             <ChevronDown className="h-6 w-6 shrink-0 transition-transform duration-200" />

@@ -9,7 +9,7 @@ export default function Philosophy() {
     <section className="w-full h-full">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div>
-          <p className="text-[28px] italic font-semibold text-darkLiver mt-16 mb-8">
+          <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16 mb-8">
             Cascades HIRAYA Curriculum
           </p>
           <p
@@ -46,7 +46,7 @@ export default function Philosophy() {
           >
             Cascades School aims to produce independent learners by promoting
           </p>
-          <h2 className="text-meatBrown font-semibold text-[42px] w-[500px] leading-[1.2em]">
+          <h2 className="text-meatBrown font-semibold lg:text-[42px] text-4xl w-[500px] leading-[1.2em]">
             diverse methods of learning, problem solving through different
             approaches and discovery
           </h2>
@@ -74,7 +74,7 @@ export default function Philosophy() {
               className="w-[208px] h-[6px]"
             />
           </div>
-          <h2 className="text-watermelonRed font-semibold text-[42px]">
+          <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-4xl">
             Guiding Principles
           </h2>
           <InfoCard

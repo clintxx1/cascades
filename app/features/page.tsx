@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Features() {
   return (
     <section className="w-full h-full">
-      <p className="text-[28px] italic font-semibold text-darkLiver my-16">
+      <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver my-16">
         Features
       </p>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-20 mb-20">
@@ -19,7 +19,7 @@ export default function Features() {
           <CustomCarousel></CustomCarousel>
         </div>
         <div className="w-full space-y-8">
-          <p className="text-[42px] leading-[52px] font-semibold text-customBrown w-[500px]">
+          <p className="lg:text-[42px] text-4xl leading-[52px] font-semibold text-customBrown w-[500px]">
             Aesthetically appealing and unique physical structure.
           </p>
           <p
@@ -55,7 +55,7 @@ export default function Features() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          <p className="text-[42px] leading-[52px] font-semibold text-meatBrown w-[500px]">
+          <p className="lg:text-[42px] text-4xl leading-[52px] font-semibold text-meatBrown w-[500px]">
             Healthy Lunch and Snacks are being served in the school.
           </p>
           <div className="flex items-center justify-center w-[600px]">
@@ -104,7 +104,7 @@ export default function Features() {
             alt="divider2"
             className="w-[208px] h-[6px]"
           />
-          <p className="text-[42px] leading-[52px] font-semibold text-crystalBlue w-[500px]">
+          <p className="lg:text-[42px] text-4xl leading-[52px] font-semibold text-crystalBlue w-[500px]">
             The school ensures the safety and welfare of each child.
           </p>
           <div className="flex items-center justify-center w-[600px]">

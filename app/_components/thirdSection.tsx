@@ -25,7 +25,7 @@ export default function ThirdSection() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          <p className="text-[42px] font-semibold text-watermelonRed">
+          <p className="lg:text-[42px] text-4xl font-semibold text-watermelonRed">
             Experience Cascades.
           </p>
           <p
@@ -35,15 +35,15 @@ export default function ThirdSection() {
             first class facilities and see for yourself why this school is the
             best fit for your child.
           </p>
-          <div className="flex items-center justify-center lg:w-[600px] w-full gap-5">
+          <div className="flex lg:flex-row flex-col items-center justify-center lg:w-[600px] w-full gap-5">
             <Link
               href={"/contact"}
-              className="w-1/3 hover:text-watermelonRed hover:bg-transparent text-center text-white bg-[#c04545] transition-colors duration-300 text-[28px] px-4 py-4 border-[#c04545] rounded-lg border-[3px] italic"
+              className="lg:w-1/3 w-full hover:text-watermelonRed hover:bg-transparent text-center text-white bg-[#c04545] transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-[#c04545] rounded-lg border-[3px] italic"
             >
               Book a tour!
             </Link>
             <p
-              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver w-2/3`}
+              className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:w-2/3 w-full`}
             >
               or read the{" "}
               <a

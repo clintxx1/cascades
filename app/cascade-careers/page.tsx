@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CascadeCareers() {
   return (
     <section className="w-full">
-      <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
+      <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
         Careers
       </p>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-20">
@@ -23,7 +23,7 @@ export default function CascadeCareers() {
           height={663}
         />
         <div className="w-full space-y-8">
-          <p className="text-[42px] font-semibold text-crystalBlue w-[470px]">
+          <p className="lg:text-[42px] text-4xl font-semibold text-crystalBlue w-[470px]">
             Cascades School is seeking professionals who believe in the value of
             emergent curriculum
           </p>
@@ -70,7 +70,7 @@ export default function CascadeCareers() {
       </div>
       <div className="flex items-end justify-start pb-24 w-full px-36">
         <div className="mt-4 space-y-8">
-          <p className="text-[42px] leading-[1.2em] font-semibold text-watermelonRed">
+          <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-watermelonRed">
             Have questions?
           </p>
           <div className="flex items-center justify-start w-[500px] gap-4">
@@ -83,7 +83,7 @@ export default function CascadeCareers() {
         </div>
         <Link
           href={"/contact"}
-          className="text-watermelonRed text-center hover:text-white hover:bg-watermelonRed transition-colors duration-300 text-[28px] px-8 py-4 border-watermelonRed rounded-2xl border-[3px] italic"
+          className="text-watermelonRed text-center hover:text-white hover:bg-watermelonRed transition-colors duration-300 lg:text-[28px] text-[24px] px-8 py-4 border-watermelonRed rounded-2xl border-[3px] italic"
         >
           Contact Us
         </Link>

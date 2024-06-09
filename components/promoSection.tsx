@@ -18,7 +18,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
         <InfoCard
           className="pt-0"
           title="Promos"
-          titleCN="text-[42px] leading-[1.2em] text-[#9a5600]"
+          titleCN="lg:text-[42px] text-4xl leading-[1.2em] text-[#9a5600]"
           description="Make the most of your Cascades experience by taking advantage of the following promos:"
           descriptionCN="w-[300px]"
         />

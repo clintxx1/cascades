@@ -17,7 +17,7 @@ export default function MobileNavbar({
     <Sheet open={open} onOpenChange={(e) => setIsOpen(e)}>
       <SheetContent className="w-full !m-0 !max-w-full min-h-screen bg-blueSapphire">
         {/* <div className="grid gap-4 py-4"> */}
-        <div className="grid grid-cols-1 md:text-[28px] text-[20px] h-max">
+        <div className="grid grid-cols-1 md:lg:text-[28px] text-[24px] text-[20px] h-max">
           <LinkDropdown
             dropdownData={[
               {

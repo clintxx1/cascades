@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Community() {
   return (
     <section className="w-full h-full">
-      <p className="text-[28px] italic font-semibold text-darkLiver mt-16">
+      <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
         Community
       </p>
       <p

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <section className="w-full h-full">
-      <p className="text-[28px] italic font-semibold text-darkLiver mt-16 px-4">
+      <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16 px-4">
         Get in Touch
       </p>
       <p
@@ -24,7 +24,7 @@ export default function Contact() {
       <SchoolMap />
       <div className="flex items-start justify-start gap-20 px-4">
         <div className="pb-20">
-          <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
             Admission Department Information
           </h2>
           <Details
@@ -58,7 +58,7 @@ export default function Contact() {
               alt="divider"
             />
           </div>
-          <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
             Finance Department Information
           </h2>
           <Details
@@ -69,7 +69,7 @@ export default function Contact() {
             label="Email Address:"
             value="<a href='mailto:finance@cascades.ph'>finance@cascades.ph</a>"
           />
-          <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
             Human Resource Department Information
           </h2>
           <Details
@@ -78,7 +78,7 @@ export default function Contact() {
           />
         </div>
         <div className="w-full">
-          <h2 className="text-darkLiver leading-[52px] font-semibold text-[42px]">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
             Contact Form
           </h2>
           <InquiryForm />

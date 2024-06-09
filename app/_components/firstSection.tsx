@@ -40,14 +40,14 @@ export default function FirstSection() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          <p className="text-[42px] font-semibold text-crystalBlue">
+          <p className="lg:text-[42px] text-4xl font-semibold text-crystalBlue lg:text-start text-center">
             Cascades Four Teachers
           </p>
-          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] text-italic font-semibold text-darkLiver lg:text-start text-center">
             The First and Second Teachers
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-14 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 md:text-lg text-base text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             As an expert educator for young children, I firmly believe in the
             concept of adults serving as the first teacher in the classroom, and
@@ -70,11 +70,11 @@ export default function FirstSection() {
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div className="w-full space-y-8">
-          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             The Third Teacher
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-14 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             &apos;The environment is the third teacher&apos; emphasizes the
             crucial role of physical surroundings in education. By designing
@@ -87,11 +87,11 @@ export default function FirstSection() {
           </p>
         </div>
         <div className="w-full space-y-8">
-          <p className="text-[28px] italic font-semibold text-darkLiver lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             The Fourth Teacher
           </p>
           <p
-            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-14 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} text-[20px] leading-[36px] text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
           >
             Plants and animals into the classroom environment can serve as the
             "fourth teacher" for students. By incorporating living organisms,
@@ -110,7 +110,7 @@ export default function FirstSection() {
           </p>
         </div>
       </div>
-      <div className="mt-5 w-[590px] mx-auto space-y-14">
+      <div className="mt-5 lg:w-[590px] w-full mx-auto space-y-14">
         <div className="grid place-items-center lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6">
           {programItems.map((item) => (
             <Card
@@ -124,7 +124,7 @@ export default function FirstSection() {
         <div className="flex lg:justify-start justify-center">
           <Link
             href={"/primary-program"}
-            className="text-crystalBlue hover:text-white hover:bg-crystalBlue transition-colors duration-300 text-[28px] px-7 py-5 border-crystalBlue rounded-lg border-[3px] italic"
+            className="text-crystalBlue hover:text-white hover:bg-crystalBlue transition-colors duration-300 lg:text-[28px] text-[24px] px-7 py-5 border-crystalBlue rounded-lg border-[3px] italic"
           >
             Check our programs
           </Link>

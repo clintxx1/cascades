@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Scholarship() {
   return (
     <section className="w-full">
-      <p className="text-[28px] italic font-semibold text-darkLiver my-16">
+      <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver my-16">
         Admissions
       </p>
       <div className="flex items-start justify-center gap-20 w-full">
@@ -23,10 +23,10 @@ export default function Scholarship() {
           height={427}
         />
         <div className="space-y-8">
-          <p className="text-[42px] font-semibold text-meatBrown">
+          <p className="lg:text-[42px] text-4xl font-semibold text-meatBrown">
             Scholarship
           </p>
-          <p className="text-[28px] font-semibold text-darkLiver">
+          <p className="lg:text-[28px] text-[24px] font-semibold text-darkLiver">
             Kids & Ideas
           </p>
           <p
@@ -56,7 +56,7 @@ export default function Scholarship() {
       </div>
       <div className="flex items-end justify-start pb-24 w-full px-36">
         <div className="mt-4 space-y-8">
-          <p className="text-[42px] leading-[1.2em] font-semibold text-customBrown">
+          <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-customBrown">
             Get in touch
           </p>
           <div className="flex items-center justify-center w-[500px] gap-4">
@@ -70,7 +70,7 @@ export default function Scholarship() {
         </div>
         <Link
           href={"/contact"}
-          className="text-customBrown text-center hover:text-white hover:bg-customBrown transition-colors duration-300 text-[28px] px-8 py-4 border-customBrown rounded-2xl border-[3px] italic"
+          className="text-customBrown text-center hover:text-white hover:bg-customBrown transition-colors duration-300 lg:text-[28px] text-[24px] px-8 py-4 border-customBrown rounded-2xl border-[3px] italic"
         >
           Contact Us
         </Link>
