@@ -87,9 +87,9 @@ export default function PrimaryProgram() {
           className="w-full h-[6px] px-4"
         />
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-0">
         <div className="mt-24">
-          <div className="flex items-end justify-start gap-5">
+          <div className="flex items-end lg:justify-start justify-center gap-5">
             <Image
               src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
               alt={"primaryLogo"}
@@ -97,7 +97,7 @@ export default function PrimaryProgram() {
               height={64}
               className="h-16 w-16 object-contain"
             />
-            <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-crystalBlue">
+            <p className="lg:text-[42px] text-3xl leading-[1.2em] font-semibold text-crystalBlue">
               Primary Program
             </p>
           </div>
@@ -114,8 +114,8 @@ export default function PrimaryProgram() {
             dropdownData={OPENSY26}
           />
         </div>
-        <div className="space-y-14">
-          <div className="w-[700px] bg-red-300 object-cover">
+        <div className="lg:space-y-14 flex lg:flex-col flex-col-reverse">
+          <div className="lg:w-[700px] w-full object-contain">
             <Image
               src={
                 "https://ik.imagekit.io/cascades/cascades/primary_banner_2x-1024x502.jpg"
@@ -123,6 +123,7 @@ export default function PrimaryProgram() {
               alt={"image1"}
               width={1024}
               height={502}
+              className="object-contain"
             />
           </div>
           <InfoCard
@@ -134,7 +135,7 @@ export default function PrimaryProgram() {
         </div>
       </div>
       <PromoSection />
-      <div className="flex items-center justify-start w-full gap-12 pb-20">
+      <div className="flex lg:flex-row flex-col items-center justify-start w-full gap-12 pb-20">
         <Image
           src={
             "https://ik.imagekit.io/cascades/cascades/home_experience@2x.jpg"
@@ -142,27 +143,28 @@ export default function PrimaryProgram() {
           alt="Image 1"
           width={388}
           height={388}
+          className="object-contain"
         />
-        <div className="space-y-8">
-          <p className="lg:text-[42px] text-4xl font-semibold text-meatBrown">
+        <div className="space-y-8 grid lg:place-items-start place-items-center">
+          <p className="lg:text-[42px] flex flex-1 text-3xl font-semibold text-meatBrown">
             Experience Cascades.
           </p>
           <p
-            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[500px]`}
+            className={`${lato.className} lg:text-[20px] text-base lg:leading-[36px] leading-8 text-darkLiver lg:w-[500px] w-full lg:text-start text-justify`}
           >
             We are more than happy to welcome you to our home. Come see our
             first class facilities and see for yourself why this school is the
             best fit for your child.
           </p>
-          <div className="flex items-center justify-center w-[600px] gap-5">
+          <div className="flex lg:flex-row md:flex-row flex-col items-center justify-center lg:w-[600px] w-full gap-5">
             <Link
               href={"/contact"}
-              className="w-1/3 hover:text-meatBrown hover:bg-transparent text-white bg-meatBrown transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-meatBrown rounded-lg border-[3px] italic"
+              className="lg:w-1/3 md:w-1/3 hover:text-meatBrown hover:bg-transparent text-center text-white bg-meatBrown transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-meatBrown rounded-lg border-[3px] italic"
             >
               Book a tour!
             </Link>
             <p
-              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-2/3`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:w-2/3 md:w-2/3 w-full lg:text-start md:text-start text-center`}
             >
               or read the &nbsp;
               <a

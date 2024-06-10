@@ -32,7 +32,7 @@ export default function InfoCard({
           alt="divider"
           width={208}
           height={6}
-          className="w-[208px] h-[6px]"
+          className="lg:w-[208px] w-full object-contain h-[6px]"
         />
       ) : null}
       <p
@@ -45,18 +45,22 @@ export default function InfoCard({
         {title}
       </p>
       {isDropdown && dropdownData.length ? (
-        <Accordion type="single" collapsible className="lg:w-[500px] w-full">
+        <Accordion
+          type="single"
+          collapsible
+          className="lg:w-[500px] w-full lg:block grid gap-0 place-items-center"
+        >
           {dropdownData.map((item) => (
             <AccordionItem value={item.value} key={item.value}>
               <AccordionTrigger
-                className={`${lato.className} font-normal text-[20px] text-darkLiver`}
+                className={`${lato.className} font-normal lg:text-[20px] text-base text-darkLiver`}
               >
                 {item.label}
               </AccordionTrigger>
               <AccordionContent>
                 <div
                   className={cn(
-                    `${lato.className} text-lg text-darkLiver w-[500px] border p-5`,
+                    `${lato.className} text-lg text-darkLiver lg:w-[500px] w-full border p-5 lg:text-start text-justify`,
                     descriptionCN
                   )}
                   dangerouslySetInnerHTML={createMarkup(item.description)}

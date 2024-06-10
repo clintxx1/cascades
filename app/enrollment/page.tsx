@@ -17,12 +17,12 @@ export default function Enrollment() {
       <div className="grid lg:grid-cols-2 grid-cols-1">
         <div className="mt-24">
           <div className="flex items-end justify-start gap-5">
-            <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-blueSapphire">
+            <p className="lg:text-[42px] text-3xl leading-[1.2em] font-semibold text-blueSapphire">
               Enrollment Process
             </p>
           </div>
           <p
-            className={`${lato.className} text-[20px] italic leading-[36px] text-darkLiver w-[470px] pt-5 pb-12`}
+            className={`${lato.className} lg:text-[20px] text-base italic leading-[36px] text-darkLiver lg:w-[470px] w-full pt-5 pb-12 lg:text-start text-center`}
           >
             OPEN ENROLLMENT for the whole year given that there are still open
             slots. New enrollees will be gradually mainstreamed into programs.
@@ -39,7 +39,7 @@ export default function Enrollment() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
           <InfoCard
             title="2. Schedule a Campus Tour and Free 1-day Trial Class"
@@ -48,7 +48,7 @@ export default function Enrollment() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
           <InfoCard
             title="3. Submit and fill out the following forms by email: "
@@ -65,7 +65,7 @@ export default function Enrollment() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[650px]"
+            descriptionCN="lg:w-[650px] md:w-2/3 w-full mx-auto text-start"
           />
           <InfoCard
             title="4. Assessment and Payment Process and Verification"
@@ -74,7 +74,7 @@ export default function Enrollment() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
           <InfoCard
             title="5. Parents Circle Time (Orientation)"
@@ -83,7 +83,7 @@ export default function Enrollment() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
         </div>
       </div>
@@ -95,7 +95,7 @@ export default function Enrollment() {
           alt="longDiv"
           width={1024}
           height={6}
-          className="w-full h-[6px] my-12 px-8"
+          className="w-full h-[6px] my-12 lg:px-8 lg:object-cover md:object-cover object-contain"
         />
       </div>
     </section>

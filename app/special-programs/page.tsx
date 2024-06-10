@@ -14,7 +14,7 @@ export default function SpecialPrograms() {
       <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
         Programs
       </p>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
         <div className="mt-24">
           <div className="flex items-end justify-start gap-5">
             <Image
@@ -22,14 +22,14 @@ export default function SpecialPrograms() {
               alt={"primaryLogo"}
               width={64}
               height={64}
-              className="h-16 w-16 object-contain"
+              className="lg:h-16 lg:w-16 w-12 h-12 object-contain"
             />
-            <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-meatBrown">
+            <p className="lg:text-[42px] text-3xl leading-[1.2em] font-semibold text-meatBrown">
               Special Programs
             </p>
           </div>
           <p
-            className={`${lato.className} text-[20px] italic leading-[36px] text-darkLiver w-[470px] pt-5 pb-12`}
+            className={`${lato.className} lg:text-[20px] text-base italic leading-[36px] text-darkLiver lg:w-[470px] w-full pt-5 pb-12 lg:text-start text-center`}
           >
             Enrolled students in the Basic Programs can avail the 5% discount to
             these special classes
@@ -37,12 +37,12 @@ export default function SpecialPrograms() {
           <InfoCard
             title="1. Hiraya Play"
             description="The HIRAYA Play program, where our little ones start their first school experience. Our children are offered sensory activities which are great both for their little hands and developing minds. This program offers two hours of playtime using our invitation table and provocations areas. Give your little ones the chance to explore, create and learn in a safe and nurturing environment. For only Php10,000 and get 8 sessions of fun and learning you can use it between Monday to Thursday."
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
           <InfoCard
             title="2. Bahaghari Program"
             description="A program designed to provide long term support and guidance for children with special needs. This program aims to help and achieve their goals and reach their full potential through targeted interventions and collaborative support from special education teachers and other professionals."
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
             hasHeader
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
@@ -62,7 +62,7 @@ export default function SpecialPrograms() {
           <InfoCard
             title="3. Baby-Mama System"
             description="A baby-sitting program wherein caretakers care for babies under 3 years old by following and developing their home routine or schedule. Special classes are also offered for parents / guardians and their babies under 3 years old."
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
             hasHeader
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
@@ -75,7 +75,7 @@ export default function SpecialPrograms() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
           <InfoCard
             title="5. Parent and Child Classes"
@@ -84,7 +84,7 @@ export default function SpecialPrograms() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
           <InfoCard
             title="6. Special Classes"
@@ -93,7 +93,7 @@ export default function SpecialPrograms() {
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="w-[450px]"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
         </div>
       </div>

@@ -12,25 +12,27 @@ export default function PromoSection({ classname }: { classname?: string }) {
         alt="longDiv1"
         width={1024}
         height={6}
-        className="w-full h-[6px] my-12 px-12"
+        className="w-full h-[6px] my-12 lg:px-12 lg:object-cover md:object-cover object-contain"
       />
-      <div className="flex items-start justify-center gap-12">
+      <div className="flex lg:flex-row flex-col items-center lg:items-start justify-center gap-12">
         <InfoCard
           className="pt-0"
           title="Promos"
-          titleCN="lg:text-[42px] text-4xl leading-[1.2em] text-[#9a5600]"
+          titleCN="lg:text-[42px] text-3xl leading-[1.2em] text-[#9a5600]"
           description="Make the most of your Cascades experience by taking advantage of the following promos:"
-          descriptionCN="w-[300px]"
+          descriptionCN="lg:w-[300px] w-full"
         />
         <div className="text-darkLiver space-y-6">
           <div>
-            <p className="text-4xl font-semibold">Payment Terms Option</p>
+            <p className="lg:text-3xl text-3xl lg:text-start text-center font-semibold">
+              Payment Terms Option
+            </p>
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="One Year Payment"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="Maximum of 8% discount only (enrolled for one whole year)"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
           </div>
           <Image
@@ -40,37 +42,39 @@ export default function PromoSection({ classname }: { classname?: string }) {
             width={470}
             height={8}
             alt="divider"
-            className="w-full h-[8px]"
+            className="w-full h-[8px] lg:object-cover md:object-cover object-contain"
           />
           <div>
-            <p className="text-4xl font-semibold">5 years old below</p>
+            <p className="lg:text-3xl text-3xl lg:text-start text-center font-semibold">
+              5 years old below
+            </p>
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Annual Payment"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="5% Discount"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Semi-Annual Payment"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="3% Discount"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Bi-monthly Payment"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="1.5% Discount"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Monthly Payment"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="No Discount"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
           </div>
           <Image
@@ -80,37 +84,39 @@ export default function PromoSection({ classname }: { classname?: string }) {
             width={470}
             height={8}
             alt="divider"
-            className="w-full h-[8px]"
+            className="w-full h-[8px] lg:object-cover md:object-cover object-contain"
           />
           <div>
-            <p className="text-4xl font-semibold">Special Discount Offers</p>
+            <p className="lg:text-3xl text-3xl lg:text-start text-center font-semibold">
+              Special Discount Offers
+            </p>
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Early Bird Discount"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="5% Early Bird Discount (from April 1 to June 31, 2024 only)"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center grid lg:place-items-start md:place-items-start place-items-center"
             />
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Siblings Discount"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="3% Siblings Discount (applied to the 2nd child's fee)"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="PWD Discount"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="3% PWD Discount (with PWD ID)"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
             <InfoCard
-              className="flex gap-8 pl-10"
+              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Elementary Special Discount"
-              titleCN="w-[300px]"
+              titleCN="lg:w-[300px] w-full"
               description="30% Discount for 5-9 years old (Elementary level)"
-              descriptionCN="w-[330px]"
+              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
           </div>
           {/* <Image
@@ -152,7 +158,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
         alt="longDiv2"
         width={1024}
         height={6}
-        className="w-full h-[6px] my-12 px-12"
+        className="w-full h-[6px] my-12 lg:px-12 lg:object-cover md:object-cover object-contain"
       />
     </div>
   );

@@ -25,7 +25,7 @@ export default function ThirdSection() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          <p className="lg:text-[42px] text-4xl font-semibold text-watermelonRed">
+          <p className="lg:text-[42px] text-3xl font-semibold text-watermelonRed">
             Experience Cascades.
           </p>
           <p

@@ -10,7 +10,7 @@ export default function Approach() {
     <section className="w-full h-full">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
         <div className="space-y-14 grid lg:place-items-start place-items-center">
-          <h2 className="text-darkLiver font-semibold lg:text-[42px] text-4xl">
+          <h2 className="text-darkLiver font-semibold lg:text-[42px] text-3xl">
             About Cascades
           </h2>
           <p
@@ -33,7 +33,7 @@ export default function Approach() {
             is next in their lives: grade school, high school, college,
             workforce, or community service.
           </p>
-          <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-4xl">
+          <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-3xl">
             Hiraya Curriculum
           </h2>
           <p
@@ -203,7 +203,7 @@ export default function Approach() {
           height={304}
         />
         <div className="mt-12 space-y-8">
-          <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-[#1c6a88] lg:text-start text-center">
+          <p className="lg:text-[42px] text-3xl leading-[1.2em] font-semibold text-[#1c6a88] lg:text-start text-center">
             Check our programs
           </p>
           <div className="flex lg:flex-row md:flex-row flex-col items-center justify-center lg:w-[700px] w-full gap-4">

@@ -16,15 +16,15 @@ export default function Contact() {
         Get in Touch
       </p>
       <p
-        className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[470px] pt-5 pb-12 px-4`}
+        className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:w-[470px] w-full pt-5 pb-12 px-4`}
       >
         Schedule a visit or inquire now!
       </p>
 
       <SchoolMap />
-      <div className="flex items-start justify-start gap-20 px-4">
+      <div className="flex lg:flex-row flex-col lg:items-start justify-start lg:gap-20 lg:px-4">
         <div className="pb-20">
-          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-3xl">
             Admission Department Information
           </h2>
           <Details
@@ -58,7 +58,7 @@ export default function Contact() {
               alt="divider"
             />
           </div>
-          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-3xl">
             Finance Department Information
           </h2>
           <Details
@@ -69,7 +69,7 @@ export default function Contact() {
             label="Email Address:"
             value="<a href='mailto:finance@cascades.ph'>finance@cascades.ph</a>"
           />
-          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-3xl">
             Human Resource Department Information
           </h2>
           <Details
@@ -78,7 +78,7 @@ export default function Contact() {
           />
         </div>
         <div className="w-full">
-          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-4xl">
+          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-3xl">
             Contact Form
           </h2>
           <InquiryForm />

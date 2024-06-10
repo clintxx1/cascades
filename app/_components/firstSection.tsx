@@ -40,7 +40,7 @@ export default function FirstSection() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          <p className="lg:text-[42px] text-4xl font-semibold text-crystalBlue lg:text-start text-center">
+          <p className="lg:text-[42px] text-3xl font-semibold text-crystalBlue lg:text-start text-center">
             Cascades Four Teachers
           </p>
           <p className="lg:text-[28px] text-[24px] text-italic font-semibold text-darkLiver lg:text-start text-center">

@@ -16,7 +16,7 @@ export default function SecondSection() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          <p className="lg:text-[42px] text-4xl font-semibold text-[#9a5600]">
+          <p className="lg:text-[42px] text-3xl font-semibold text-[#9a5600]">
             Student Health, Safety
             <br />
             and Well-being a Priority.

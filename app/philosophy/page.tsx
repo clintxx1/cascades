@@ -47,7 +47,7 @@ export default function Philosophy() {
           >
             Cascades School aims to produce independent learners by promoting
           </p>
-          <h2 className="text-meatBrown font-semibold lg:text-[42px] text-4xl lg:w-[500px] md:w-[450px] w-full leading-[1.2em] lg:text-start md:text-end text-center">
+          <h2 className="text-meatBrown font-semibold lg:text-[42px] text-3xl lg:w-[500px] md:w-[450px] w-full leading-[1.2em] lg:text-start md:text-end text-center">
             diverse methods of learning, problem solving through different
             approaches and discovery
           </h2>
@@ -75,7 +75,7 @@ export default function Philosophy() {
               className="w-[208px] h-[6px]"
             />
           </div>
-          <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-4xl">
+          <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-3xl">
             Guiding Principles
           </h2>
           <InfoCard

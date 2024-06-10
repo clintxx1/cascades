@@ -122,138 +122,142 @@ export default function InquiryForm() {
     }
   };
   return (
-    <Form {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full space-y-6"
-        id="myForm"
-      >
-        <FormField
-          control={form.control}
-          name="categories"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Categories</FormLabel>
-              <Select onValueChange={field.onChange} value={field.value}>
+    <div className="pb-10">
+      <Form {...form}>
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="w-full space-y-6"
+          id="myForm"
+        >
+          <FormField
+            control={form.control}
+            name="categories"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Categories</FormLabel>
+                <Select onValueChange={field.onChange} value={field.value}>
+                  <FormControl>
+                    <SelectTrigger className="w-full lg:text-[20px] lg:leading-[36px] leading-8">
+                      <SelectValue placeholder="Select a category for your inquiry" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem value="General Inquiry">
+                      General Inquiry
+                    </SelectItem>
+                    <SelectItem value="Programs Offered">
+                      Programs Offered
+                    </SelectItem>
+                    <SelectItem value="Admissions">Admissions</SelectItem>
+                    <SelectItem value="Book a Tour">Book a Tour</SelectItem>
+                  </SelectContent>
+                </Select>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Full Name</FormLabel>
                 <FormControl>
-                  <SelectTrigger className="w-full lg:text-[20px] lg:leading-[36px] leading-8">
-                    <SelectValue placeholder="Select a category for your inquiry" />
-                  </SelectTrigger>
+                  <Input
+                    {...field}
+                    placeholder="Full Name"
+                    className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
+                  />
                 </FormControl>
-                <SelectContent>
-                  <SelectItem value="General Inquiry">
-                    General Inquiry
-                  </SelectItem>
-                  <SelectItem value="Programs Offered">
-                    Programs Offered
-                  </SelectItem>
-                  <SelectItem value="Admissions">Admissions</SelectItem>
-                  <SelectItem value="Book a Tour">Book a Tour</SelectItem>
-                </SelectContent>
-              </Select>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Full Name</FormLabel>
-              <FormControl>
-                <Input
-                  {...field}
-                  placeholder="Full Name"
-                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="from_email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input
-                  type="email"
-                  {...field}
-                  placeholder="Email"
-                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="contact"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Contact Number</FormLabel>
-              <FormControl>
-                <Input
-                  {...field}
-                  placeholder="Contact Number"
-                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="title"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Title</FormLabel>
-              <FormControl>
-                <Input
-                  {...field}
-                  placeholder="Title"
-                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message</FormLabel>
-              <FormControl>
-                <Textarea
-                  {...field}
-                  placeholder="Message"
-                  className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <div className="flex items-center justify-end pt-4">
-          <Button
-            type="submit"
-            className="text-watermelonRed hover:text-watermelonRed transition-colors duration-300 lg:text-[28px] text-[24px] py-8 border-watermelonRed rounded-2xl border-[2px] italic"
-            size={"lg"}
-            variant={"outline"}
-            disabled={loading}
-          >
-            {loading && <LoaderCircle className="h-7 w-7 animate-spin mr-4" />}
-            Submit
-          </Button>
-        </div>
-      </form>
-    </Form>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="from_email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input
+                    type="email"
+                    {...field}
+                    placeholder="Email"
+                    className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="contact"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Contact Number</FormLabel>
+                <FormControl>
+                  <Input
+                    {...field}
+                    placeholder="Contact Number"
+                    className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="title"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Title</FormLabel>
+                <FormControl>
+                  <Input
+                    {...field}
+                    placeholder="Title"
+                    className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Message</FormLabel>
+                <FormControl>
+                  <Textarea
+                    {...field}
+                    placeholder="Message"
+                    className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <div className="flex items-center lg:justify-end justify-center pt-4">
+            <Button
+              type="submit"
+              className="text-watermelonRed hover:text-watermelonRed transition-colors duration-300 lg:text-[28px] text-[24px] py-8 border-watermelonRed rounded-2xl border-[2px] italic"
+              size={"lg"}
+              variant={"outline"}
+              disabled={loading}
+            >
+              {loading && (
+                <LoaderCircle className="h-7 w-7 animate-spin mr-4" />
+              )}
+              Submit
+            </Button>
+          </div>
+        </form>
+      </Form>
+    </div>
   );
 }

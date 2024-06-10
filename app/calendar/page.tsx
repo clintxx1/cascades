@@ -15,7 +15,7 @@ export default function Calendar() {
       <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
         Calendar
       </p>
-      <h2 className="text-meatBrown italic font-semibold lg:text-[42px] text-4xl">
+      <h2 className="text-meatBrown italic font-semibold lg:text-[42px] text-3xl">
         School Year 2024 - 2025
       </h2>
       <div className="py-8">
@@ -26,27 +26,37 @@ export default function Calendar() {
           alt="longDiv"
           width={1024}
           height={6}
-          className="w-full h-[6px] px-4"
+          className="w-full h-[6px] lg:px-4 lg:object-cover md:object-cover object-contain"
         />
       </div>
-      <div className="mx-auto px-5 w-full space-y-5">
+      <div className="mx-auto px-5 w-full lg:space-y-5 md:space-y-5 space-y-10">
         <a
-          className="flex flex-1 items-center gap-3"
+          className="flex flex-1 items-center lg:flex-row md:flex-row flex-col lg:gap-3 md:gap-3"
           href="https://ik.imagekit.io/cascades/Files/CASCADES%20PRESCHOOL%20CALENDAR-ACADEMIC%20YEAR%202024-2025.pdf"
           download={"cascades-preschool-calendar.pdf"}
           target="_blank"
         >
           Cascades Preschool Calendar - Academic Year 2024-2025{" "}
-          <BiSolidFilePdf className="text-watermelonRed h-6 w-6" />
+          <BiSolidFilePdf className="text-watermelonRed h-6 w-6 hidden lg:block md:block" />
+          <p
+            className={`${lato.className} block lg:hidden md:hidden text-sm underline`}
+          >
+            Click here to download
+          </p>
         </a>
         <a
-          className="flex items-center gap-3"
+          className="flex flex-1 items-center lg:flex-row md:flex-row flex-col lg:gap-3 md:gap-3"
           href="https://ik.imagekit.io/cascades/Files/CASCADES%20ELEMENTARY%20CALENDAR-%20ACADEMIC%20YEAR%202024-2025.pdf"
           download={"cascades-elementary-calendar.pdf"}
           target="_blank"
         >
           Cascades Elementary Calendar - Academic Year 2024-2025{" "}
-          <BiSolidFilePdf className="text-watermelonRed h-6 w-6" />
+          <BiSolidFilePdf className="text-watermelonRed h-6 w-6 hidden lg:block md:block" />
+          <p
+            className={`${lato.className} block lg:hidden md:hidden text-sm underline`}
+          >
+            Click here to download
+          </p>
         </a>
       </div>
       <div className="py-8">
@@ -57,7 +67,7 @@ export default function Calendar() {
           alt="longDiv"
           width={1024}
           height={6}
-          className="w-full h-[6px] px-4"
+          className="w-full h-[6px] lg:px-4 lg:object-cover md:object-cover object-contain"
         />
       </div>
       {/* <div className="w-full">
@@ -253,14 +263,14 @@ export default function Calendar() {
           className="w-full h-[6px]"
         />
       </div> */}
-      <div className="flex items-end justify-start pb-24 w-full">
+      <div className="flex lg:flex-row flex-col lg:items-end items-start lg:gap-0 gap-5 justify-start pb-24 w-full">
         <div className="mt-4 space-y-8">
-          <p className="lg:text-[42px] text-4xl leading-[1.2em] font-semibold text-customBrown">
+          <p className="lg:text-[42px] text-3xl leading-[1.2em] font-semibold text-customBrown">
             Have questions?
           </p>
-          <div className="flex items-center justify-start w-[500px] gap-4">
+          <div className="flex  items-center justify-start lg:w-[500px] w-full gap-4">
             <p
-              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] text-base lg:leading-[36px] leading-8 text-darkLiver`}
             >
               For more information, visit our Contact Us page:
             </p>

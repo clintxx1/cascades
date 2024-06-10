@@ -45,6 +45,7 @@ export default function CustomCarousel() {
           height={1240}
           src={item.image}
           alt={`${item.key}`}
+          className="object-contain"
         />
       ))}
     </Carousel>

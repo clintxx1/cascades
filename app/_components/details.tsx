@@ -17,18 +17,21 @@ export function Details({
   };
   return (
     <div
-      className={cn("flex items-start justify-between w-[520px] py-2", mainCN)}
+      className={cn(
+        "flex items-start justify-between lg:w-[520px] w-full py-2",
+        mainCN
+      )}
     >
       <div
         className={cn(
-          `lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver font-semibold w-[470px] px-4`,
+          `lg:text-[20px] text-base lg:leading-[36px] leading-8 text-darkLiver font-semibold lg:w-[470px] w-full lg:px-4`,
           labelCN
         )}
         dangerouslySetInnerHTML={createMarkup(label)}
       ></div>
       <div
         className={cn(
-          `${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-full px-4`,
+          `${lato.className} lg:text-[20px] text-base lg:leading-[36px] leading-8 text-darkLiver w-full lg:px-4`,
           valueCN
         )}
         dangerouslySetInnerHTML={createMarkup(value)}

@@ -14,16 +14,16 @@ export default function Features() {
       <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver my-16">
         Features
       </p>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-20 mb-20">
-        <div className="w-[500px]">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10 mb-20 lg:place-items-start place-items-center">
+        <div className="lg:w-[500px] md:w-[70%] w-[60%]">
           <CustomCarousel></CustomCarousel>
         </div>
         <div className="w-full space-y-8">
-          <p className="lg:text-[42px] text-4xl leading-[52px] font-semibold text-customBrown w-[500px]">
+          <p className="lg:text-[42px] text-3xl leading-[52px] font-semibold text-customBrown lg:w-[500px] w-full lg:text-start text-center">
             Aesthetically appealing and unique physical structure.
           </p>
           <p
-            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-[500px] text-justify`}
+            className={`${lato.className} lg:text-[20px] text-base lg:leading-[36px] leading-8 text-darkLiver lg:w-[500px] w-full text-justify`}
           >
             The school is built as a “house” with child-sized furniture and
             tools. Repurposed furniture and small interactive installations will
@@ -44,7 +44,7 @@ export default function Features() {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full gap-8 mt-14">
+      <div className="flex lg:flex-row flex-col-reverse items-center justify-between w-full gap-8 mt-14">
         <div className="space-y-8 w-full">
           <Image
             src={
@@ -53,12 +53,12 @@ export default function Features() {
             width={208}
             height={6}
             alt="divider"
-            className="w-[208px] h-[6px]"
+            className="lg:w-[208px] w-full object-contain h-[6px]"
           />
-          <p className="lg:text-[42px] text-4xl leading-[52px] font-semibold text-meatBrown w-[500px]">
+          <p className="lg:text-[42px] text-3xl leading-[52px] font-semibold text-meatBrown lg:w-[500px] w-full lg:text-start text-center">
             Healthy Lunch and Snacks are being served in the school.
           </p>
-          <div className="flex items-center justify-center w-[600px]">
+          <div className="flex items-center justify-center lg:w-[600px] w-full text-justify">
             <p
               className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
@@ -74,7 +74,7 @@ export default function Features() {
             </p>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full grid lg:place-items-start place-items-center">
           <Image
             src={"https://ik.imagekit.io/cascades/cascades/features_lunch.jpg"}
             alt="Image 1"
@@ -104,7 +104,7 @@ export default function Features() {
             alt="divider2"
             className="w-[208px] h-[6px]"
           />
-          <p className="lg:text-[42px] text-4xl leading-[52px] font-semibold text-crystalBlue w-[500px]">
+          <p className="lg:text-[42px] text-3xl leading-[52px] font-semibold text-crystalBlue w-[500px]">
             The school ensures the safety and welfare of each child.
           </p>
           <div className="flex items-center justify-center w-[600px]">
@@ -129,7 +129,7 @@ export default function Features() {
           alt="longDiv"
           width={1024}
           height={8}
-          className="w-full h-[6px] my-12 px-8"
+          className="w-full h-[6px] my-12 lg:px-8 lg:object-cover md:object-cover object-contain"
         />
       </div>
     </section>
