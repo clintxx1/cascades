@@ -21,11 +21,11 @@ export default function Community() {
         lifelong love of learning in children.
       </p>
       <CommunityCard
-        className="w-full"
+        // className="w-full"
         firstImage={"https://ik.imagekit.io/cascades/cascades/irene_2x.jpg"}
         firstTitle="Founder/Directress"
         firstName="Irene Theresa M. Mawo"
-        firstDescription="Irene is a graduate of Secondary Education major in Biological Science. After graduating magna cum laude she immediately took her Master’s in teaching General Science then pursued her Master’s in Early Childhood Education. She has been teaching for over a decade now in both local and international schools, having spent years as head teacher before deciding to build Cascades School."
+        // firstDescription="Irene is a graduate of Secondary Education major in Biological Science. After graduating magna cum laude she immediately took her Master’s in teaching General Science then pursued her Master’s in Early Childhood Education. She has been teaching for over a decade now in both local and international schools, having spent years as head teacher before deciding to build Cascades School."
       />
       <div className="hidden lg:block">
         <CommunityCard
