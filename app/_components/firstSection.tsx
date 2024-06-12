@@ -19,7 +19,7 @@ export default function FirstSection() {
     },
   ];
   return (
-    <section className="space-y-20 lg:w-fit w-full">
+    <section className="space-y-20 lg:w-fit w-full lg:px-[50px] md:px-[50px] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:gap-20 gap-10">
         <Image
           src={
@@ -28,7 +28,7 @@ export default function FirstSection() {
           alt="Image 1"
           width={612}
           height={663}
-          className="lg:w-full lg:h-full md:w-[512px] md:h-[563px] w-[412px] h-[463px] flex-shrink-0 object-contain"
+          className="w-full flex-shrink-0 object-contain"
         />
         <div className="w-full space-y-8 grid lg:place-items-start place-items-center">
           <Image
@@ -38,43 +38,43 @@ export default function FirstSection() {
             height={6}
             width={208}
             alt="divider"
-            className="w-[208px] h-[6px]"
+            className="lg:w-[208px] w-full lg:object-cover object-contain h-[6px]"
           />
           <p className="lg:text-[42px] text-3xl font-semibold text-crystalBlue lg:text-start text-center">
             Cascades Four Teachers
           </p>
-          <p className="lg:text-[28px] text-[24px] text-italic font-semibold text-darkLiver lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             The First and Second Teachers
           </p>
           <p
-            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 md:text-lg text-base text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 md:text-lg text-base text-darkLiver w-full lg:text-start text-justify`}
           >
-            As an expert educator for young children, I firmly believe in the
-            concept of adults serving as the first teacher in the classroom, and
-            the children as the second teacher. Adults play a central role in
-            modeling behavior, providing guidance, and facilitating learning
-            experiences for young learners. By creating a nurturing and
-            enriching learning environment, educators lay the foundation for
-            children's growth and development. Simultaneously, the children
-            themselves, through their unique perspectives, interests, and
-            interactions, become invaluable contributors to the learning
-            process, enlightening educators about their needs, preferences, and
-            learning styles. This dynamic interaction empowers students to take
-            an active role in their education, fostering a sense of agency and
-            autonomy in their learning journey. Embracing this partnership
-            between adults and children as the first and second teachers in the
-            classroom allows for a symbiotic relationship that enhances the
-            overall educational experience for young learners.
+            Cascades School firmly believes in the concept of adults serving as
+            the first teacher in the classroom, and the children as the second
+            teacher. Adults play a central role in modeling behavior, providing
+            guidance, and facilitating learning experiences for young learners.
+            By creating a nurturing and enriching learning environment,
+            educators lay the foundation for children's growth and development.
+            Simultaneously, the children themselves, through their unique
+            perspectives, interests, and interactions, become invaluable
+            contributors to the learning process, enlightening educators about
+            their needs, preferences, and learning styles. This dynamic
+            interaction empowers students to take an active role in their
+            education, fostering a sense of agency and autonomy in their
+            learning journey. Embracing this partnership between adults and
+            children as the first and second teachers in the classroom allows
+            for a symbiotic relationship that enhances the overall educational
+            experience for young learners.
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
         <div className="w-full space-y-8">
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             The Third Teacher
           </p>
           <p
-            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-full lg:text-start text-justify`}
           >
             &apos;The environment is the third teacher&apos; emphasizes the
             crucial role of physical surroundings in education. By designing
@@ -91,7 +91,7 @@ export default function FirstSection() {
             The Fourth Teacher
           </p>
           <p
-            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:px-0 px-4 lg:w-[611px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-full lg:text-start text-justify`}
           >
             Plants and animals into the classroom environment can serve as the
             "fourth teacher" for students. By incorporating living organisms,
@@ -110,7 +110,7 @@ export default function FirstSection() {
           </p>
         </div>
       </div>
-      <div className="mt-5 lg:w-[590px] w-full mx-auto space-y-14">
+      <div className="mt-5 m-auto space-y-14 lg:w-[calc(100%_-_30dvw)] w-full">
         <div className="grid place-items-center lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6">
           {programItems.map((item) => (
             <Card

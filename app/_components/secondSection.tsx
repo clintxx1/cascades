@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function SecondSection() {
   return (
-    <section className="py-20">
+    <section className="py-20 lg:px-[50px] md:px-[50px] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full lg:gap-20 gap-10">
-        <div className="space-y-8 lg:w-3/4 w-full">
+        <div className="space-y-8 w-full">
           <Image
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-1-1.png"
@@ -14,7 +14,7 @@ export default function SecondSection() {
             width={208}
             height={6}
             alt="divider"
-            className="w-[208px] h-[6px]"
+            className="lg:w-[208px] w-full lg:object-cover object-contain h-[6px]"
           />
           <p className="lg:text-[42px] text-3xl font-semibold text-[#9a5600]">
             Student Health, Safety
@@ -24,7 +24,7 @@ export default function SecondSection() {
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             School Features
           </p>
-          <div className="flex lg:flex-row flex-col items-center justify-center lg:w-[600px] w-full lg:text-start text-justify lg:gap-0 gap-10">
+          <div className="flex lg:flex-row flex-col items-center justify-center w-full lg:text-start text-justify lg:gap-0 gap-10">
             <p
               className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
@@ -35,7 +35,7 @@ export default function SecondSection() {
             </p>
             <Link
               href={"/features"}
-              className="text-[#1c6a88] hover:text-white text-center hover:bg-[#1c6a88] transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic lg:w-[600px]"
+              className="text-[#1c6a88] hover:text-white text-center hover:bg-[#1c6a88] transition-colors duration-300 lg:text-[28px] text-[24px] px-4 py-4 border-[#1c6a88] rounded-lg border-[3px] italic flex-shrink-0"
             >
               Read more
             </Link>
@@ -48,7 +48,7 @@ export default function SecondSection() {
           alt="Image 1"
           width={612}
           height={663}
-          className="lg:w-full lg:h-full md:w-[512px] md:h-[563px] w-[412px] h-[463px] flex-shrink-0 object-contain"
+          className="w-full flex-shrink-0 object-contain"
         />
       </div>
     </section>

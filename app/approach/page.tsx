@@ -82,7 +82,7 @@ export default function Approach() {
             alt="image 1"
             width={858}
             height={1024}
-            className="object-contain lg:w-full lg:h-full md:w-[758px] md:h-[924px] w-[658px] h-[824px]"
+            className="object-contain lg:w-full md:w-[758px] w-[658px]"
           />
           <div>
             <Image
@@ -117,7 +117,7 @@ export default function Approach() {
             alt="image 2"
             width={1024}
             height={850}
-            className="object-contain lg:w-full lg:h-full md:w-[924px] md:h-[750px] w-[824px] h-[650px]"
+            className="object-contain lg:w-full md:w-[924px] w-[824px]"
           />
         </div>
         <div className="grid gap-5 mt-28">

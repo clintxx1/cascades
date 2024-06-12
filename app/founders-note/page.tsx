@@ -39,7 +39,7 @@ export default function FoundersNote() {
           <br />
           <br />
           <p
-            className={`${josefinSans.className} lg:text-[42px] text-3xl leading-[1.2em] text-crystalBlue lg:w-[550px] w-full font-semibold`}
+            className={`${josefinSans.className} lg:text-[42px] text-start text-3xl leading-[1.2em] text-crystalBlue lg:w-[550px] w-full font-semibold`}
           >
             My name is Irene, a teacher and a mother to two beautiful children,
             Aeon and Sage.
