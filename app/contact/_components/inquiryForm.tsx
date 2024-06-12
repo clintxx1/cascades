@@ -27,7 +27,6 @@ import { fetchFormList, submitFormDetails } from "@/lib/form";
 import { Form as PrismaFormSchema } from "@prisma/client";
 import { useState } from "react";
 import { LoaderCircle } from "lucide-react";
-
 const FormSchema = z.object({
   categories: z
     .string({
@@ -94,12 +93,24 @@ export default function InquiryForm() {
         url: `${window.location.href}`,
         form_name: "Contact Form",
       };
-      const res = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-        payload,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
-      );
+
+      // SENDGRID
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      // EMAILJS
+      // const res = await emailjs.send(
+      //   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+      //   process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+      //   payload,
+      //   process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
+      // );
+
       if (res.status == 200) {
         //@ts-ignore
         await submitFormDetails(payload);
@@ -115,10 +126,11 @@ export default function InquiryForm() {
           title: "Contact Form",
           description: "Inquiry submitted successfully",
         });
-        setLoading(false);
       }
+      setLoading(false);
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
   };
   return (
