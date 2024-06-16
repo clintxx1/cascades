@@ -65,7 +65,7 @@ export default function Navbar() {
   ListItem.displayName = "ListItem";
 
   return (
-    <header className="m-auto w-[calc(100%_-_5rem)] lg:w-[calc(100%_-_16rem)] pb-6 relative z-50">
+    <header className="m-auto w-[calc(100%_-_3rem)] lg:w-[calc(100%_-_16rem)] pb-6 relative z-50">
       {collapsed ? (
         <MobileNavbar open={collapsed} setIsOpen={setCollapse} />
       ) : null}
@@ -92,9 +92,7 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`mt-8 flex items-center justify-center pb-3 lg:mt-0 lg:block lg:pb-0 ${
-              collapsed ? "block" : "hidden"
-            }`}
+            className={`mt-8 hidden lg:flex items-center justify-center pb-3 lg:mt-0 lg:pb-0`}
           >
             <div className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
               <NavigationMenu>

@@ -55,7 +55,7 @@ export default function InfoCard({
               <AccordionTrigger
                 className={`${lato.className} font-normal lg:text-[20px] text-base text-darkLiver`}
               >
-                {item.label}
+                <div dangerouslySetInnerHTML={createMarkup(item.label)}></div>
               </AccordionTrigger>
               <AccordionContent>
                 <div

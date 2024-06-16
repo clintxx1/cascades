@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function SecondSection() {
   return (
-    <section className="py-20 lg:px-[50px] md:px-[50px] px-6 mx-auto">
+    <section className="py-20 lg:px-[10%] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full lg:gap-20 gap-10">
         <div className="space-y-8 w-full">
           <Image

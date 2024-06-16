@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ThirdSection() {
   return (
-    <section className="lg:px-[50px] md:px-[50px] px-6 mx-auto">
+    <section className="lg:px-[10%] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full gap-12">
         <Image
           src={

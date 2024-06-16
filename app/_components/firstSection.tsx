@@ -19,7 +19,7 @@ export default function FirstSection() {
     },
   ];
   return (
-    <section className="space-y-20 lg:w-fit w-full lg:px-[50px] md:px-[50px] px-6 mx-auto">
+    <section className="space-y-20 lg:w-fit w-full lg:px-[10%] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:gap-20 gap-10">
         <Image
           src={
