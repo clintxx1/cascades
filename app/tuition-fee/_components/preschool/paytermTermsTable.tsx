@@ -9,11 +9,14 @@ import {
 } from "@/components/ui/table";
 import { lato } from "@/lib/fonts";
 import React from "react";
+import MobileDropdown from "../mobileDropdown";
+import { Separator } from "@/components/ui/separator";
+import { TUITION_FEE_WITH_DISCOUNT } from "@/lib/constants";
 
 const PaymentTermsTable = () => {
   return (
     <div className={`${lato.className} w-full`}>
-      <div className="container mx-auto p-4 hidden lg:block">
+      <div className="container mx-auto p-4 hidden lg:block md:block">
         <div className="overflow-auto">
           <Table>
             <TableHeader>
@@ -195,36 +198,43 @@ const PaymentTermsTable = () => {
           </Table>
         </div>
       </div>
-      <div className="space-y-4 block lg:hidden">
-        <div>
-          <h2 className="text-lg font-semibold">Tuition Fees</h2>
-          <ul className="space-y-2">
-            <li>
-              <strong>Classes:</strong> Half-Day Physical, Whole-Day Physical,
-              Full Online, Blended
-            </li>
-            <li>
-              <strong>Total Tuition Fee:</strong> 175,000, 250,000, 115,000,
-              135,000
-            </li>
-            <li>
-              <strong>Tuition Fee with Discount:</strong> 166,250, 237,500,
-              109,250, 128,250
-            </li>
-            <li>
-              <strong>Annual:</strong> 84,875, 121,250, 55,775, 65,475
-            </li>
-            <li>
-              <strong>Semestral:</strong> 35,000, 49,250, 22,655, 26,595
-            </li>
-            <li>
-              <strong>Bi Monthly:</strong> 17,500, 25,000, 11,500, 13,500
-            </li>
-          </ul>
+      <div className="space-y-4 block lg:hidden md:hidden">
+        <div className="grid gap-2">
+          <h2 className="text-base bg-blueSapphire text-white">
+            PAYMENT TERMS OPTIONS FOR TUITION FEES
+          </h2>
+          <div className="flex items-center justify-between w-full">
+            <p>Half-Day Physical</p>
+            <p>175,000</p>
+          </div>
+          <Separator />
+          <div className="flex items-center justify-between w-full">
+            <p>Whole-Day Physical</p>
+            <p>250,000</p>
+          </div>
+          <Separator />
+          <div className="flex items-center justify-between w-full">
+            <p>Full Online</p>
+            <p>115,000</p>
+          </div>
+          <Separator />
+          <div className="flex items-center justify-between w-full">
+            <p>Blended</p>
+            <p>135,000</p>
+          </div>
+          <Separator />
         </div>
         <div>
-          <h2 className="text-lg font-semibold">Payment Terms</h2>
-          <ul className="space-y-2">
+          <h2 className="text-base bg-blueSapphire text-white uppercase">
+            Tuition Fee with Discount
+          </h2>
+          <MobileDropdown dropdownData={TUITION_FEE_WITH_DISCOUNT} />
+        </div>
+        <div>
+          <h2 className="text-base bg-blueSapphire text-white uppercase">
+            Payment Terms Schedule
+          </h2>
+          <ul className="space-y-2 pl-2">
             <li>
               <strong>Annual (5% Discount):</strong> On or Before July 28, 2024
             </li>

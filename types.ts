@@ -27,6 +27,7 @@ export interface InfoCardProps {
 export interface NavItem {
   label: string;
   page: string;
+  className?: string;
 }
 
 export interface CommunityCardProps {

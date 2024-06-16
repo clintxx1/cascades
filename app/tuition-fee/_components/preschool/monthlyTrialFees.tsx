@@ -109,71 +109,60 @@ export default function MonthlyTrialFeeTable() {
           </TableBody>
         </Table>
       </div>
-      {/* <div className="block lg:hidden md:hidden space-y-2">
-          <p className="text-base text-center bg-blueSapphire text-white">
-            MONTHLY CALENDAR AND THEME: EXPLORERS & WANDERERS PROGRAM
+      <div className="block lg:hidden space-y-2">
+        <p className="text-base text-center bg-blueSapphire text-white">
+          MONTHLY TRIAL FEES:
+        </p>
+        <div className="border-b">
+          <p>
+            <strong>Full Online Class</strong>
+            <br />
+            Php13,500
+            <br />
+            With Busy book and Kits
+            <br />1 Hour and 30 Mins
           </p>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 1: Me and Myself</strong>
-            </p>
-            <p className="w-1/2 text-end">Aug 12 - Sept 6, 2024</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 2: Me and Emotions</strong>
-            </p>
-            <p className="w-1/2 text-end">Sept 9 - Oct 6, 2024</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 3: Me and Family</strong>
-            </p>
-            <p className="w-1/2 text-end">Oct 7 - Nov 1, 2024</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 4: Me and Home</strong>
-            </p>
-            <p className="w-1/2 text-end">Nov 4 - Nov 29, 2024</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 5: Me and the Things I can Do</strong>
-            </p>
-            <p className="w-1/2 text-end">Dec 2 - Jan 10, 2025</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 6: Me and My Community</strong>
-            </p>
-            <p className="w-1/2 text-end">Jan 13 - Feb 7, 2025</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 7: Me as a Citizen</strong>
-            </p>
-            <p className="w-1/2 text-end">Feb 17 - Mar 14, 2025</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 8: Me and My Earth</strong>
-            </p>
-            <p className="w-1/2 text-end">Mar 17 - Apr 11, 2025</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 9: Me and My Universe</strong>
-            </p>
-            <p className="w-1/2 text-end">Apr 14 - May 9, 2025</p>
-          </div>
-          <div className="flex items-center justify-between border-b">
-            <p className="w-1/2">
-              <strong>Month 10: Me as an Advocate</strong>
-            </p>
-            <p className="w-1/2 text-end">May 12 - June 6, 2025</p>
-          </div>
-        </div> */}
+        </div>
+        <div className=" border-b">
+          <p>
+            <strong>Blended Learning Class</strong>
+            <br />
+            Php15,500
+            <br />
+            <span className="pl-14">2x Half-day physical class</span>
+            <br />
+            <span className="pl-14">2x Online/Async with Kits</span>
+            <br />
+            <span className="pl-14">1 Hour and 30 Mins</span>
+          </p>
+        </div>
+        <div className=" border-b">
+          <p>
+            <strong>Physical Class</strong>
+            <br />
+            Php19,000
+            <br />
+            <span className="pl-14">Half-day</span>
+            <br />
+            <span className="pl-14">8:30 -11:30 AM</span>
+            <br />
+            <span className="pl-14">1:30 – 4:30 PM</span>
+          </p>
+        </div>
+        <div className=" border-b">
+          <p>
+            <strong>Physical Class</strong>
+            <br />
+            Php26,000
+            <br />
+            <span className="pl-14">Whole-Day</span>
+            <br />
+            <span className="pl-14">8:30AM to 4:30 PM</span>
+            <br />
+            <span className="pl-14">Free Lunch & 2 Snacks</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

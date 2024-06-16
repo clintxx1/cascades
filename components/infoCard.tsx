@@ -35,15 +35,14 @@ export default function InfoCard({
           className="lg:w-[208px] w-full object-contain h-[6px]"
         />
       ) : null}
-      <p
+      <div
         className={cn(
           "lg:text-[28px] text-[24px] font-semibold text-darkLiver lg:text-start text-center",
           titleCN,
           `${hasHeader && "mt-8"}`
         )}
-      >
-        {title}
-      </p>
+        dangerouslySetInnerHTML={createMarkup(title)}
+      ></div>
       {isDropdown && dropdownData.length ? (
         <Accordion
           type="single"
