@@ -63,7 +63,7 @@ const OptionalAddOnsTable = () => {
                     </p>
                   </div>
                 </TableCell>
-                <TableCell>
+                <TableCell colSpan={2}>
                   <p>
                     Taekwondo ArtSura
                     <br />
@@ -85,7 +85,7 @@ const OptionalAddOnsTable = () => {
                     </p>
                   </div>
                 </TableCell>
-                <TableCell className="align-top p-0">
+                <TableCell colSpan={2} className="align-top p-0">
                   <div>
                     <p className="px-5 py-2">
                       Php8,500 (Half Day with snacks) 8:00am-12pm OR 1pm-5pm
@@ -103,7 +103,6 @@ const OptionalAddOnsTable = () => {
                 </TableCell>
               </TableRow>
               <TableRow>
-                <br />
                 <TableCell colSpan={1} className="align-top">
                   <div className="text-end">
                     <p>
@@ -111,7 +110,7 @@ const OptionalAddOnsTable = () => {
                     </p>
                   </div>
                 </TableCell>
-                <TableCell className="align-top">
+                <TableCell colSpan={2} className="align-top">
                   <div>
                     <p>
                       Php150 – Lunch OR Dinner
@@ -125,7 +124,7 @@ const OptionalAddOnsTable = () => {
           </Table>
         </div>
       </div>
-      <div className="space-y-4 block lg:hidden">
+      {/* <div className="space-y-4 block lg:hidden">
         <div>
           <h2 className="text-lg font-semibold">Tuition Fees</h2>
           <ul className="space-y-2">
@@ -224,7 +223,7 @@ const OptionalAddOnsTable = () => {
             8%.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
