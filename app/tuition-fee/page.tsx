@@ -4,6 +4,7 @@ import OneTimePaymentTable from "./_components/preschool/oneTimePaymentTable";
 import ClassSchedTable from "./_components/preschool/classScheduleTable";
 import PaymentTermsTable from "./_components/preschool/paytermTermsTable";
 import OptionalAddOnsTable from "./_components/preschool/optionalAddOns";
+import MonthlyTrialFeeTable from "./_components/preschool/monthlyTrialFees";
 
 export default function Tuition() {
   return (
@@ -17,6 +18,7 @@ export default function Tuition() {
         <ClassSchedTable />
         <PaymentTermsTable />
         <OptionalAddOnsTable />
+        <MonthlyTrialFeeTable />
       </div>
     </section>
   );

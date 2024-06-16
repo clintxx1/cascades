@@ -42,7 +42,7 @@ const FULL_ONLINE_CLASS: ProgramContentProps[] = [
 export default function ClassSchedTable() {
   return (
     <div className="w-full">
-      <div className="hidden lg:block md:block ">
+      <div className="hidden lg:block md:block">
         <Table>
           <TableHeader>
             <TableRow>
