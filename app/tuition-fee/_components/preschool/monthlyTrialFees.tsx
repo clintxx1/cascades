@@ -56,7 +56,7 @@ export default function MonthlyTrialFeeTable() {
           </TableHeader>
           <TableBody className={`text-base ${lato.className}`}>
             <TableRow>
-              <TableCell>
+              <TableCell className="align-top">
                 <p>
                   <strong>Full Online Class</strong>
                   <br />
@@ -66,7 +66,7 @@ export default function MonthlyTrialFeeTable() {
                   <br />1 Hour and 30 Mins
                 </p>
               </TableCell>
-              <TableCell>
+              <TableCell className="align-top">
                 <p>
                   <strong>Blended Learning Class</strong>
                   <br />
@@ -79,7 +79,7 @@ export default function MonthlyTrialFeeTable() {
                   <span className="pl-14">1 Hour and 30 Mins</span>
                 </p>
               </TableCell>
-              <TableCell>
+              <TableCell className="align-top">
                 <p>
                   <strong>Physical Class</strong>
                   <br />
@@ -92,7 +92,7 @@ export default function MonthlyTrialFeeTable() {
                   <span className="pl-14">1:30 – 4:30 PM</span>
                 </p>
               </TableCell>
-              <TableCell>
+              <TableCell className="align-top">
                 <p>
                   <strong>Physical Class</strong>
                   <br />
