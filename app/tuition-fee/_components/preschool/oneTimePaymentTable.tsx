@@ -67,7 +67,7 @@ export default function OneTimePaymentTable() {
               </TableCell>
               <TableCell>500</TableCell>
             </TableRow>
-            <TableRow className="bg-blueSapphire text-white">
+            <TableRow className="bg-blueSapphire text-white hover:bg-blueSapphire hover:text-white">
               <TableCell className="text-right border-r">TOTAL</TableCell>
               <TableCell>8600</TableCell>
             </TableRow>

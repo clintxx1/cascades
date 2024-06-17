@@ -16,6 +16,14 @@ const DetailedPaymentTermsTable = () => {
         <Table>
           <TableHeader>
             <TableRow>
+              <TableHead
+                colSpan={4}
+                className="text-base font-semibold border-x-2 border-t-2 text-center"
+              >
+                PAYMENT OPTIONS FOR TUITION FEES
+              </TableHead>
+            </TableRow>
+            <TableRow>
               <TableHead className="text-base font-semibold bg-blueSapphire text-white"></TableHead>
               <TableHead className="text-base font-semibold bg-blueSapphire text-white text-center">
                 HALF DAY <br />
