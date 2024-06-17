@@ -30,7 +30,7 @@ const OptionalAddOnsTable = () => {
             <TableBody>
               <TableRow>
                 <TableCell colSpan={1}>
-                  <div className="text-end">
+                  <div className="text-end w-1/4">
                     <p>
                       <strong>HIRAYA Play</strong> <br />
                       Monday-Thursday <br />
@@ -54,7 +54,7 @@ const OptionalAddOnsTable = () => {
               </TableRow>
               <TableRow>
                 <TableCell colSpan={1} className="align-top">
-                  <div className="text-end">
+                  <div className="text-end w-1/4">
                     <p>
                       <strong>Skilled-Based Workshop</strong> <br />1 Hour per
                       session
@@ -78,7 +78,7 @@ const OptionalAddOnsTable = () => {
               </TableRow>
               <TableRow>
                 <TableCell colSpan={1} className="align-top">
-                  <div className="text-end">
+                  <div className="text-end w-1/4">
                     <p>
                       <strong>Child Minding</strong> <br />
                       (Monday to Friday) 1 Month
@@ -104,7 +104,7 @@ const OptionalAddOnsTable = () => {
               </TableRow>
               <TableRow>
                 <TableCell colSpan={1} className="align-top">
-                  <div className="text-end">
+                  <div className="text-end w-1/4">
                     <p>
                       <strong>Meals</strong>
                     </p>
@@ -122,6 +122,86 @@ const OptionalAddOnsTable = () => {
               </TableRow>
             </TableBody>
           </Table>
+        </div>
+      </div>
+      <div className="block lg:hidden space-y-2">
+        <p className="text-base text-center bg-blueSapphire text-white">
+          OPTIONAL ADD ONS:
+        </p>
+        <div className="flex items-center justify-between border-b gap-3">
+          <div className="text-end w-1/4">
+            <p>
+              <strong>HIRAYA Play</strong> <br />
+              Monday-Thursday <br />
+              8:00 AM - 10:00 AM <br />
+              2:00 PM - 4:00 PM
+            </p>
+          </div>
+          <p className="w-3/4">
+            Php10,000 (for kids not enrolled in regular programs)
+            <br />
+            2hrs/session for 8 sessions consumable within 1 month upon
+            enrollment
+            <br />
+            <br />
+            Available for Wanderers and Explorers Only (16 Months to 4 years
+            old)
+          </p>
+        </div>
+        <div className="flex items-center justify-between border-b gap-3">
+          <div className="text-end w-1/4">
+            <p>
+              <strong>Skilled-Based Workshop</strong> <br />1 Hour per session
+              <br />
+              Also Open for Non-students
+            </p>
+          </div>
+          <p className="w-3/4">
+            Taekwondo ArtSura
+            <br />
+            Ballet Music
+            <br />
+            Hip hop Cooking and Baking
+            <br />
+            The above skilled workshop has a separate fee. TBA
+            <br />
+          </p>
+        </div>
+        <div className="flex items-center justify-between border-b gap-3">
+          <div className="text-end w-1/4">
+            <p>
+              <strong>Child Minding</strong> <br />
+              (Monday to Friday) 1 Month
+            </p>
+          </div>
+          <div className="w-3/4">
+            <p className="py-2">
+              Php8,500 (Half Day with snacks) 8:00am-12pm OR 1pm-5pm
+              <br />
+              Php16,000 (Whole day with snacks and lunch) 8am-5pm
+              <br />
+            </p>
+            <Separator />
+            <p className="py-2">
+              Php250 per hour
+              <br />
+              Php2300 per day with 2 meals and 2 snacks I 8am-5pm
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-between border-b gap-3">
+          <div className="text-end w-1/4">
+            <p>
+              <strong>Meals</strong>
+            </p>
+          </div>
+          <div className="w-3/4">
+            <p>
+              Php150 – Lunch OR Dinner
+              <br />
+              Php100 – Snacks
+            </p>
+          </div>
         </div>
       </div>
     </div>
