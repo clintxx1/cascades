@@ -7,6 +7,7 @@ import OptionalAddOnsTable from "./_components/preschool/optionalAddOns";
 import MonthlyTrialFeeTable from "./_components/preschool/monthlyTrialFees";
 import Image from "next/image";
 import ElemTuitionFeeTable from "./_components/elementary/tuitionFeeTable";
+import DetailedPaymentTermsTable from "./_components/elementary/paymentOptionsTable";
 
 export default function Tuition() {
   return (
@@ -39,6 +40,7 @@ export default function Tuition() {
           <p className="text-lg text-crystalBlue">School Year 2024 - 2025</p>
         </div>
         <ElemTuitionFeeTable />
+        <DetailedPaymentTermsTable />
       </div>
     </section>
   );
