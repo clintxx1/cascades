@@ -141,6 +141,90 @@ const ElemTuitionFeeTable = () => {
           </Table>
         </div>
       </div>
+      <div className="block lg:hidden md:hidden space-y-2">
+        <div className="space-y-4">
+          <div>
+            <h2 className="text-lg pl-2 bg-blueSapphire text-white">
+              Tuition Fees
+            </h2>
+            <ul className="space-y-2 pl-2">
+              <li>
+                <strong>Total Tuition Fee:</strong> <br />
+                <span className="pl-5">
+                  Half-Day Physical - 175,000 <br />
+                </span>
+                <span className="pl-5">
+                  Whole-Day Physical - 250,000, <br />
+                </span>
+                <span className="pl-5">
+                  Full Online - 130,000
+                  <br />
+                </span>
+              </li>
+              <li className="text-watermelonRed">
+                <strong>Discounted Tuition Fee (30%):</strong> <br />
+                <span className="pl-5">
+                  Half-Day Physical - 122,500 <br />
+                </span>
+                <span className="pl-5">
+                  Whole-Day Physical - 175,500 <br />
+                </span>
+                <span className="pl-5">
+                  Full Online - 91,000
+                  <br />
+                </span>
+              </li>
+              <li>
+                <strong>Miscellaneous Fee:</strong> 16,000
+              </li>
+              <li>
+                <strong>Registration / Application (Filing Fees):</strong> 500
+              </li>
+              <li>
+                <strong>Parents' Development Fund:</strong> 1500
+              </li>
+              <li>
+                <strong>Cascades Starting Kit:</strong> 3000
+              </li>
+              <li>
+                <strong>Year-end Culmination Kit and Moving Up Fee:</strong>{" "}
+                3500
+              </li>
+              <li>
+                <strong>Health and Safety:</strong> 500
+              </li>
+              <li>
+                <strong>Social Action and Community Project:</strong> 500
+              </li>
+              <li>
+                <strong>Accident Insurance:</strong> 500
+              </li>
+              <li>
+                <strong>Atelier / Project Fees:</strong> 3000
+              </li>
+              <li>
+                <strong>
+                  Department Enrichment / Cultural and Social Engagements:
+                </strong>{" "}
+                3000
+              </li>
+              <li>
+                <strong>Total School Fees:</strong> <br />
+                <span className="pl-5">
+                  Half-Day Physical - 138,500 <br />
+                </span>
+                <span className="pl-5">
+                  Whole-Day Physical - 191,500 <br />
+                </span>
+                <span className="pl-5">
+                  Full Online - 107,000
+                  <br />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
