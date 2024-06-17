@@ -30,7 +30,7 @@ const OptionalAddOnsTable = () => {
             <TableBody>
               <TableRow>
                 <TableCell colSpan={1}>
-                  <div className="text-end w-1/4">
+                  <div className="text-end">
                     <p>
                       <strong>HIRAYA Play</strong> <br />
                       Monday-Thursday <br />
@@ -54,7 +54,7 @@ const OptionalAddOnsTable = () => {
               </TableRow>
               <TableRow>
                 <TableCell colSpan={1} className="align-top">
-                  <div className="text-end w-1/4">
+                  <div className="text-end">
                     <p>
                       <strong>Skilled-Based Workshop</strong> <br />1 Hour per
                       session
@@ -78,7 +78,7 @@ const OptionalAddOnsTable = () => {
               </TableRow>
               <TableRow>
                 <TableCell colSpan={1} className="align-top">
-                  <div className="text-end w-1/4">
+                  <div className="text-end">
                     <p>
                       <strong>Child Minding</strong> <br />
                       (Monday to Friday) 1 Month
@@ -104,7 +104,7 @@ const OptionalAddOnsTable = () => {
               </TableRow>
               <TableRow>
                 <TableCell colSpan={1} className="align-top">
-                  <div className="text-end w-1/4">
+                  <div className="text-end">
                     <p>
                       <strong>Meals</strong>
                     </p>
