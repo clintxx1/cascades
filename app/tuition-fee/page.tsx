@@ -62,6 +62,31 @@ export default function Tuition() {
         </div>
         <ScheduleTable />
         <TuitionTable />
+        <OneTimePaymentTable />
+      </div>
+      <div className="py-5">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={8}
+          className="w-full h-[6px] my-12 lg:object-cover md:object-cover object-contain"
+        />
+      </div>
+      <div className="w-full text-base border p-3 rounded-lg font-semibold text-center space-y-4">
+        <p>
+          OTHER SERVICES/ ITEMS ARE NOT INCLUDED IN THE SCHOOL FEES (FOR ALL
+          LEVELS):
+        </p>
+        <div className="font-normal text-sm">
+          <p>Extra Uniform</p>
+          <p>Individual After School Activity</p>
+          <p>Learning Support System (LSC) or Mentoring</p>
+          <p>Educational Events/Trips</p>
+          <p>After Class Caregiving Service</p>
+        </div>
       </div>
     </section>
   );
