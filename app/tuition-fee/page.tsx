@@ -9,6 +9,7 @@ import Image from "next/image";
 import ElemTuitionFeeTable from "./_components/elementary/tuitionFeeTable";
 import DetailedPaymentTermsTable from "./_components/elementary/paymentOptionsTable";
 import ScheduleTable from "./_components/bahaghari/scheduleTable";
+import TuitionTable from "./_components/bahaghari/tuitionFeeTable";
 
 export default function Tuition() {
   return (
@@ -60,6 +61,7 @@ export default function Tuition() {
           <p className="text-lg text-crystalBlue">School Year 2024 - 2025</p>
         </div>
         <ScheduleTable />
+        <TuitionTable />
       </div>
     </section>
   );
