@@ -10,7 +10,7 @@ import {
 
 const ScheduleTable = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="mx-auto w-full">
       {/* Desktop View */}
       <div className="hidden md:block">
         <div className="overflow-auto">
@@ -132,6 +132,93 @@ const ScheduleTable = () => {
               </TableRow>
             </TableBody>
           </Table>
+        </div>
+      </div>
+      {/* Mobile View */}
+      <div className="md:hidden block">
+        <div className="flex flex-col">
+          <div className="font-semibold bg-blueSapphire text-white p-2">
+            5X A WEEK <br /> WHOLE-DAY <br /> Physical Class <br />{" "}
+            Monday-Thursday <br /> Friday Class (AM only)
+          </div>
+          <div className="p-2">
+            <p>8:30am - 4:30pm</p>
+            <p>With Lunch & 2 Snacks with Support Teacher</p>
+            <p className="font-semibold mt-2">Inclusions:</p>
+            <p>A. OT- Occupational Therapy (1 on 1)</p>
+            <p>B. Individualized intervention with SPED Teacher</p>
+            <p>C. Inclusion in regular class (3 days regular class)</p>
+            <p>D. SPED Group Class</p>
+            <p>1 Day - OT (1 Hour) + Regular Class</p>
+            <p>1 Day - 1 on 1 SPED intervention (1 Hour)</p>
+            <p>SPED Group Class (1 Hour)</p>
+            <p className="font-semibold mt-2">
+              Meraki/ Movement Day is only on FRIDAY MORNING SCHEDULE
+            </p>
+          </div>
+          <div className="font-semibold bg-blueSapphire text-white p-2 mt-4">
+            5X A WEEK <br /> HALF-DAY <br /> Physical Class <br />{" "}
+            Monday-Thursday <br /> Friday Class (AM only)
+          </div>
+          <div className="p-2">
+            <p>
+              8:30am - 11:30am <br /> 1:30pm - 4:30pm
+            </p>
+            <p>With Support Teacher</p>
+            <p className="font-semibold mt-2">Inclusions:</p>
+            <p>A. OT- Occupational Therapy (1 on 1)</p>
+            <p>B. Individualized intervention with SPED Teacher</p>
+            <p>C. Inclusion in regular class (3 days regular class)</p>
+            <p>D. SPED Group Class</p>
+            <p>1 Day - OT (1 Hour) + Regular Class</p>
+            <p>1 Day - 1 on 1 SPED intervention (1 Hour)</p>
+            <p>SPED Group Class (1 Hour)</p>
+            <p className="font-semibold mt-2">
+              Meraki/ Movement Day is only on FRIDAY MORNING SCHEDULE
+            </p>
+          </div>
+          <div className="font-semibold bg-blueSapphire text-white p-2 mt-4">
+            4X A WEEK <br /> HALF-DAY <br /> Physical Class <br />{" "}
+            Monday-Thursday <br /> Friday Class (AM only)
+          </div>
+          <div className="p-2">
+            <p>
+              8:30am - 11:30am <br /> 1:30pm - 4:30pm
+            </p>
+            <p>With Support Teacher</p>
+            <p className="font-semibold mt-2">Inclusions:</p>
+            <p>A. OT- Occupational Therapy (1 on 1)</p>
+            <p>B. Individualized intervention with SPED Teacher</p>
+            <p>C. Inclusion in regular class (2 days regular class)</p>
+            <p>D. SPED Group Class</p>
+            <p>1 Day - OT (1 Hour) + Regular Class</p>
+            <p>1 Day - 1 on 1 SPED intervention (1 Hour)</p>
+            <p>SPED Group Class (1 Hour)</p>
+            <p className="font-semibold mt-2">
+              Meraki/ Movement Day is only on FRIDAY MORNING SCHEDULE
+            </p>
+          </div>
+          <div className="font-semibold bg-blueSapphire text-white p-2 mt-4">
+            3X A WEEK <br /> HALF-DAY <br /> Physical Class <br />{" "}
+            Monday-Thursday <br /> Friday Class (AM only)
+          </div>
+          <div className="p-2">
+            <p>
+              8:30am - 11:30am <br /> 1:30pm - 4:30pm
+            </p>
+            <p>With Support Teacher</p>
+            <p className="font-semibold mt-2">Inclusions:</p>
+            <p>A. OT- Occupational Therapy (1 on 1)</p>
+            <p>B. Individualized intervention with SPED Teacher</p>
+            <p>C. Inclusion in regular class (1 day regular class)</p>
+            <p>D. SPED Group Class</p>
+            <p>1 Day - OT (1 Hour) + Regular Class</p>
+            <p>1 Day - 1 on 1 SPED intervention (1 Hour)</p>
+            <p>SPED Group Class (1 Hour)</p>
+            <p className="font-semibold mt-2">
+              Meraki/ Movement Day is only on FRIDAY MORNING SCHEDULE
+            </p>
+          </div>
         </div>
       </div>
     </div>
