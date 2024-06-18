@@ -367,3 +367,158 @@ export const TUITION_FEE_WITH_DISCOUNT = [
     ],
   },
 ];
+
+export const BAHAGHARI_TUITION_FEE_WITH_DISCOUNT = [
+  {
+    label: `5X A WEEK WHOLE DAY`,
+    value: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT1",
+    description: [
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT2",
+        label: `
+        <p>
+          <p>Annual</p>
+          <p>408,500</p>
+        </p>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT3",
+        label: `
+        <div>
+          <p>Semestral</p>
+          <p>208,550</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT4",
+        label: `
+        <div>
+          <p>Bi Monthly</p>
+          <p>84,710</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT5",
+        label: `
+        <div>
+          <p>Monthly</p>
+          <p>43,000</p>
+        </div>`,
+      },
+    ],
+  },
+  {
+    label: `3X A WEEK HALF DAY`,
+    value: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT6",
+    description: [
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT7",
+        label: `
+        <div>
+          <p>Annual</p>
+          <p>247,000</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT8",
+        label: `
+        <div>
+          <p>Semestral</p>
+          <p>126,100</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT9",
+        label: `
+        <div>
+          <p>Bi Monthly</p>
+          <p>51,220</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT9",
+        label: `
+        <div>
+          <p>Monthly</p>
+          <p>26,000</p>
+        </div>`,
+      },
+    ],
+  },
+  {
+    label: `4X A WEEK HALF DAY`,
+    value: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT10",
+    description: [
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT11",
+        label: `
+        <div>
+          <p>Annual</p>
+          <p>261,250</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT12",
+        label: `
+        <div>
+          <p>Semestral</p>
+          <p>133,375</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT13",
+        label: `
+        <div>
+          <p>Bi Monthly</p>
+          <p>54,175</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT14",
+        label: `
+        <div>
+          <p>Monthly</p>
+          <p>27,500</p>
+        </div>`,
+      },
+    ],
+  },
+  {
+    label: `5X A WEEK HALF DAY`,
+    value: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT15",
+    description: [
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT16",
+        label: `
+        <div>
+          <p>Annual</p>
+          <p>275,500</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT17",
+        label: `
+        <div>
+          <p>Semestral</p>
+          <p>140,650</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT18",
+        label: `
+        <div>
+          <p>Bi Monthly</p>
+          <p>57,130</p>
+        </div>`,
+      },
+      {
+        page: "BAHAGHARI_TUITION_FEE_WITH_DISCOUNT19",
+        label: `
+        <div>
+          <p>Monthly</p>
+          <p>29,000</p>
+        </div>`,
+      },
+    ],
+  },
+];
