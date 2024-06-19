@@ -23,8 +23,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import moment from "moment";
 import emailjs from "@emailjs/browser";
-import { fetchFormList, submitFormDetails } from "@/lib/form";
-import { Form as PrismaFormSchema } from "@prisma/client";
 import { useState } from "react";
 import { LoaderCircle } from "lucide-react";
 const FormSchema = z.object({
@@ -75,16 +73,26 @@ export default function InquiryForm() {
     },
   });
 
+  const getEntryId = async () => {
+    const formEntry = await fetch("/api/form", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const { data } = await formEntry.json();
+
+    if (!data.length) return 1;
+
+    return data[0].entry_id + 1;
+  };
+
   const onSubmit = async (data: z.infer<typeof FormSchema>) => {
     try {
       setLoading(true);
-      let entry_id = 1;
-      const formEntry = (await fetchFormList()) as PrismaFormSchema[];
-      if (formEntry.length) {
-        entry_id = Number(formEntry[0].entry_id + 1);
-      }
       const date = moment().format("LL");
       const time = moment().format("hh:mm a");
+      const entry_id = await getEntryId();
       const payload = {
         ...data,
         date,
@@ -94,8 +102,8 @@ export default function InquiryForm() {
         form_name: "Contact Form",
       };
 
-      // SENDGRID
-      const res = await fetch("/api/send-email", {
+      /* SENDGRID */
+      const email = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -103,7 +111,7 @@ export default function InquiryForm() {
         body: JSON.stringify(payload),
       });
 
-      // EMAILJS
+      /* EMAILJS */
       // const res = await emailjs.send(
       //   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
       //   process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
@@ -111,26 +119,40 @@ export default function InquiryForm() {
       //   process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
       // );
 
-      if (res.status == 200) {
-        //@ts-ignore
-        await submitFormDetails(payload);
-        form.reset({
-          categories: "",
-          name: "",
-          from_email: "",
-          contact: "",
-          title: "",
-          message: "",
+      if (email.status === 200) {
+        const inquiry = await fetch("/api/form", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
         });
-        toast({
-          title: "Contact Form",
-          description: "Inquiry submitted successfully",
-        });
+
+        if (inquiry.status === 200) {
+          form.reset({
+            categories: "",
+            name: "",
+            from_email: "",
+            contact: "",
+            title: "",
+            message: "",
+          });
+          toast({
+            title: "Contact Form",
+            description: "Inquiry submitted successfully",
+          });
+        }
       }
       setLoading(false);
     } catch (error) {
       console.log(error);
       setLoading(false);
+      toast({
+        variant: "destructive",
+        title: "Contact Form",
+        description:
+          "An error occurred. Please contact the administrator for support",
+      });
     }
   };
   return (
