@@ -522,3 +522,16 @@ export const BAHAGHARI_TUITION_FEE_WITH_DISCOUNT = [
     ],
   },
 ];
+
+export const ADMIN_FORM_TABLE_HEADER = [
+  "Entry ID",
+  "Form",
+  "Category",
+  "Name",
+  "Email",
+  "Contact",
+  "Title",
+  "Message",
+  "Date",
+  "Time",
+];
