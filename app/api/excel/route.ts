@@ -2,12 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import ExcelJS from "exceljs";
 import { Form as PrismaForm } from "@prisma/client";
 
-export const config = {
-  api: {
-    bodyParser: true,
-  },
-};
-
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
