@@ -214,7 +214,7 @@ const ElemTuitionFeeTable = () => {
                   Half-Day Physical - 138,500 <br />
                 </span>
                 <span className="pl-5">
-                  Whole-Day Physical - 191,500 <br />
+                  Whole-Day Physical - 191,000 <br />
                 </span>
                 <span className="pl-5">
                   Full Online - 107,000
