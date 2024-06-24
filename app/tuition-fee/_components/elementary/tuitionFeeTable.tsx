@@ -134,7 +134,7 @@ const ElemTuitionFeeTable = () => {
               <TableRow className=" text-base">
                 <TableCell className="text-end">TOTAL SCHOOL FEES</TableCell>
                 <TableCell className="text-center">138,500</TableCell>
-                <TableCell className="text-center">191,500</TableCell>
+                <TableCell className="text-center">191,000</TableCell>
                 <TableCell className="text-center">107,000</TableCell>
               </TableRow>
             </TableBody>
