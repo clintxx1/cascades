@@ -198,29 +198,31 @@ const DetailedPaymentTermsTable = () => {
           </div>
           <div className="pl-2 py-2 space-y-1">
             <p className="font-semibold">ANNUAL PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT (June 3, 2024): 138,500</p>
+            <p>FULL PAYMENT (Before June 26, 2024) 138,500</p>
             <p className="font-semibold text-blue-700 border-y py-2">
               TOTAL SCHOOL FEES: 138,500
             </p>
             <p className="font-semibold mt-2">SEMESTRAL PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (Before June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT with MISC (July 22, 2024): 78,169</p>
-            <p>3RD PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025): 62,169</p>
+            <p>1ST PAYMENT ENROLLMENT with MISC (July 26, 2024): 78,169</p>
+            <p>2ND PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025): 62,169</p>
             <p className="font-semibold text-blue-700 border-y py-2">
               TOTAL SCHOOL FEES: 140,338
             </p>
             <p className="font-semibold mt-2">MONTHLY PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (Before June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT with MISC (July 22, 2024): 34,375</p>
-            <p>3RD PAYMENT INSTALLMENT (Sept 3, 2024): 18,375</p>
-            <p>4TH PAYMENT INSTALLMENT (Oct 3, 2024): 18,375</p>
-            <p>5TH PAYMENT INSTALLMENT (Nov 3, 2024): 18,375</p>
-            <p>6TH PAYMENT INSTALLMENT (Dec 3, 2024): 18,375</p>
-            <p>7TH PAYMENT INSTALLMENT (Feb 3, 2025): 18,375</p>
-            <p>8TH PAYMENT INSTALLMENT (Mar 3, 2025): 18,375</p>
+            <p>
+              RESERVATION / BOND FEE (Before July 2024): <i>12,000</i>
+            </p>
+            <p>1ST MONTH PAYMENT ENROLLMENT with MISC (August 2024): 28,863</p>
+            <p>2ND MONTH PAYMENT INSTALLMENT (Sept 3, 2024): 12,863</p>
+            <p>3RD MONTH PAYMENT INSTALLMENT (Oct 3, 2024): 12,863</p>
+            <p>4TH MONTH PAYMENT INSTALLMENT (Nov 3, 2024): 12,863</p>
+            <p>5TH MONTH PAYMENT INSTALLMENT (Dec 3, 2024): 12,863</p>
+            <p>6TH MONTH PAYMENT INSTALLMENT (Feb 3, 2025): 12,863</p>
+            <p>7TH MONTH PAYMENT INSTALLMENT (March 3, 2025): 12,863</p>
+            <p>8TH MONTH PAYMENT INSTALLMENT (April 3, 2025): 12,863</p>
+            <p>9TH AND 10TH MONTHS PAYMENT INSTALLMENT (May 3, 2025): 12,863</p>
             <p className="font-semibold text-blue-700 border-y py-2">
-              TOTAL SCHOOL FEES: 144,625
+              TOTAL SCHOOL FEES: 144,630
             </p>
           </div>
           <div className="font-semibold bg-blueSapphire text-white p-2 mt-4">
@@ -228,29 +230,31 @@ const DetailedPaymentTermsTable = () => {
           </div>
           <div className="pl-2 py-2 space-y-1">
             <p className="font-semibold">ANNUAL PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT (June 3, 2024): 191,500</p>
+            <p>FULL PAYMENT (Before June 26, 2024) 191,000</p>
             <p className="font-semibold text-blue-700 border-y py-2">
-              TOTAL SCHOOL FEES: 191,500
+              TOTAL SCHOOL FEES: 191,000
             </p>
             <p className="font-semibold mt-2">SEMESTRAL PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (Before June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT with MISC (July 22, 2024): 105,067</p>
-            <p>3RD PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025): 89,067</p>
+            <p>1ST PAYMENT ENROLLMENT with MISC (July 26, 2024): 105,067</p>
+            <p>2ND PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025): 89,067</p>
             <p className="font-semibold text-blue-700 border-y py-2">
               TOTAL SCHOOL FEES: 194,134
             </p>
             <p className="font-semibold mt-2">MONTHLY PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (Before June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT with MISC (July 22, 2024): 42,325</p>
-            <p>3RD PAYMENT INSTALLMENT (Sept 3, 2024): 26,325</p>
-            <p>4TH PAYMENT INSTALLMENT (Oct 3, 2024): 26,325</p>
-            <p>5TH PAYMENT INSTALLMENT (Nov 3, 2024): 26,325</p>
-            <p>6TH PAYMENT INSTALLMENT (Dec 3, 2024): 26,325</p>
-            <p>7TH PAYMENT INSTALLMENT (Feb 3, 2025): 26,325</p>
-            <p>8TH PAYMENT INSTALLMENT (Mar 3, 2025): 26,325</p>
+            <p>
+              RESERVATION / BOND FEE (Before July 2024): <i>12,000</i>
+            </p>
+            <p>1ST MONTH PAYMENT ENROLLMENT with MISC (August 2024): 34,375</p>
+            <p>2ND MONTH PAYMENT INSTALLMENT (Sept 3, 2024): 18,375</p>
+            <p>3RD MONTH PAYMENT INSTALLMENT (Oct 3, 2024): 18,375</p>
+            <p>4TH MONTH PAYMENT INSTALLMENT (Nov 3, 2024): 18,375</p>
+            <p>5TH MONTH PAYMENT INSTALLMENT (Dec 3, 2024): 18,375</p>
+            <p>6TH MONTH PAYMENT INSTALLMENT (Feb 3, 2025): 18,375</p>
+            <p>7TH MONTH PAYMENT INSTALLMENT (March 3, 2025): 18,375</p>
+            <p>8TH MONTH PAYMENT INSTALLMENT (April 3, 2025): 18,375</p>
+            <p>9TH AND 10TH MONTHS PAYMENT INSTALLMENT (May 3, 2025): 18,375</p>
             <p className="font-semibold text-blue-700 border-y py-2">
-              TOTAL SCHOOL FEES: 200,275
+              TOTAL SCHOOL FEES: 199,750
             </p>
           </div>
           <div className="font-semibold bg-blueSapphire text-white p-2 mt-4">
@@ -258,27 +262,29 @@ const DetailedPaymentTermsTable = () => {
           </div>
           <div className="pl-2 py-2 space-y-1">
             <p className="font-semibold">ANNUAL PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT (June 3, 2024): 107,000</p>
+            <p>FULL PAYMENT (Before June 26, 2024) 107,000</p>
             <p className="font-semibold text-blue-700 border-y py-2">
               TOTAL SCHOOL FEES: 107,000
             </p>
             <p className="font-semibold mt-2">SEMESTRAL PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (Before June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT with MISC (July 22, 2024): 62,183</p>
-            <p>3RD PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025): 46,183</p>
+            <p>1ST PAYMENT ENROLLMENT with MISC (July 26, 2024): 62,183</p>
+            <p>2ND PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025): 46,183</p>
             <p className="font-semibold text-blue-700 border-y py-2">
               TOTAL SCHOOL FEES: 108,366
             </p>
             <p className="font-semibold mt-2">MONTHLY PAYMENT</p>
-            <p>1ST PAYMENT RESERVATION (Before June 2024): 12,000</p>
-            <p>2ND PAYMENT ENROLLMENT with MISC (July 22, 2024): 29,650</p>
-            <p>3RD PAYMENT INSTALLMENT (Sept 3, 2024): 13,650</p>
-            <p>4TH PAYMENT INSTALLMENT (Oct 3, 2024): 13,650</p>
-            <p>5TH PAYMENT INSTALLMENT (Nov 3, 2024): 13,650</p>
-            <p>6TH PAYMENT INSTALLMENT (Dec 3, 2024): 13,650</p>
-            <p>7TH PAYMENT INSTALLMENT (Feb 3, 2025): 13,650</p>
-            <p>8TH PAYMENT INSTALLMENT (Mar 3, 2025): 13,650</p>
+            <p>
+              RESERVATION / BOND FEE (Before July 2024): <i>12,000</i>
+            </p>
+            <p>1ST MONTH PAYMENT ENROLLMENT with MISC (August 2024): 25,555</p>
+            <p>2ND MONTH PAYMENT INSTALLMENT (Sept 3, 2024): 9,555</p>
+            <p>3RD MONTH PAYMENT INSTALLMENT (Oct 3, 2024): 9,555</p>
+            <p>4TH MONTH PAYMENT INSTALLMENT (Nov 3, 2024): 9,555</p>
+            <p>5TH MONTH PAYMENT INSTALLMENT (Dec 3, 2024): 9,555</p>
+            <p>6TH MONTH PAYMENT INSTALLMENT (Feb 3, 2025): 9,555</p>
+            <p>7TH MONTH PAYMENT INSTALLMENT (March 3, 2025): 9,555</p>
+            <p>8TH MONTH PAYMENT INSTALLMENT (April 3, 2025): 9,555</p>
+            <p>9TH AND 10TH MONTHS PAYMENT INSTALLMENT (May 3, 2025): 7,110</p>
             <p className="font-semibold text-blue-700 border-y py-2">
               TOTAL SCHOOL FEES: 111,550
             </p>
