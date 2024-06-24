@@ -52,24 +52,16 @@ const DetailedPaymentTermsTable = () => {
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                1ST PAYMENT RESERVATION (June 2024)
-              </TableCell>
-              <TableCell className="text-center">12,000</TableCell>
-              <TableCell className="text-center">12,000</TableCell>
-              <TableCell className="text-center">12,000</TableCell>
-            </TableRow>
-            <TableRow className="text-sm">
-              <TableCell className="text-end">
-                2ND PAYMENT ENROLLMENT (June 3, 2024)
+                FULL PAYMENT (Before June 26, 2024)
               </TableCell>
               <TableCell className="text-center">138,500</TableCell>
-              <TableCell className="text-center">191,500</TableCell>
+              <TableCell className="text-center">191,000</TableCell>
               <TableCell className="text-center">107,000</TableCell>
             </TableRow>
             <TableRow className="text-sm font-semibold text-blue-700">
               <TableCell className="text-end">TOTAL SCHOOL FEES</TableCell>
               <TableCell className="text-center">138,500</TableCell>
-              <TableCell className="text-center">191,500</TableCell>
+              <TableCell className="text-center">191,000</TableCell>
               <TableCell className="text-center">107,000</TableCell>
             </TableRow>
             <TableRow className="text-sm">
@@ -82,15 +74,7 @@ const DetailedPaymentTermsTable = () => {
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                1ST PAYMENT RESERVATION (Before June 2024)
-              </TableCell>
-              <TableCell className="text-center">12,000</TableCell>
-              <TableCell className="text-center">12,000</TableCell>
-              <TableCell className="text-center">12,000</TableCell>
-            </TableRow>
-            <TableRow className="text-sm">
-              <TableCell className="text-end">
-                2ND PAYMENT ENROLLMENT with MISC (July 22, 2024)
+                1ST PAYMENT ENROLLMENT with MISC (July 26, 2024)
               </TableCell>
               <TableCell className="text-center">78,169</TableCell>
               <TableCell className="text-center">105,067</TableCell>
@@ -98,7 +82,7 @@ const DetailedPaymentTermsTable = () => {
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                3RD PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025)
+                2ND PAYMENT SEMESTRAL FEE BALANCE (Jan 22, 2025)
               </TableCell>
               <TableCell className="text-center">62,169</TableCell>
               <TableCell className="text-center">89,067</TableCell>
@@ -120,7 +104,7 @@ const DetailedPaymentTermsTable = () => {
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                1ST PAYMENT RESERVATION (Before June 2024)
+                RESERVATION / BOND FEE (Before July 2024)
               </TableCell>
               <TableCell className="text-center">12,000</TableCell>
               <TableCell className="text-center">12,000</TableCell>
@@ -128,64 +112,80 @@ const DetailedPaymentTermsTable = () => {
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                2ND PAYMENT ENROLLMENT with MISC (July 22, 2024)
+                1ST PAYMENT ENROLLMENT with MISC (Before August 2024)
               </TableCell>
+              <TableCell className="text-center">28,863</TableCell>
               <TableCell className="text-center">34,375</TableCell>
-              <TableCell className="text-center">42,325</TableCell>
-              <TableCell className="text-center">29,650</TableCell>
+              <TableCell className="text-center">25,555</TableCell>
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                3RD PAYMENT INSTALLMENT (Sept 3, 2024)
+                2ND PAYMENT INSTALLMENT (Sept 3, 2024)
               </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
               <TableCell className="text-center">18,375</TableCell>
-              <TableCell className="text-center">26,325</TableCell>
-              <TableCell className="text-center">13,650</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                4TH PAYMENT INSTALLMENT (Oct 3, 2024)
+                3RD PAYMENT INSTALLMENT (Oct 3, 2024)
               </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
               <TableCell className="text-center">18,375</TableCell>
-              <TableCell className="text-center">26,325</TableCell>
-              <TableCell className="text-center">13,650</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                5TH PAYMENT INSTALLMENT (Nov 3, 2024)
+                4TH PAYMENT INSTALLMENT (Nov 3, 2024)
               </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
               <TableCell className="text-center">18,375</TableCell>
-              <TableCell className="text-center">26,325</TableCell>
-              <TableCell className="text-center">13,650</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                6TH PAYMENT INSTALLMENT (Dec 3, 2024)
+                5TH PAYMENT INSTALLMENT (Dec 3, 2024)
               </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
               <TableCell className="text-center">18,375</TableCell>
-              <TableCell className="text-center">26,325</TableCell>
-              <TableCell className="text-center">13,650</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                7TH PAYMENT INSTALLMENT (Feb 3, 2025)
+                6TH PAYMENT INSTALLMENT (Feb 3, 2025)
               </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
               <TableCell className="text-center">18,375</TableCell>
-              <TableCell className="text-center">26,325</TableCell>
-              <TableCell className="text-center">13,650</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
             </TableRow>
             <TableRow className="text-sm">
               <TableCell className="text-end">
-                8TH PAYMENT INSTALLMENT (Mar 3, 2025)
+                7TH PAYMENT INSTALLMENT (March 3, 2025)
               </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
               <TableCell className="text-center">18,375</TableCell>
-              <TableCell className="text-center">26,325</TableCell>
-              <TableCell className="text-center">13,650</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
+            </TableRow>
+            <TableRow className="text-sm">
+              <TableCell className="text-end">
+                8TH PAYMENT INSTALLMENT (April 3, 2025)
+              </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
+              <TableCell className="text-center">18,375</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
+            </TableRow>
+            <TableRow className="text-sm">
+              <TableCell className="text-end">
+                9TH AND 10TH PAYMENT INSTALLMENT (May 3, 2025)
+              </TableCell>
+              <TableCell className="text-center">12,863</TableCell>
+              <TableCell className="text-center">18,375</TableCell>
+              <TableCell className="text-center">9,555</TableCell>
             </TableRow>
             <TableRow className="text-sm font-semibold text-blue-700">
               <TableCell className="text-end">TOTAL SCHOOL FEES</TableCell>
-              <TableCell className="text-center">144,625</TableCell>
-              <TableCell className="text-center">200,275</TableCell>
+              <TableCell className="text-center">144,630</TableCell>
+              <TableCell className="text-center">199,750</TableCell>
               <TableCell className="text-center">111,550</TableCell>
             </TableRow>
           </TableBody>
