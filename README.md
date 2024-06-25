@@ -2,16 +2,21 @@ Cascades School
 
 Commercial Website
 
-## Getting Started
+## Getting 
 
-First, run the development server:
+Install packages:
+
+```bash
+npm install
+```
+
+Create a local db (optional):
+```bash
+npx prisma migrate dev
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
