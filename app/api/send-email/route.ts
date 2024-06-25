@@ -18,15 +18,15 @@ export async function POST(request: Request) {
     // Payload for sendgrid
     const msg = [
       {
-        to: "cascadesinternational@gmail.com",
-        from: "admission@cascades.ph",
-        templateId: "d-ed1fd9d3dc61436d9bc952a68162995f",
+        to: process.env.SENDGRID_EMAIL_TO as string,
+        from: process.env.SENDGRID_EMAIL_FROM as string,
+        templateId: process.env.SENDGRID_SUBMISSION_TEMPLATE_ID as string,
         dynamic_template_data: { ...data, ...address },
       },
       {
         to: data.from_email,
-        from: "admission@cascades.ph",
-        templateId: "d-5a877dbe2b1c4eeb87c175a1b77e67f3",
+        from: process.env.SENDGRID_EMAIL_FROM as string,
+        templateId: process.env.SENDGRID_REPLY_TEMPLATE_ID as string,
         dynamic_template_data: { ...data, ...address },
       },
     ];
