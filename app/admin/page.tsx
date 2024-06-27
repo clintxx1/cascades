@@ -26,13 +26,14 @@ export default function Admin() {
   const { replace } = useRouter();
   const pathname = usePathname();
   const params = new URLSearchParams(searchParams);
+  const search = params.get("search") || "";
 
   useDebounce(
     () => {
       handleSearch();
     },
     1000,
-    [params.get("search")]
+    [search]
   );
 
   useEffect(() => {
@@ -161,6 +162,7 @@ export default function Admin() {
             className="pl-10 py-2 lg:w-[30%] md:w-[50%] w-full focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
             placeholder="Search by Name"
             onChange={handleChange}
+            defaultValue={search}
           />
         </div>
         <TableData data={formList} />
