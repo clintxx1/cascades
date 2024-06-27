@@ -1,3 +1,4 @@
+"use client";
 import {
   Table,
   TableBody,
@@ -9,7 +10,6 @@ import {
 import { ADMIN_FORM_TABLE_HEADER } from "@/lib/constants";
 import { Form } from "@prisma/client";
 import { Info } from "lucide-react";
-import React from "react";
 
 export default function TableData({ data }: { data: Form[] }) {
   if (!data.length) {

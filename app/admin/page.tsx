@@ -10,14 +10,30 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Form } from "@prisma/client";
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import TableData from "./_components/tableData";
-import { Dot, Loader, Loader2 } from "lucide-react";
+import { Loader2, MoveLeftIcon, Power, Search } from "lucide-react";
+import Link from "next/link";
+import useDebounce from "@/hooks/useDebounce";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Input } from "@/components/ui/input";
 
 export default function Admin() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isExporting, setIsExporting] = useState<boolean>(false);
   const [formList, setFormList] = useState<Form[]>([]);
+  const searchParams = useSearchParams();
+  const { replace } = useRouter();
+  const pathname = usePathname();
+  const params = new URLSearchParams(searchParams);
+
+  useDebounce(
+    () => {
+      handleSearch();
+    },
+    1000,
+    [params.get("search")]
+  );
 
   useEffect(() => {
     const fetchFormList = async () => {
@@ -35,6 +51,7 @@ export default function Admin() {
     };
 
     fetchFormList();
+    window.scrollTo(0, 0);
   }, []);
 
   const handleExport = async () => {
@@ -66,16 +83,64 @@ export default function Admin() {
     }
   };
 
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const searchResult = e.target.value;
+    if (searchResult) {
+      params.set("search", searchResult);
+    } else {
+      params.delete("search");
+    }
+    replace(`${pathname}?${params.toString()}`);
+  };
+
+  const handleSearch = async () => {
+    try {
+      const res = await fetch(
+        `/api/form?sort=asc${params.toString() && `&${params.toString()}`}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      if (res.status === 200) {
+        const { data } = await res.json();
+        console.log(data, "hmm");
+        setFormList(data);
+      }
+    } catch (error) {
+      console.log("ERR: ", error);
+    }
+  };
+
   const handleLogout = () => {
     localStorage.clear();
     setIsOpen(false);
     window.location.reload();
   };
   return (
-    <section className="w-full h-full">
+    <section className="w-full h-full overflow-auto">
       <AuthGuard>
-        <div className="font-semibold lg:text-[42px] text-3xl text-crystalBlue flex items-center justify-between">
-          <p>Welcome to Cascades Admin Section</p>
+        <div className="flex items-center justify-between">
+          <Link href={"/"}>
+            <div className="flex items-center gap-4">
+              <MoveLeftIcon className="h-7 w-7" />
+              <p>Back to Home</p>
+            </div>
+          </Link>
+          <Button variant="secondary" onClick={() => setIsOpen(true)}>
+            <div className="flex items-center gap-3">
+              <p>Logout</p>
+              <Power className="h-4 w-4" />
+            </div>
+          </Button>
+        </div>
+        <div className="font-semibold lg:text-[42px] text-3xl text-crystalBlue">
+          <p>Cascades Admin Section</p>
+        </div>
+        <div className="text-darkLiver text-3xl font-bold flex items-center justify-between">
+          <p>Form Table</p>
           <Button
             onClick={handleExport}
             disabled={isExporting || !formList.length}
@@ -90,10 +155,15 @@ export default function Admin() {
             )}
           </Button>
         </div>
+        <div className="flex items-center relative p-1">
+          <Search className="absolute left-3 h-5 w-5" />
+          <Input
+            className="pl-10 py-2 lg:w-[30%] md:w-[50%] w-full focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+            placeholder="Search by Name"
+            onChange={handleChange}
+          />
+        </div>
         <TableData data={formList} />
-        <Button variant="outline" onClick={() => setIsOpen(true)}>
-          Logout
-        </Button>
         <Dialog open={isOpen}>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>

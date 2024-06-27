@@ -16,7 +16,9 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import jwt from "jsonwebtoken";
-import { Loader } from "lucide-react";
+import { HomeIcon, Loader, Lock } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 const FormSchema = z.object({
   passkey: z
@@ -87,9 +89,21 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <div className="flex items-center justify-center w-full">
+    <div className="flex items-center flex-col gap-20 justify-center w-full h-screen">
+      <div className="font-semibold lg:text-[42px] text-3xl text-crystalBlue text-center grid place-items-center">
+        <Image
+          src={"https://ik.imagekit.io/cascades/header_logo_large.png"}
+          alt="cascades logo"
+          className="block flex-shrink-0 h-20 w-20 object-contain"
+          width={1272}
+          height={1209}
+        />
+        <p>
+          Welcome to <br /> Cascades Admin Section
+        </p>
+      </div>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(handleSubmit)}>
+        <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-4">
           <FormField
             control={form.control}
             name="passkey"
@@ -109,10 +123,25 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
               </FormItem>
             )}
           />
-          <div className="flex flex-col items-center justify-center space-y-5 py-5">
-            {error && <Alert variant="destructive">{error}</Alert>}
+          {error && (
+            <Alert variant="destructive" className="py-3">
+              {error}
+            </Alert>
+          )}
+          <div className="flex items-center justify-around py-5">
+            <Button asChild variant={"secondary"}>
+              <Link href={"/"}>
+                <div className="flex items-center gap-3">
+                  <HomeIcon className="h-4 w-4 text-darkLiver" />
+                  <p>Back to Home</p>
+                </div>
+              </Link>
+            </Button>
             <Button type="submit" className="px-10">
-              Login
+              <div className="flex items-center gap-3">
+                <Lock className="h-4 w-4" />
+                <p>Login</p>
+              </div>
             </Button>
           </div>
         </form>
