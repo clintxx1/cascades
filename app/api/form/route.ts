@@ -8,11 +8,18 @@ export async function GET(request: Request) {
   try {
     let sortingOrder: Prisma.SortOrder = "desc";
     const { searchParams } = new URL(request.url);
-    const sort = searchParams.get("sort");
+    const sort = searchParams.get("sort") as Prisma.SortOrder;
+    const search = searchParams.get("search") || ("" as string);
+
     if (sort) {
-      sortingOrder = "asc";
+      sortingOrder = sort;
     }
     const data = await prisma.form.findMany({
+      where: {
+        name: {
+          contains: search,
+        },
+      },
       orderBy: {
         createdAt: sortingOrder,
       },
