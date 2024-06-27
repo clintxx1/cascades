@@ -60,3 +60,9 @@ export interface DetailsProps {
   value: string;
   onClick?: () => void;
 }
+
+export type UseDebounce = (
+  callback: () => void,
+  delay: number,
+  dependencies: any[]
+) => void;
