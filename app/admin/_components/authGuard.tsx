@@ -89,7 +89,7 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <div className="flex items-center flex-col gap-20 justify-center w-full h-screen">
+    <div className="flex items-center flex-col md:gap-20 justify-center w-full h-screen overflow-hidden">
       <div className="font-semibold lg:text-[42px] text-3xl text-crystalBlue text-center grid place-items-center">
         <Image
           src={"https://ik.imagekit.io/cascades/header_logo_large.png"}
@@ -103,7 +103,10 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
         </p>
       </div>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-4">
+        <form
+          onSubmit={form.handleSubmit(handleSubmit)}
+          className="space-y-4 md:w-auto w-full px-4"
+        >
           <FormField
             control={form.control}
             name="passkey"
@@ -115,7 +118,7 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
                     {...field}
                     type="password"
                     placeholder="Enter PassKey"
-                    className="w-[500px]"
+                    className="md:w-[500px] w-full"
                     onChangeCapture={() => setError("")}
                   />
                 </FormControl>
@@ -128,8 +131,8 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
               {error}
             </Alert>
           )}
-          <div className="flex items-center justify-around py-5">
-            <Button asChild variant={"secondary"}>
+          <div className="flex md:flex-row flex-col md:gap-0 gap-5 items-center justify-around py-5">
+            <Button asChild variant={"secondary"} className="md:w-auto w-full">
               <Link href={"/"}>
                 <div className="flex items-center gap-3">
                   <HomeIcon className="h-4 w-4 text-darkLiver" />
@@ -137,7 +140,7 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
                 </div>
               </Link>
             </Button>
-            <Button type="submit" className="px-10">
+            <Button type="submit" className="px-10 md:w-auto w-full">
               <div className="flex items-center gap-3">
                 <Lock className="h-4 w-4" />
                 <p>Login</p>

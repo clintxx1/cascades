@@ -125,13 +125,13 @@ export default function Admin() {
       <AuthGuard>
         <div className="flex items-center justify-between">
           <Link href={"/"}>
-            <div className="flex items-center gap-4">
-              <MoveLeftIcon className="h-7 w-7" />
+            <div className="flex items-center md:gap-4 gap-2 md:text-base text-sm">
+              <MoveLeftIcon className="md:h-7 md:w-7 h-5 w-5" />
               <p>Back to Home</p>
             </div>
           </Link>
           <Button variant="secondary" onClick={() => setIsOpen(true)}>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center md:gap-3 gap-1 md:text-base text-sm">
               <p>Logout</p>
               <Power className="h-4 w-4" />
             </div>
@@ -140,8 +140,8 @@ export default function Admin() {
         <div className="font-semibold lg:text-[42px] text-3xl text-crystalBlue">
           <p>Cascades Admin Section</p>
         </div>
-        <div className="text-darkLiver text-3xl font-bold flex items-center justify-between">
-          <p>Form Table</p>
+        <div className="text-darkLiver text-3xl font-bold flex items-center lg:justify-between justify-end">
+          <p className="hidden lg:block">Form Table</p>
           <Button
             onClick={handleExport}
             disabled={isExporting || !formList.length}
