@@ -73,3 +73,10 @@ export type UseDebounce = (
   delay: number,
   dependencies: any[]
 ) => void;
+
+export type BranchCardProps = {
+  image: string;
+  name: string;
+  branch: string;
+  address: string;
+};
