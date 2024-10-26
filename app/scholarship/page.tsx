@@ -16,12 +16,10 @@ export default function Scholarship() {
       <div className="flex lg:flex-row flex-col items-start justify-center lg:gap-20 gap-10 w-full">
         <div className="grid lg:place-items-start place-items-center w-full">
           <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/scholarship_banner_2x-1024x974.jpg"
-            }
+            src={"https://ik.imagekit.io/cascades/cascades/admissions/Pic1.png"}
             alt="Image 1"
-            width={448}
-            height={427}
+            width={450}
+            height={450}
             className="object-contain"
           />
         </div>
