@@ -17,9 +17,9 @@ export default function SecondSection() {
             className="lg:w-[208px] w-full lg:object-cover object-contain h-[6px]"
           />
           <p className="lg:text-[42px] text-3xl font-semibold text-[#9a5600]">
-            Student Health, Safety
+            THE ENVIRONMENT
             <br />
-            and Well-being a Priority.
+            IS THE THIRD TEACHER
           </p>
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             School Features
@@ -28,10 +28,8 @@ export default function SecondSection() {
             <p
               className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >
-              The school safeguards its students to explore and learn in a risk
-              free environment. The facilities and services are constantly
-              improved to ensure a safe and nurturing environment for each
-              child.
+              The environment is the third teacher emphasizes the crucial role
+              of physical surroundings in education.
             </p>
             <Link
               href={"/features"}
@@ -42,9 +40,7 @@ export default function SecondSection() {
           </div>
         </div>
         <Image
-          src={
-            "https://ik.imagekit.io/cascades/cascades/homepage_features_2x-1-1024x950.jpg"
-          }
+          src={"https://ik.imagekit.io/cascades/cascades/home/Pic2.png"}
           alt="Image 1"
           width={612}
           height={663}
