@@ -10,18 +10,18 @@ export default function FoundersNote() {
   return (
     <section className="w-full">
       <div className="flex lg:flex-row flex-col items-start justify-center gap-8 w-full pb-24">
-        <div className="space-y-8 ">
+        <div className="space-y-8">
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
             Founder&apos;s Note
           </p>
-          <div className="flex lg:flex-col flex-row lg:items-center items-end gap-5">
+          <div className="flex lg:flex-col md:flex-row md:items-center flex-col lg:items-center gap-5">
             <Image
-              src={"https://ik.imagekit.io/cascades/cascades/Group-Copy.png"}
-              width={189}
-              height={216}
+              src={"https://ik.imagekit.io/cascades/cascades/founder/Pic1.png"}
+              width={350}
+              height={350}
               alt="image 1"
             />
-            <div className="text-darkLiver text-[20px]">
+            <div className="text-darkLiver lg:text-start md:text-start text-center text-[20px]">
               <p>
                 Irene Theresa&nbsp;
                 <br className="hidden lg:block" />
