@@ -16,9 +16,7 @@ export default function CascadeCareers() {
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
         <div className="grid lg:place-items-start place-items-center">
           <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/careers_banner_2x-985x1024.jpg"
-            }
+            src={"https://ik.imagekit.io/cascades/cascades/careers/Pic.png"}
             alt="Image 1"
             width={612}
             height={663}
