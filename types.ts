@@ -22,6 +22,8 @@ export interface InfoCardProps {
   headerImage?: string;
   isDropdown?: boolean;
   dropdownData?: ProgramContentProps[] | [];
+  hasSubtitle?: boolean;
+  subtitle?: string;
 }
 
 export interface NavItem {
