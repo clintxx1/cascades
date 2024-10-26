@@ -17,24 +17,29 @@ export default function CommunityCard({
   secondTitle = "",
   secondName = "",
   secondDescription = "",
+  hasThirdData = false,
+  thirdImage,
+  thirdTitle = "",
+  thirdName = "",
+  thirdDescription = "",
 }: CommunityCardProps) {
   const dataUI = (data: CommunityDataUIProps) => {
     const { image, title, name, description = "" } = data;
     return (
       <div
-        className={`flex lg:flex-row md:flex-row flex-col items-center justify-center w-full gap-8 ${isReversed && "flex-row-reverse"}`}
+        className={`flex lg:flex-row flex-col items-center gap-2 justify-center w-full ${isReversed && "flex-row-reverse"}`}
       >
         {image ? (
           <Image
             src={image}
             alt="image 3"
             height={350}
-            width={340}
-            className={`${hasSecondData ? "w-[190px] h-[200px]" : "w-[340px] h-[350px]"}`}
+            width={350}
+            className={`${hasSecondData || hasThirdData ? "w-[200px] h-[200px]" : "w-[350px] h-[350px] object-contain"}`}
           />
         ) : null}
-        <div className="text-darkLiver space-y-2 lg:w-[500px] w-full lg:text-start md:text-start text-center">
-          <p className="lg:text-[28px] text-[24px] leading-[36px] lg:w-[200px] w-full">
+        <div className="text-darkLiver space-y-2 lg:w-[500px] w-full lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] leading-[36px] lg:w-[350px] w-full">
             {title}
           </p>
           <p
@@ -65,7 +70,7 @@ export default function CommunityCard({
         className="w-full h-[6px] my-12"
       />
       <div
-        className={`flex items-center justify-center ${hasSecondData && "px-28"}`}
+        className={`flex items-center justify-center gap-10 ${hasSecondData && "px-28"}`}
       >
         <div className={cn("w-[500px]", className)}>
           {dataUI({
@@ -87,6 +92,21 @@ export default function CommunityCard({
               title: secondTitle,
               name: secondName,
               description: secondDescription,
+            })}
+          </div>
+        ) : null}
+        {hasDivider && hasThirdData ? (
+          <div className="w-full flex items-center justify-center mx-5">
+            <div className="h-[200px] w-[1px] p bg-black"></div>
+          </div>
+        ) : null}
+        {hasThirdData ? (
+          <div className="w-[500px]">
+            {dataUI({
+              image: thirdImage,
+              title: thirdTitle,
+              name: thirdName,
+              description: thirdDescription,
             })}
           </div>
         ) : null}

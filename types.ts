@@ -43,6 +43,11 @@ export interface CommunityCardProps {
   secondTitle?: string;
   secondName?: string;
   secondDescription?: string;
+  hasThirdData?: boolean;
+  thirdImage?: string;
+  thirdTitle?: string;
+  thirdName?: string;
+  thirdDescription?: string;
 }
 
 export interface CommunityDataUIProps {
