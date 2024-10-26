@@ -248,7 +248,7 @@ export default function Approach() {
           </p>
         </div>
         <Image
-          src={"https://ik.imagekit.io/cascades/cascades/approach/a3.png"}
+          src={"https://ik.imagekit.io/cascades/cascades/approach/a4.png"}
           alt="a1"
           width={600}
           height={850}
