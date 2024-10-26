@@ -67,7 +67,7 @@ export default function SpecialPrograms() {
             title="3. Child Minding Program"
             hasSubtitle
             subtitle="16 MONTHS TO 5 YEARS OLD"
-            description="A baby-sitting program wherein caretakers care for babies under 3 years old by following and developing their home routine or schedule. Special classes are also offered for parents / guardians and their babies under 3 years old."
+            description="A program for child caregivers provides safe, educational environments for children while their parents are at work and take care of their basic needs, including dressing, feeding, and supervising play and nap times."
             descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
             hasHeader
             headerImage={
