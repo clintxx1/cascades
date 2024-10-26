@@ -22,61 +22,97 @@ export default function Community() {
       </p>
       <CommunityCard
         // className="w-full"
-        firstImage={"https://ik.imagekit.io/cascades/cascades/irene_2x.jpg"}
-        firstTitle="Founder/Directress"
-        firstName="Irene Theresa M. Mawo"
-        // firstDescription="Irene is a graduate of Secondary Education major in Biological Science. After graduating magna cum laude she immediately took her Master’s in teaching General Science then pursued her Master’s in Early Childhood Education. She has been teaching for over a decade now in both local and international schools, having spent years as head teacher before deciding to build Cascades School."
+        firstImage={"https://ik.imagekit.io/cascades/cascades/founder/Pic1.png"}
+        firstTitle="IRENE THERESA MAWO"
+        firstName="Founder and President"
+        firstDescription="Head Pedagogista"
       />
-      <div className="hidden lg:block">
+      <div className="hidden lg:flex lg:flex-col lg:flex-shrink">
         <CommunityCard
-          firstImage={"https://ik.imagekit.io/cascades/cascades/gian_2x.jpg"}
-          firstTitle="Vice President / Art Director"
-          firstName="Gian V. Mawo"
-          hasDivider
+          firstImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic2.png"
+          }
+          firstTitle="MAWO, IRENE MARIA SALUD"
+          firstName="Officer-in-Charge, Sibol Main Campus Mandaluyong City"
+          firstDescription="Lead, Atelier of Life "
           hasSecondData
-          secondImage={"https://ik.imagekit.io/cascades/cascades/bren_2x.jpg"}
-          secondTitle="Corporate Secretary / Executive Director of Kids and Ideas Foundation"
-          secondName="Bren Cezar C. Valenciano"
+          secondImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic3.png"
+          }
+          secondTitle="GO, CATHRINE"
+          secondName="Officer-in-Charge, Sibol QC"
+          secondDescription="Lead, Atelier of Sound and Movement"
+          hasThirdData
+          thirdImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic4.png"
+          }
+          thirdTitle="GANUB, ANGEL"
+          thirdName="Officer-in-Charge, Hiraya Elementary Mandaluyong City"
+          thirdDescription="Coordinator for Bahaghari Program"
         />
         <CommunityCard
-          firstImage={"https://ik.imagekit.io/cascades/cascades/budjok_2x.jpg"}
-          firstTitle="Atelierista"
-          firstName="Randolph Maribojoc"
-          hasDivider
+          firstImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic5.png"
+          }
+          firstTitle="RANDOLPH MARIBOJOC"
+          firstName="Head Atelierista"
+          firstDescription="Likha Village Head "
           hasSecondData
+          secondImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic6.png"
+          }
+          secondTitle="BREN CEZAR VALENCIANO"
+          secondName="Chief Operation Officer"
+          secondDescription="Head for Safety and Health"
         />
       </div>
       <div className="block lg:hidden">
         <CommunityCard
           className="w-full"
-          firstImage={"https://ik.imagekit.io/cascades/cascades/gian_2x.jpg"}
-          firstTitle="Vice President / Art Director"
-          firstName="Gian V. Mawo"
+          firstImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic2.png"
+          }
+          firstTitle="MAWO, IRENE MARIA SALUD"
+          firstName="Officer-in-Charge, Sibol Main Campus Mandaluyong City"
+          firstDescription="Lead, Atelier of Life"
         />
         <CommunityCard
           className="w-full"
-          firstImage={"https://ik.imagekit.io/cascades/cascades/bren_2x.jpg"}
-          firstTitle="Corporate Secretary / Executive Director of Kids and Ideas Foundation"
-          firstName="Bren Cezar C. Valenciano"
+          firstImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic3.png"
+          }
+          firstTitle="GO, CATHRINE"
+          firstName="Officer-in-Charge, Sibol QC"
+          firstDescription="Lead, Atelier of Sound and Movement"
         />
         <CommunityCard
           className="w-full"
-          firstImage={"https://ik.imagekit.io/cascades/cascades/budjok_2x.jpg"}
-          firstTitle="Atelierista"
-          firstName="Randolph Maribojoc"
+          firstImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic4.png"
+          }
+          firstTitle="GANUB, ANGEL"
+          firstName="Officer-in-Charge, Hiraya Elementary Mandaluyong City"
+          firstDescription="Coordinator for Bahaghari Program"
+        />
+        <CommunityCard
+          className="w-full"
+          firstImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic5.png"
+          }
+          firstTitle="RANDOLPH MARIBOJOC"
+          firstName="Head Atelierista"
+          firstDescription="Likha Village Head"
+        />
+        <CommunityCard
+          className="w-full"
+          firstImage={
+            "https://ik.imagekit.io/cascades/cascades/community/Pic6.png"
+          }
+          firstTitle="BREN CEZAR VALENCIANO"
+          firstName="Chief Operation Officer"
+          firstDescription="Head for Safety and Health"
         />
       </div>
-      {/* <CommunityCard
-        firstImage={"https://ik.imagekit.io/cascades/cascades/zenith_2x.jpg"}
-        firstTitle="Finance Officer"
-        firstName="Zenith O. Pascual"
-        hasDivider
-        hasSecondData
-        isReversed
-        secondImage={"https://ik.imagekit.io/cascades/cascades/dalynn_2x.jpg"}
-        secondTitle="Secretary"
-        secondName="Fatima Dalynn S. Mendoza"
-      /> */}
     </section>
   );
 }

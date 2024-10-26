@@ -76,51 +76,57 @@ export default function Features() {
         </div>
         <div className="w-full grid lg:place-items-start place-items-center">
           <Image
-            src={"https://ik.imagekit.io/cascades/cascades/features_lunch.jpg"}
+            src={"https://ik.imagekit.io/cascades/cascades/features/Pic1.png"}
             alt="Image 1"
             width={443}
             height={442}
           />
         </div>
       </div>
-      {/* <div className="flex items-center justify-between w-full gap-8 mt-14">
-        <div className="w-full">
-          <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/features_safety_2x-768x901.jpg"
-            }
-            alt="Image 2"
-            width={443}
-            height={442}
-          />
-        </div>
-        <div className="space-y-8 w-full">
-          <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
-            }
-            width={208}
-            height={6}
-            alt="divider2"
-            className="w-[208px] h-[6px]"
-          />
-          <p className="lg:text-[42px] text-3xl leading-[52px] font-semibold text-crystalBlue w-[500px]">
-            The school ensures the safety and welfare of each child.
-          </p>
-          <div className="flex items-center justify-center w-[600px]">
-            <p
-              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
-            >
-              This is done through a tracking bracelet that notifies parents
-              when the child enters or leaves the school. This is further
-              reinforced by highly trained and equipped security personnel and
-              strategically placed CCTV cameras. Regular temperature checking
-              upon entry of school premises is also implemented to safeguard a
-              healthy environment.
-            </p>
-          </div>
-        </div>
+      <div className="py-5">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={8}
+          className="w-full h-[6px] my-12 lg:px-8 lg:object-cover md:object-cover object-contain"
+        />
+      </div>
+      <div className="flex items-center justify-center">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/features/Featurepic1.png"
+          }
+          alt="Image 1"
+          width={1024}
+          height={442}
+          className="object-contain"
+        />
+      </div>
+      {/* <div className="py-5">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
+          }
+          alt="longDiv"
+          width={1024}
+          height={8}
+          className="w-full h-[6px] my-12 lg:px-8 lg:object-cover md:object-cover object-contain"
+        />
       </div> */}
+      <div className="flex items-center justify-center">
+        <Image
+          src={
+            "https://ik.imagekit.io/cascades/cascades/features/Featurepic2.png"
+          }
+          alt="Image 1"
+          width={1024}
+          height={442}
+          className="object-contain"
+        />
+      </div>
       <div className="py-5">
         <Image
           src={

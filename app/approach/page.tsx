@@ -7,14 +7,14 @@ import { lato } from "@/lib/fonts";
 
 export default function Approach() {
   return (
-    <section className="w-full h-full">
+    <section className="w-full h-full text-darkLiver">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
         <div className="space-y-14 grid lg:place-items-start place-items-center">
-          <h2 className="text-darkLiver font-semibold lg:text-[42px] text-3xl">
+          <h2 className=" font-semibold lg:text-[42px] text-3xl">
             About Cascades
           </h2>
           <p
-            className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full lg:px-0 px-4 mb-14 lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full lg:px-0 px-4 mb-14 lg:text-start text-justify`}
           >
             Cascades School merged the elements of a school and a home. This
             home is more than just a concept; it is a place where children will
@@ -34,10 +34,10 @@ export default function Approach() {
             workforce, or community service.
           </p>
           <h2 className="text-watermelonRed font-semibold lg:text-[42px] text-3xl">
-            Hiraya Curriculum
+            Cascades Curriculum
           </h2>
           <p
-            className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full mb-28 lg:px-0 px-4 lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full mb-28 lg:px-0 px-4 lg:text-start text-justify`}
           >
             The HIRAYA Curriculum is centered around equipping students with the
             knowledge and understanding of sustainable development. Our students
@@ -62,13 +62,6 @@ export default function Approach() {
             alt="divider"
             className="w-[208px] h-[6px]"
           />
-          {/* <InfoCard
-              title="Classroom Groupings"
-              description="
-              Wanderers (16 months to 3 years old) and Explorers (3 to 5 years old) classes are mixed age. In a mixed-age group class for children aged 3 to 5 years old, students from different age brackets learn and play together in the same space. This arrangement can provide several benefits, such as fostering a sense of community and collaboration, promoting non-competitive social interactions, and allowing younger children to learn from older peers while providing older children opportunities to develop leadership skills. Moreover, mixed age groups allow for personalized learning experiences, as children can progress at their own pace and are exposed to a wider range of social and emotional development.
-              <br /><br />
-              For students in Kindergarten 2 to Elementary, while they typically have separate subject area classes based on their grade level, they have the opportunity to work in mixed-age groups during big projects or school events. This setup allows them to collaborate with peers from different grades, facilitating the development of teamwork, communication, and problem-solving skills. Working on these joint initiatives also creates a sense of community and camaraderie across different age groups within the school, promoting a positive and inclusive school environment."
-            /> */}
           <InfoCard
             title="Co-teaching and Co-learning"
             description="Co-teaching and co-learning are essential in providing a well-rounded and collaborative learning experience for students. The weekly meetings among teachers at Cascades Academy allow for open communication and sharing of ideas, ensuring that all children's interests are incorporated into lesson plans. Furthermore, the designated Fridays where teachers teach other teachers provide an opportunity for continuous professional development, encouraging teachers to learn from one another and improve their instructional techniques. Through this collaborative effort, teachers can ensure that each student receives a comprehensive education that caters to their unique learning needs and preferences."
@@ -76,9 +69,7 @@ export default function Approach() {
         </div>
         <div className="mt-28 space-y-28 grid lg:place-items-start place-items-center">
           <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/approach_banner_2x-858x1024.jpg"
-            }
+            src={"https://ik.imagekit.io/cascades/cascades/approach/Pic1.png"}
             alt="image 1"
             width={858}
             height={1024}
@@ -111,16 +102,20 @@ export default function Approach() {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
         <div className="mt-8">
           <Image
-            src={
-              "https://ik.imagekit.io/cascades/cascades/approach_celebrate_2x-1024x850.jpg"
-            }
+            src={"https://ik.imagekit.io/cascades/cascades/approach/Pic2.png"}
             alt="image 2"
             width={1024}
             height={850}
             className="object-contain lg:w-full md:w-[924px] w-[824px]"
           />
         </div>
-        <div className="grid gap-5 mt-28">
+        <div className="place-content-end">
+          <p className="text-4xl italic font-bold lg:text-start text-center">
+            Subject Areas
+          </p>
+        </div>
+        {/* OLD UI - KEEP */}
+        {/* <div className="grid gap-5 mt-28">
           <InfoCard
             title="Individualized Tracking"
             description="Teachers will document the progress of each child by tracking the
@@ -150,7 +145,115 @@ export default function Approach() {
             linear process, concepts and skills on different subjects are
             revisited at each level with increasing depth and complexity."
           />
+        </div> */}
+      </div>
+      <div
+        className={`flex lg:flex-row flex-col items-center justify-between pt-14 gap-4 ${lato.className}`}
+      >
+        <div className="lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] font-bold">
+            ATELIER OF LIFE
+          </p>
+          <p className="text-base font-bold pb-5 italic">
+            Talyer ng Buhay at Lupa
+          </p>
+          <p className="lg:text-[20px] lg:leading-[36px] leading-8">
+            Explore Earth's ecosystems and elements, emphasizing the
+            interconnectedness of all living things. Encourage mindfulness,
+            sustainability, and active citizenship through understanding plants,
+            animals, and life processes. Children will have the opportunity to
+            engage with varied readings to deepen their understanding and
+            research within this atelier.
+          </p>
         </div>
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/approach/a1.png"}
+          alt="a1"
+          width={600}
+          height={850}
+          className="object-contain lg:w-full md:w-[924px] w-[824px]"
+        />
+      </div>
+      <div
+        className={`flex lg:flex-row flex-col items-center justify-between pt-14 gap-4 ${lato.className}`}
+      >
+        <div className="lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] font-bold">
+            ATELIER OF MATERIALS
+          </p>
+          <p className="text-base font-bold pb-5 italic">
+            Talyer ng Wika ng Materyales
+          </p>
+          <p className="lg:text-[20px] lg:leading-[36px] leading-8">
+            Delve into the characteristics of various materials, often
+            repurposed or discarded, to spark creativity and innovation.
+            Understand how man-made materials interconnect with the natural
+            environment while exploring logic, math, chemistry, and physics.
+            Children will have access to different sources and references to
+            expand on their exploration of the materials and its possibilities.
+          </p>
+        </div>
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/approach/a2.png"}
+          alt="a1"
+          width={600}
+          height={850}
+          className="object-contain lg:w-full md:w-[924px] w-[824px]"
+        />
+      </div>
+      <div
+        className={`flex lg:flex-row flex-col items-center justify-between pt-14 gap-4 ${lato.className}`}
+      >
+        <div className="lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] font-bold">
+            ATELIER OF TASTE
+          </p>
+          <p className="text-base font-bold pb-5 italic">
+            Talyer ng Lasa ng Kultura
+          </p>
+          <p className="lg:text-[20px] lg:leading-[36px] leading-8">
+            Discover the world through seasonal fruits and vegetables,
+            connecting nature, culture, science, and math. Engage in research,
+            explore applications and gadgets, and deepen understanding of the
+            environment. Children will also be exposed to readings of different
+            books to aid in their discovery and research within this atelier.
+          </p>
+        </div>
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/approach/a3.png"}
+          alt="a1"
+          width={600}
+          height={850}
+          className="object-contain lg:w-full md:w-[924px] w-[824px]"
+        />
+      </div>
+      <div
+        className={`flex lg:flex-row flex-col items-center justify-between pt-14 gap-4 ${lato.className}`}
+      >
+        <div className="lg:text-start text-center">
+          <p className="lg:text-[28px] text-[24px] font-bold">
+            ATELIER OF MOVEMENT AND SOUND
+          </p>
+          <p className="text-base font-bold pb-5 italic">
+            Talyer ng mga Galaw at Tunog
+          </p>
+          <p className="lg:text-[20px] lg:leading-[36px] leading-8">
+            Embark on a journey of self-discovery through movement and sound in
+            a stimulating environment equipped with mirrors, lights, and
+            shadows. Connect with your body, emotions, and the world through
+            diverse sounds, rhythms, and expressions. Children will reimagine
+            stories they read and be inspired to create their own narratives,
+            sharing them in unique and creative ways. Reading sessions will be
+            incorporated to enrich their storytelling experiences.
+          </p>
+        </div>
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/approach/a4.png"}
+          alt="a1"
+          width={600}
+          height={850}
+          className="object-contain lg:w-full md:w-[924px] w-[824px]"
+        />
       </div>
       <Image
         src={
@@ -164,9 +267,9 @@ export default function Approach() {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
         <div className="space-y-14">
           <p
-            className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full lg:text-start text-justify`}
           >
-            <strong>Digital Literacy in the HIRAYA Approach</strong> refers to
+            <strong>Digital Literacy in the Cascades Approach</strong> refers to
             the development of skills and competencies in using digital
             technologies to further research and find the connection between
             self and the environment. The technology will help the children
@@ -178,7 +281,7 @@ export default function Approach() {
         </div>
         <div className="lg:mt-28 space-y-28 lg:w-[75%] grid lg:place-items-start place-items-end w-full">
           <Image
-            src={"https://ik.imagekit.io/cascades/cascades/pointing.png"}
+            src={"https://ik.imagekit.io/cascades/cascades/approach/Pic3.png"}
             alt="image 1"
             width={2402}
             height={2400}
@@ -197,7 +300,7 @@ export default function Approach() {
       />
       <div className="flex lg:flex-row flex-col items-center justify-around pb-24 lg:gap-14 gap-2">
         <Image
-          src={"https://ik.imagekit.io/cascades/cascades/path_programs_2x.jpg"}
+          src={"https://ik.imagekit.io/cascades/cascades/approach/Pic4.png"}
           alt="image 3"
           width={304}
           height={304}
@@ -208,7 +311,7 @@ export default function Approach() {
           </p>
           <div className="flex lg:flex-row md:flex-row flex-col items-center justify-center lg:w-[700px] w-full gap-4">
             <p
-              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8`}
             >
               Cascades School prides itself in providing a modified Reggio
               curriculum that aims to instill a lifelong love for learning to

@@ -10,7 +10,7 @@ export default function Philosophy() {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div>
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16 mb-8">
-            Cascades HIRAYA Curriculum
+            Cascades Curriculum
           </p>
           <p
             className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 w-full lg:text-start text-justify`}
@@ -151,9 +151,7 @@ export default function Philosophy() {
         <div className="flex lg:flex-row lg:gap-0 md:flex-row gap-5 flex-col items-center justify-around">
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
             <Image
-              src={
-                "https://ik.imagekit.io/cascades/cascades/hiraya-curriculum.png"
-              }
+              src={"https://ik.imagekit.io/cascades/cascades/philosophy/1.png"}
               alt="longDiv"
               width={1206}
               height={2075}
@@ -162,9 +160,7 @@ export default function Philosophy() {
           </div>
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
             <Image
-              src={
-                "https://ik.imagekit.io/cascades/cascades/sustainable-wellness.png"
-              }
+              src={"https://ik.imagekit.io/cascades/cascades/philosophy/2.png"}
               alt="longDiv"
               width={1206}
               height={1950}
@@ -173,9 +169,7 @@ export default function Philosophy() {
           </div>
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
             <Image
-              src={
-                "https://ik.imagekit.io/cascades/cascades/active-citizenship.png"
-              }
+              src={"https://ik.imagekit.io/cascades/cascades/philosophy/3.png"}
               alt="longDiv"
               width={1206}
               height={1941}
@@ -184,7 +178,7 @@ export default function Philosophy() {
           </div>
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
             <Image
-              src={"https://ik.imagekit.io/cascades/cascades/batang-pinoy.png"}
+              src={"https://ik.imagekit.io/cascades/cascades/philosophy/4.png"}
               alt="longDiv"
               width={1206}
               height={2022}

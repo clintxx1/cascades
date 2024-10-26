@@ -22,15 +22,17 @@ export default function FirstSection() {
     <section className="space-y-20 lg:w-fit w-full lg:px-[10%] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:gap-20 gap-10">
         <Image
-          src={
-            "https://ik.imagekit.io/cascades/cascades/home_programs_2x-944x1024.jpg"
-          }
+          src={"https://ik.imagekit.io/cascades/cascades/home/Pic1.png"}
           alt="Image 1"
           width={612}
           height={663}
           className="w-full flex-shrink-0 object-contain"
         />
         <div className="w-full space-y-8 grid lg:place-items-start place-items-center">
+          <p className="lg:text-[32px] text-[24px] font-semibold text-crystalBlue lg:text-start text-center">
+            A reggio approach in education
+          </p>
+
           <Image
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
@@ -40,73 +42,42 @@ export default function FirstSection() {
             alt="divider"
             className="lg:w-[208px] w-full lg:object-cover object-contain h-[6px]"
           />
-          <p className="lg:text-[42px] text-3xl font-semibold text-crystalBlue lg:text-start text-center">
-            Cascades Four Teachers
-          </p>
-          <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
-            The First and Second Teachers
-          </p>
-          <p
-            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 md:text-lg text-base text-darkLiver w-full lg:text-start text-justify`}
-          >
-            Cascades School firmly believes in the concept of adults serving as
-            the first teacher in the classroom, and the children as the second
-            teacher. Adults play a central role in modeling behavior, providing
-            guidance, and facilitating learning experiences for young learners.
-            By creating a nurturing and enriching learning environment,
-            educators lay the foundation for children's growth and development.
-            Simultaneously, the children themselves, through their unique
-            perspectives, interests, and interactions, become invaluable
-            contributors to the learning process, enlightening educators about
-            their needs, preferences, and learning styles. This dynamic
-            interaction empowers students to take an active role in their
-            education, fostering a sense of agency and autonomy in their
-            learning journey. Embracing this partnership between adults and
-            children as the first and second teachers in the classroom allows
-            for a symbiotic relationship that enhances the overall educational
-            experience for young learners.
+          <p className="lg:text-[42px] leading-[48px] text-3xl font-semibold text-crystalBlue lg:text-start text-center">
+            Every child is viewed as <br /> capable contributor, <br />
+            an active citizen of the world.
           </p>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
         <div className="w-full space-y-8">
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
-            The Third Teacher
+            Importance of expression
           </p>
           <p
             className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-full lg:text-start text-justify`}
           >
-            &apos;The environment is the third teacher&apos; emphasizes the
-            crucial role of physical surroundings in education. By designing
-            learning spaces that inspire creativity and exploration, educators
-            can enhance the learning experience for students. Thoughtful
-            consideration of factors such as lighting, layout, and materials can
-            foster student engagement and autonomy. Embracing the environment as
-            a teaching tool empowers students to take an active role in their
-            learning journey.
+            In Cascades, we believe that our children are born ready to learn
+            and excited for the future. Our job is to help them retain the
+            courage to bring out their natural talents and use them as their
+            voice to express their ideas and understanding of the world. This
+            kind of education will help the children live life with the
+            authenticity and courage to be who they are regardless of their
+            limitations.
           </p>
         </div>
         <div className="w-full space-y-8">
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
-            The Fourth Teacher
+            Active Citizenship
           </p>
           <p
             className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver w-full lg:text-start text-justify`}
           >
-            Plants and animals into the classroom environment can serve as the
-            "fourth teacher" for students. By incorporating living organisms,
-            such as classroom pets and indoor plants, educators can create
-            opportunities for hands-on learning and meaningful experiences.
-            These living elements foster a sense of responsibility and empathy
-            among students as they learn to care for and observe the needs of
-            these living beings. Additionally, the presence of plants and
-            animals in the classroom provides natural opportunities for
-            scientific inquiry, as children can engage in firsthand observations
-            and investigations, igniting their curiosity and wonder about the
-            natural world. Ultimately, embracing plants and animals as the
-            "fourth teacher" in the classroom cultivates an environment that
-            promotes respect for all living things and enhances the overall
-            learning experience for young learners.
+            The Cascades approach focuses on the understanding that even a child
+            can be an active citizen of the community. Their "smallness" does
+            not diminish their value or capabilities to contribute to the
+            community's progress. Cascades Hiraya's goal is to make the
+            community realize this truth and, in turn, create more opportunities
+            for children to be involved and exercise their citizenship.
           </p>
         </div>
       </div>

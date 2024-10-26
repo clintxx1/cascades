@@ -22,6 +22,8 @@ export interface InfoCardProps {
   headerImage?: string;
   isDropdown?: boolean;
   dropdownData?: ProgramContentProps[] | [];
+  hasSubtitle?: boolean;
+  subtitle?: string;
 }
 
 export interface NavItem {
@@ -43,6 +45,11 @@ export interface CommunityCardProps {
   secondTitle?: string;
   secondName?: string;
   secondDescription?: string;
+  hasThirdData?: boolean;
+  thirdImage?: string;
+  thirdTitle?: string;
+  thirdName?: string;
+  thirdDescription?: string;
 }
 
 export interface CommunityDataUIProps {
@@ -66,3 +73,10 @@ export type UseDebounce = (
   delay: number,
   dependencies: any[]
 ) => void;
+
+export type BranchCardProps = {
+  image: string;
+  name: string;
+  branch: string;
+  address: string;
+};

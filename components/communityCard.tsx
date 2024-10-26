@@ -17,37 +17,36 @@ export default function CommunityCard({
   secondTitle = "",
   secondName = "",
   secondDescription = "",
+  hasThirdData = false,
+  thirdImage,
+  thirdTitle = "",
+  thirdName = "",
+  thirdDescription = "",
 }: CommunityCardProps) {
   const dataUI = (data: CommunityDataUIProps) => {
     const { image, title, name, description = "" } = data;
     return (
       <div
-        className={`flex lg:flex-row md:flex-row flex-col items-center justify-center w-full gap-8 ${isReversed && "flex-row-reverse"}`}
+        className={`flex lg:flex-row flex-col items-center gap-2 justify-center w-full ${isReversed && "flex-row-reverse"}`}
       >
         {image ? (
           <Image
             src={image}
             alt="image 3"
             height={350}
-            width={340}
-            className={`${hasSecondData ? "w-[190px] h-[200px]" : "w-[340px] h-[350px]"}`}
+            width={350}
+            className={`${hasSecondData || hasThirdData ? "w-[200px] h-[200px]" : "w-[350px] h-[350px] object-contain"}`}
           />
         ) : null}
-        <div className="text-darkLiver space-y-2 lg:w-[500px] w-full lg:text-start md:text-start text-center">
-          <p className="lg:text-[28px] text-[24px] leading-[36px] lg:w-[200px] w-full">
+        <div className="text-darkLiver space-y-2 lg:w-[500px] w-full lg:text-start text-center">
+          <p
+            className={`lg:text-[28px] text-[24px] ${hasThirdData ? "lg:w-full" : "lg:w-[350px]"}`}
+          >
             {title}
           </p>
-          <p
-            className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8`}
-          >
-            {name}
-          </p>
+          <p className={`${lato.className} lg:text-[20px]`}>{name}</p>
           {description ? (
-            <p
-              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8`}
-            >
-              {description}
-            </p>
+            <p className={`${lato.className} lg:text-[18px]`}>{description}</p>
           ) : null}
         </div>
       </div>
@@ -65,9 +64,14 @@ export default function CommunityCard({
         className="w-full h-[6px] my-12"
       />
       <div
-        className={`flex items-center justify-center ${hasSecondData && "px-28"}`}
+        className={`flex items-center justify-center  ${hasSecondData && "px-28"} ${hasThirdData ? "gap-10" : "gap-10"}`}
       >
-        <div className={cn("w-[500px]", className)}>
+        <div
+          className={cn(
+            `${hasThirdData ? "w-[400px]" : "w-[500px]"}`,
+            className
+          )}
+        >
           {dataUI({
             image: firstImage,
             title: firstTitle,
@@ -81,12 +85,27 @@ export default function CommunityCard({
           </div>
         ) : null}
         {hasSecondData ? (
-          <div className="w-[500px]">
+          <div className={`${hasThirdData ? "w-[400px]" : "w-[500px]"}`}>
             {dataUI({
               image: secondImage,
               title: secondTitle,
               name: secondName,
               description: secondDescription,
+            })}
+          </div>
+        ) : null}
+        {hasDivider && hasThirdData ? (
+          <div className="w-full flex items-center justify-center mx-5">
+            <div className="h-[200px] w-[1px] p bg-black"></div>
+          </div>
+        ) : null}
+        {hasThirdData ? (
+          <div className={`${hasThirdData ? "w-[400px]" : "w-[500px]"}`}>
+            {dataUI({
+              image: thirdImage,
+              title: thirdTitle,
+              name: thirdName,
+              description: thirdDescription,
             })}
           </div>
         ) : null}

@@ -20,12 +20,14 @@ export default function InfoCard({
   headerImage,
   isDropdown = false,
   dropdownData = [],
+  hasSubtitle = false,
+  subtitle = "",
 }: InfoCardProps) {
   const createMarkup = (htmlContent: string) => {
     return { __html: htmlContent };
   };
   return (
-    <div className={cn("py-8", className)}>
+    <div className={cn("py-8 text-darkLiver", className)}>
       {hasHeader && headerImage ? (
         <Image
           src={headerImage}
@@ -37,12 +39,17 @@ export default function InfoCard({
       ) : null}
       <div
         className={cn(
-          "lg:text-[28px] text-[24px] font-semibold text-darkLiver lg:text-start text-center",
+          "lg:text-[28px] text-[24px] font-semibold  lg:text-start text-center",
           titleCN,
           `${hasHeader && "mt-8"}`
         )}
         dangerouslySetInnerHTML={createMarkup(title)}
       ></div>
+      {hasSubtitle && (
+        <p className="text-xs pl-6 pb-2 lg:text-start text-center">
+          {subtitle}
+        </p>
+      )}
       {isDropdown && dropdownData.length ? (
         <Accordion
           type="single"
@@ -52,14 +59,14 @@ export default function InfoCard({
           {dropdownData.map((item) => (
             <AccordionItem value={item.value} key={item.value}>
               <AccordionTrigger
-                className={`${lato.className} font-normal lg:text-[20px] text-base text-darkLiver`}
+                className={`${lato.className} font-normal lg:text-[20px] text-base `}
               >
                 <div dangerouslySetInnerHTML={createMarkup(item.label)}></div>
               </AccordionTrigger>
               <AccordionContent>
                 <div
                   className={cn(
-                    `${lato.className} text-lg text-darkLiver lg:w-[500px] w-full border p-5 lg:text-start text-justify`,
+                    `${lato.className} text-lg  lg:w-[500px] w-full border p-5 lg:text-start text-justify`,
                     descriptionCN
                   )}
                   dangerouslySetInnerHTML={createMarkup(item.description)}
@@ -71,7 +78,7 @@ export default function InfoCard({
       ) : (
         <div
           className={cn(
-            `${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:w-[500px] w-full lg:px-0 px-4 lg:text-start text-justify`,
+            `${lato.className} lg:text-[20px] lg:leading-[36px] leading-8  lg:w-[500px] w-full lg:px-0 px-4 lg:text-start text-justify`,
             descriptionCN
           )}
           dangerouslySetInnerHTML={createMarkup(description)}

@@ -60,12 +60,12 @@ const OPENSY27: ProgramContentProps[] = [
 
 export default function PrimaryProgram() {
   return (
-    <section className="w-full">
-      <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver mt-16">
+    <section className="w-full text-darkLiver">
+      <p className="lg:text-[28px] text-[24px] italic font-semibold mt-16">
         Cascades Programs
       </p>
       <p
-        className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 w-full mt-8 mb-20`}
+        className={`${lato.className}  lg:text-[20px] lg:leading-[36px] leading-8 w-full mt-8 mb-20`}
       >
         Cascades Approach has aligned learning programs from infancy through age
         18.
@@ -87,9 +87,104 @@ export default function PrimaryProgram() {
           className="w-full h-[6px] px-4"
         />
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-0">
+      {/* PRESCHOOL */}
+      <div className="flex flex-col gap-4 w-fulll">
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
+          alt={"primaryLogo"}
+          width={64}
+          height={64}
+          className="h-16 w-16 object-contain"
+        />
+        <p className="lg:text-[42px] italic text-3xl leading-[1.2em] font-semibold text-crystalBlue">
+          PRESCHOOL
+        </p>
+        <div className="w-full flex items-center justify-center">
+          <Image
+            src={"https://ik.imagekit.io/cascades/cascades/programs/Pic1.png"}
+            alt={"image1"}
+            width={600}
+            height={300}
+            className="object-contain"
+          />
+        </div>
+        <div className="w-full flex items-start lg:justify-center md:justify-center sm:justify-center justify-between lg:gap-52 md:gap-52 sm:gap-52">
+          <div>
+            <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+              WANDERERS
+            </p>
+            <p className="italic lg:text-base md:text-base text-sm">
+              16 Months to 3 years old
+            </p>
+          </div>
+          <div className="flex flex-col">
+            <div>
+              <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                EXPLORERS
+              </p>
+              <p className="italic lg:text-base md:text-base text-sm">
+                3 years old to 4 years old
+              </p>
+            </div>
+            <div>
+              <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                SR. EXPLORERS
+              </p>
+              <p className="italic lg:text-base md:text-base text-sm">
+                5 years old
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ELEMENTARY */}
+      <div className="flex flex-col gap-4 w-fulll">
+        <Image
+          src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
+          alt={"primaryLogo"}
+          width={64}
+          height={64}
+          className="h-16 w-16 object-contain"
+        />
+        <p className="lg:text-[42px] italic text-3xl leading-[1.2em] font-semibold text-crystalBlue">
+          ELEMENTARY
+        </p>
+        <div className="w-full flex items-center justify-center">
+          <Image
+            src={"https://ik.imagekit.io/cascades/cascades/programs/Pic2.png"}
+            alt={"image1"}
+            width={600}
+            height={300}
+            className="object-contain"
+          />
+        </div>
+        <div className="w-full flex items-start lg:justify-center md:justify-center sm:justify-center justify-between lg:gap-40 md:gap-40 sm:gap-40">
+          <div>
+            <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+              NAVIGATORS
+            </p>
+            <p className="italic lg:text-base md:text-base text-sm">
+              6 years old to 8 years old <br />
+              Grade 1 - 3
+            </p>
+          </div>
+          <div>
+            <div>
+              <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                DISCOVERERS
+              </p>
+              <p className="italic lg:text-base md:text-base text-sm">
+                9 years old to 11 years old <br />
+                Grade 4 - 6
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* OLD UI - KEEP */}
+      {/* <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-0">
         <div className="mt-24">
-          <div className="flex items-end lg:justify-start justify-center gap-5">
+          <div className="flex flex-col gap-4 w-fulll">
             <Image
               src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
               alt={"primaryLogo"}
@@ -97,9 +192,21 @@ export default function PrimaryProgram() {
               height={64}
               className="h-16 w-16 object-contain"
             />
-            <p className="lg:text-[42px] text-3xl leading-[1.2em] font-semibold text-crystalBlue">
-              Primary Program
+            <p className="lg:text-[42px] italic text-3xl leading-[1.2em] font-semibold text-crystalBlue">
+              PRESCHOOL
             </p>
+            <div className="w-full bg-red-300">
+              <Image
+                src={
+                  "https://ik.imagekit.io/cascades/cascades/programs/Pic1.png"
+                }
+                alt={"image1"}
+                width={1024}
+                height={502}
+                className="object-contain snap-center"
+              />
+            </div>
+
           </div>
           <InfoCard
             title="Currently Offered:"
@@ -133,7 +240,7 @@ export default function PrimaryProgram() {
             dropdownData={OPENSY27}
           />
         </div>
-      </div>
+      </div> */}
       <PromoSection />
       <div className="flex lg:flex-row flex-col items-center justify-start w-full gap-12 pb-20">
         <Image
@@ -150,7 +257,7 @@ export default function PrimaryProgram() {
             Experience Cascades.
           </p>
           <p
-            className={`${lato.className} lg:text-[20px] text-base lg:leading-[36px] leading-8 text-darkLiver lg:w-[500px] w-full lg:text-start text-justify`}
+            className={`${lato.className} lg:text-[20px] text-base lg:leading-[36px] leading-8 lg:w-[500px] w-full lg:text-start text-justify`}
           >
             We are more than happy to welcome you to our home. Come see our
             first class facilities and see for yourself why this school is the
@@ -164,12 +271,12 @@ export default function PrimaryProgram() {
               Book a tour!
             </Link>
             <p
-              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver lg:w-2/3 md:w-2/3 w-full lg:text-start md:text-start text-center`}
+              className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 lg:w-2/3 md:w-2/3 w-full lg:text-start md:text-start text-center`}
             >
               or read the &nbsp;
               <a
                 href="/enrollment"
-                className={`text-darkLiver italic cursor-pointer underline ${josefinSans.className}`}
+                className={`italic cursor-pointer underline ${josefinSans.className}`}
               >
                 enrollment process
               </a>
