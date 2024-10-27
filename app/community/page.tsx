@@ -32,21 +32,21 @@ export default function Community() {
           firstImage={
             "https://ik.imagekit.io/cascades/cascades/community/Pic2.png"
           }
-          firstTitle="MAWO, IRENE MARIA SALUD"
+          firstTitle="IRENE MARIA SALUD MAWO"
           firstName="Officer-in-Charge, Sibol Main Campus Mandaluyong City"
           firstDescription="Lead, Atelier of Life "
           hasSecondData
           secondImage={
             "https://ik.imagekit.io/cascades/cascades/community/Pic3.png"
           }
-          secondTitle="GO, CATHRINE"
+          secondTitle="CATHRINE GO"
           secondName="Officer-in-Charge, Sibol QC"
           secondDescription="Lead, Atelier of Sound and Movement"
           hasThirdData
           thirdImage={
             "https://ik.imagekit.io/cascades/cascades/community/Pic4.png"
           }
-          thirdTitle="GANUB, ANGEL"
+          thirdTitle="ANGEL GANUB"
           thirdName="Officer-in-Charge, Hiraya Elementary Mandaluyong City"
           thirdDescription="Coordinator for Bahaghari Program"
         />

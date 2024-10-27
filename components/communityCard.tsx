@@ -35,7 +35,7 @@ export default function CommunityCard({
             alt="image 3"
             height={350}
             width={350}
-            className={`${hasSecondData || hasThirdData ? "w-[200px] h-[200px]" : "w-[350px] h-[350px] object-contain"}`}
+            className={`${hasSecondData || hasThirdData ? "w-[200px] h-[200px] object-contain" : "w-[350px] h-[350px] object-contain"}`}
           />
         ) : null}
         <div className="text-darkLiver space-y-2 lg:w-[500px] w-full lg:text-start text-center">
