@@ -23,17 +23,7 @@ export default function Faqs() {
             descriptionCN="lg:w-[500px] w-full lg:text-start text-center"
           />
           <InfoCard
-            title="2. Are there available discounts?"
-            titleCN="text-blueSapphire lg:lg:w-[500px] w-full lg:text-start text-center w-full"
-            description="Get the 10% early bird discount if you reserve or enroll as early as August 26 – 30, 2019.
-          <br />
-          Contact us for inquiries on SIBLINGS and referral discounts."
-            descriptionCN="lg:w-[500px] w-full lg:text-start text-center"
-          />
-        </div>
-        <div>
-          <InfoCard
-            title="3. Are there programs for children with special needs?"
+            title="2. Are there programs for children with special needs?"
             titleCN="text-blueSapphire lg:lg:w-[500px] w-full lg:text-start text-center w-full"
             description="Cascades welcome children with special needs. They will be mainstreamed and be a part of the whole program as long as:<br />
           <li>they have approval from their physician / pediatrician allowing them to be included in a mainstream class.</li>
@@ -41,8 +31,18 @@ export default function Faqs() {
           <li>if the family does not have their own trained caregiver / mirror teacher, the school will help them find a guide teacher with special trainings for their child’s special needs.</li>"
             descriptionCN="lg:w-[550px] md:w-2/3 mx-auto w-full"
           />
+          {/* <InfoCard
+            title="2. Are there available discounts?"
+            titleCN="text-blueSapphire lg:lg:w-[500px] w-full lg:text-start text-center w-full"
+            description="Get the 10% early bird discount if you reserve or enroll as early as August 26 – 30, 2019.
+          <br />
+          Contact us for inquiries on SIBLINGS and referral discounts."
+            descriptionCN="lg:w-[500px] w-full lg:text-start text-center"
+          /> */}
+        </div>
+        <div>
           <InfoCard
-            title="4. How about ESL Students?"
+            title="3. How about ESL Students?"
             titleCN="text-blueSapphire lg:lg:w-[500px] w-full lg:text-start text-center w-full"
             description="ESL Students (English as a second language) are welcome to the school and will be provided extra help to learn the language easily, and be able to have smooth transition to the new environment."
             descriptionCN="lg:w-[500px] w-full lg:text-start text-center"

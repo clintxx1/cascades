@@ -39,12 +39,12 @@ export default function Approach() {
           <p
             className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 lg:w-[520px] w-full mb-28 lg:px-0 px-4 lg:text-start text-justify`}
           >
-            The HIRAYA Curriculum is centered around equipping students with the
-            knowledge and understanding of sustainable development. Our students
-            are exposed to hands-on experiences that encourage them to build,
-            innovate, and create. By emphasizing the value of work, resources,
-            money, and time, our curriculum instills a sense of responsibility
-            and purpose in our students.
+            The Cascades Curriculum is centered around equipping students with
+            the knowledge and understanding of sustainable development. Our
+            students are exposed to hands-on experiences that encourage them to
+            build, innovate, and create. By emphasizing the value of work,
+            resources, money, and time, our curriculum instills a sense of
+            responsibility and purpose in our students.
             <br />
             <br />
             The Curriculum will emphasize collaboration and community
@@ -109,7 +109,7 @@ export default function Approach() {
             className="object-contain lg:w-full md:w-[924px] w-[824px]"
           />
         </div>
-        <div className="place-content-end">
+        <div className="flex items-end">
           <p className="text-4xl italic font-bold lg:text-start text-center">
             Subject Areas
           </p>

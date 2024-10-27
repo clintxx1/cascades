@@ -24,7 +24,7 @@ export default function SecondSection() {
           <p className="lg:text-[28px] text-[24px] italic font-semibold text-darkLiver lg:text-start text-center">
             School Features
           </p>
-          <div className="flex lg:flex-row flex-col items-center justify-center w-full lg:text-start text-justify lg:gap-0 gap-10">
+          <div className="flex lg:flex-row flex-col items-center justify-center w-full lg:text-start text-justify gap-10">
             <p
               className={`${lato.className} lg:text-[20px] lg:leading-[36px] leading-8 text-darkLiver`}
             >

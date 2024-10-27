@@ -29,11 +29,15 @@ export default function Contact() {
           </h2>
           <Details
             label="Pre-school Campus Address:"
-            value="6 Silangan St. Barangka Drive Mandaluyong City"
+            value="
+              6 Silangan St. Barangka Drive Mandaluyong City<br/><br/>
+              74 Tomas Morato Avenue, Sacred Heart Quezon City<br/><br/>
+              Likha Village, Lot 2 Biluso Poblacion, Silang Cavite
+            "
           />
           <Details
             label="Elementary Campus Address:"
-            value="286 Sto. Rosario Plainview, Mandaluyong City"
+            value="276 Sto. Rosario Plainview, Mandaluyong City"
           />
           <br />
           <br />

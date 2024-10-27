@@ -96,10 +96,10 @@ export default function MobileNavbar({
                       label: "Scholarships",
                       page: "/scholarship",
                     },
-                    {
-                      label: "Tuition Fee",
-                      page: "/tuition-fee",
-                    },
+                    // {
+                    //   label: "Tuition Fee",
+                    //   page: "/tuition-fee",
+                    // },
                   ],
                 },
               ]}

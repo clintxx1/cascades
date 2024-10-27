@@ -174,11 +174,11 @@ export default function Navbar() {
                           href={"/scholarship"}
                         ></ListItem>
                         <div className="w-full bg-white h-[2px] p-0 m-0"></div>
-                        <ListItem
+                        {/* <ListItem
                           key={"tuition"}
                           title={"Tuition Fee"}
                           href={"/tuition-fee"}
-                        ></ListItem>
+                        ></ListItem> */}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>

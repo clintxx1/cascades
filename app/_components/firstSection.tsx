@@ -30,7 +30,7 @@ export default function FirstSection() {
         />
         <div className="w-full space-y-8 grid lg:place-items-start place-items-center">
           <p className="lg:text-[32px] text-[24px] font-semibold text-crystalBlue lg:text-start text-center">
-            A reggio approach in education
+            A reggio-approach in education
           </p>
 
           <Image
@@ -43,7 +43,8 @@ export default function FirstSection() {
             className="lg:w-[208px] w-full lg:object-cover object-contain h-[6px]"
           />
           <p className="lg:text-[42px] leading-[48px] text-3xl font-semibold text-crystalBlue lg:text-start text-center">
-            Every child is viewed as <br /> capable contributor, <br />
+            Every child is viewed as <br className="sm:block hidden" /> capable
+            contributor, <br className="sm:block hidden" />
             an active citizen of the world.
           </p>
         </div>
