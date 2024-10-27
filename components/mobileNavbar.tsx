@@ -23,7 +23,7 @@ export default function MobileNavbar({
       `}</style>
       <Sheet open={open} onOpenChange={(e) => setIsOpen(e)}>
         <SheetContent className="w-full !m-0 !max-w-full min-h-screen bg-blueSapphire border-none overflow-auto">
-          <div className="grid grid-cols-1 lg:text-[28px] text-[24px] h-max">
+          <div className="grid grid-cols-1 lg:text-[28px] text-[24px] pb-12">
             <LinkDropdown
               dropdownData={[
                 {
