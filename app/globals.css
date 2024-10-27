@@ -148,3 +148,8 @@
   height: 89px;
   aspect-ratio: auto 345/89;
 }
+
+.customIndent {
+  padding-left: 60px;
+  display: inline-block;
+}

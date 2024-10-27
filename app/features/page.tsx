@@ -44,7 +44,7 @@ export default function Features() {
           </p>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col-reverse items-center justify-between w-full gap-8 mt-14">
+      {/* <div className="flex lg:flex-row flex-col-reverse items-center justify-between w-full gap-8 mt-14">
         <div className="space-y-8 w-full">
           <Image
             src={
@@ -82,7 +82,7 @@ export default function Features() {
             height={442}
           />
         </div>
-      </div>
+      </div> */}
       <div className="py-5">
         <Image
           src={

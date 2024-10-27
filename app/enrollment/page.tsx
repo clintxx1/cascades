@@ -32,14 +32,14 @@ export default function Enrollment() {
           <InfoCard
             title="1. Message us your inquiry and details"
             description={`
-            &check; Child’s Name, Nick Name, Birthday, Age<br />
-            &check; Parents Name, Viber/SMS Number, Email Address
+            &check;&nbsp;Child’s Name, Nick Name, Birthday, Age<br />
+            &check;&nbsp;Parents Name, Viber/SMS Number, Email Address
             `}
             hasHeader
             headerImage={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
-            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
+            descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center text-left"
           />
           <InfoCard
             title="2. Schedule a Campus Tour and Free 1-day Trial Class"
@@ -58,7 +58,7 @@ export default function Enrollment() {
               <span style="padding-left: 60px;">Fetcher’s Form and ID Picture</span><br />
               <span style="padding-left: 60px;">Photocopy of Birth Certificate</span><br />
               <span style="padding-left: 30px;">3.2 Transfering Student Requirements:</span><br />
-              <span style="padding-left: 60px;">Recommendation Form accomplished by the previous center/school</span><br />
+              <span class="customIndent">Recommendation Form accomplished by the previous center/school</span><br />
               <span style="padding-left: 60px;">Report Card</span><br />
             `}
             hasHeader
@@ -68,7 +68,7 @@ export default function Enrollment() {
             descriptionCN="lg:w-[650px] md:w-2/3 w-full mx-auto text-start"
           />
           <InfoCard
-            title="4. Assessment and Payment Process and Verification"
+            title="4. Assessment, Payment Process and Verification"
             description=""
             hasHeader
             headerImage={

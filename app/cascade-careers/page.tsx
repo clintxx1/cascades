@@ -46,7 +46,7 @@ export default function CascadeCareers() {
               alt="divider"
               className="lg:w-[470px] w-full h-[8px]"
             />
-            <Image
+            {/* <Image
               src={
                 "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
               }
@@ -54,7 +54,7 @@ export default function CascadeCareers() {
               height={8}
               alt="divider"
               className="lg:w-[470px] w-full h-[8px]"
-            />
+            /> */}
           </div>
         </div>
       </div>

@@ -67,14 +67,12 @@ export default function PrimaryProgram() {
       <p
         className={`${lato.className}  lg:text-[20px] lg:leading-[36px] leading-8 w-full mt-8 mb-20`}
       >
-        Cascades Approach has aligned learning programs from infancy through age
-        18.
-        <br />
+        Cascades Approach has aligned learning programs from toddlers to grade
+        school. <br className="sm:block hidden" />
         It will ensure that the learning gains in an early childhood setting
-        will develop as they grow.
-        <br />
-        The children will be given proper guidance and mentoring to have a
-        higher chance of getting a career they truly want to pursue.
+        will develop as they grow. <br className="sm:block hidden" /> The
+        children will be given proper guidance and mentoring to have a higher
+        chance of getting the career they truly want to pursue.
       </p>
       <div className="pb-20 m-0">
         <Image
