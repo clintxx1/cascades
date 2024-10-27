@@ -38,7 +38,7 @@ export default function SpecialPrograms() {
             title="1. Cascades Play Program"
             hasSubtitle
             subtitle="18 MONTHS TO 3 YEARS OLD"
-            description="The HIRAYA Play program, where our little ones start their first school experience. Our children are offered sensory activities which are great both for their little hands and developing minds. This program offers two hours of playtime using our invitation table and provocations areas. Give your little ones the chance to explore, create and learn in a safe and nurturing environment. For only Php10,000 and get 8 sessions of fun and learning you can use it between Monday to Thursday."
+            description="The Cascades Play program, where our little ones start their first school experience. Our children are offered sensory activities which are great both for their little hands and developing minds. This program offers two hours of playtime using our invitation table and provocations areas. Give your little ones the chance to explore, create and learn in a safe and nurturing environment. For only Php10,000 and get 8 sessions of fun and learning you can use it between Monday to Thursday."
             descriptionCN="lg:w-[450px] w-full grid lg:place-items-start place-items-center"
           />
           <InfoCard
