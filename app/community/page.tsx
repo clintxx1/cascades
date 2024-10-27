@@ -72,7 +72,7 @@ export default function Community() {
           firstImage={
             "https://ik.imagekit.io/cascades/cascades/community/Pic2.png"
           }
-          firstTitle="MAWO, IRENE MARIA SALUD"
+          firstTitle="IRENE MARIA SALUD MAWO"
           firstName="Officer-in-Charge, Sibol Main Campus Mandaluyong City"
           firstDescription="Lead, Atelier of Life"
         />
@@ -81,7 +81,7 @@ export default function Community() {
           firstImage={
             "https://ik.imagekit.io/cascades/cascades/community/Pic3.png"
           }
-          firstTitle="GO, CATHRINE"
+          firstTitle="CATHRINE GO"
           firstName="Officer-in-Charge, Sibol QC"
           firstDescription="Lead, Atelier of Sound and Movement"
         />
@@ -90,7 +90,7 @@ export default function Community() {
           firstImage={
             "https://ik.imagekit.io/cascades/cascades/community/Pic4.png"
           }
-          firstTitle="GANUB, ANGEL"
+          firstTitle="ANGEL GANUB"
           firstName="Officer-in-Charge, Hiraya Elementary Mandaluyong City"
           firstDescription="Coordinator for Bahaghari Program"
         />
