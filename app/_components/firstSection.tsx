@@ -30,7 +30,7 @@ export default function FirstSection() {
         />
         <div className="w-full space-y-8 grid lg:place-items-start place-items-center">
           <p className="lg:text-[32px] text-[24px] font-semibold text-crystalBlue lg:text-start text-center">
-            A reggio approach in education
+            A reggio-approach in education
           </p>
 
           <Image
