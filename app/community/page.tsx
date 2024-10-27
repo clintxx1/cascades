@@ -55,8 +55,8 @@ export default function Community() {
             "https://ik.imagekit.io/cascades/cascades/community/Pic5.png"
           }
           firstTitle="RANDOLPH MARIBOJOC"
-          firstName="Head Atelierista"
-          firstDescription="Likha Village Head "
+          firstName="Cascades Head Atelierista"
+          // firstDescription="Likha Village Head "
           hasSecondData
           secondImage={
             "https://ik.imagekit.io/cascades/cascades/community/Pic6.png"
@@ -100,8 +100,8 @@ export default function Community() {
             "https://ik.imagekit.io/cascades/cascades/community/Pic5.png"
           }
           firstTitle="RANDOLPH MARIBOJOC"
-          firstName="Head Atelierista"
-          firstDescription="Likha Village Head"
+          firstName="Cascades Head Atelierista"
+          // firstDescription="Likha Village Head"
         />
         <CommunityCard
           className="w-full"

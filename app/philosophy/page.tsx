@@ -169,7 +169,9 @@ export default function Philosophy() {
           </div>
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
             <Image
-              src={"https://ik.imagekit.io/cascades/cascades/philosophy/3.png"}
+              src={
+                "https://ik.imagekit.io/cascades/cascades/philosophy/3(updated).png"
+              }
               alt="longDiv"
               width={1206}
               height={1941}
