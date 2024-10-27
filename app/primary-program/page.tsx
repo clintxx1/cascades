@@ -97,16 +97,55 @@ export default function PrimaryProgram() {
         <p className="lg:text-[42px] italic text-3xl leading-[1.2em] font-semibold text-crystalBlue">
           PRESCHOOL
         </p>
-        <div className="w-full flex items-center justify-center">
-          <Image
-            src={"https://ik.imagekit.io/cascades/cascades/programs/Pic1.png"}
-            alt={"image1"}
-            width={600}
-            height={300}
-            className="object-contain"
-          />
+        <div className="w-full flex sm:flex-row flex-col sm:items-start items-center justify-center gap-20">
+          <div className="space-y-6">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/programs/pre-1.png"
+              }
+              alt={"image1"}
+              width={223}
+              height={250}
+              className="object-contain"
+            />
+            <div className="text-center">
+              <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                WANDERERS
+              </p>
+              <p className="italic lg:text-base md:text-base text-sm">
+                16 Months to 3 years old
+              </p>
+            </div>
+          </div>
+          <div className="space-y-6">
+            <Image
+              src={"https://ik.imagekit.io/cascades/cascades/programs/pre2.png"}
+              alt={"image1"}
+              width={250}
+              height={250}
+              className="object-contain"
+            />
+            <div className="flex flex-col text-center">
+              <div>
+                <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                  EXPLORERS
+                </p>
+                <p className="italic lg:text-base md:text-base text-sm">
+                  3 years old to 4 years old
+                </p>
+              </div>
+              <div>
+                <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                  SR. EXPLORERS
+                </p>
+                <p className="italic lg:text-base md:text-base text-sm">
+                  5 years old
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="w-full flex items-start lg:justify-center md:justify-center sm:justify-center justify-between lg:gap-52 md:gap-52 sm:gap-52">
+        {/* <div className="w-full flex items-start justify-around lg:gap-52 md:gap-52 sm:gap-52">
           <div>
             <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
               WANDERERS
@@ -133,7 +172,7 @@ export default function PrimaryProgram() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* ELEMENTARY */}
       <div className="flex flex-col gap-4 w-fulll">
@@ -147,7 +186,49 @@ export default function PrimaryProgram() {
         <p className="lg:text-[42px] italic text-3xl leading-[1.2em] font-semibold text-crystalBlue">
           ELEMENTARY
         </p>
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex sm:flex-row flex-col sm:items-start items-center justify-center gap-20">
+          <div className="space-y-6">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/programs/elem1.png"
+              }
+              alt={"image1"}
+              width={220}
+              height={250}
+              className="object-contain"
+            />
+            <div className="text-center">
+              <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                NAVIGATORS
+              </p>
+              <p className="italic lg:text-base md:text-base text-sm">
+                6 years old to 8 years old <br />
+                Grade 1 - 3
+              </p>
+            </div>
+          </div>
+          <div className="space-y-6">
+            <Image
+              src={
+                "https://ik.imagekit.io/cascades/cascades/programs/elem2.png"
+              }
+              alt={"image1"}
+              width={250}
+              height={250}
+              className="object-contain"
+            />
+            <div className="text-center">
+              <p className="lg:text-2xl md:text-2xl text-lg italic font-semibold">
+                DISCOVERERS
+              </p>
+              <p className="italic lg:text-base md:text-base text-sm">
+                9 years old to 11 years old <br />
+                Grade 4 - 6
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="w-full flex items-center justify-center">
           <Image
             src={"https://ik.imagekit.io/cascades/cascades/programs/Pic2.png"}
             alt={"image1"}
@@ -177,7 +258,7 @@ export default function PrimaryProgram() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* OLD UI - KEEP */}
       {/* <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-0">

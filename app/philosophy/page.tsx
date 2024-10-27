@@ -15,12 +15,12 @@ export default function Philosophy() {
           <p
             className={`${lato.className} text-darkLiver lg:text-[20px] lg:leading-[36px] leading-8 w-full lg:text-start text-justify`}
           >
-            The HIRAYA Curriculum is centered around equipping students with the
-            knowledge and understanding of sustainable development. Our students
-            are exposed to hands-on experiences that encourage them to build,
-            innovate, and create. By emphasizing the value of work, resources,
-            money, and time, our curriculum instills a sense of responsibility
-            and purpose in our students.
+            The Cascades Curriculum is centered around equipping students with
+            the knowledge and understanding of sustainable development. Our
+            students are exposed to hands-on experiences that encourage them to
+            build, innovate, and create. By emphasizing the value of work,
+            resources, money, and time, our curriculum instills a sense of
+            responsibility and purpose in our students.
             <br />
             <br />
             The Curriculum will emphasize collaboration and community
