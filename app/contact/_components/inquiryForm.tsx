@@ -47,11 +47,6 @@ const FormSchema = z.object({
       required_error: "Please enter a contact number.",
     })
     .min(1),
-  title: z
-    .string({
-      required_error: "Please enter a title.",
-    })
-    .min(1),
   message: z
     .string({
       required_error: "Please enter add a message.",
@@ -68,7 +63,6 @@ export default function InquiryForm() {
       name: "",
       from_email: "",
       contact: "",
-      title: "",
       message: "",
     },
   });
@@ -134,7 +128,6 @@ export default function InquiryForm() {
             name: "",
             from_email: "",
             contact: "",
-            title: "",
             message: "",
           });
           toast({
@@ -235,23 +228,6 @@ export default function InquiryForm() {
                   <Input
                     {...field}
                     placeholder="Contact Number"
-                    className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="title"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Title</FormLabel>
-                <FormControl>
-                  <Input
-                    {...field}
-                    placeholder="Title"
                     className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                   />
                 </FormControl>

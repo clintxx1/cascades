@@ -15,7 +15,6 @@ export async function POST(req: NextRequest) {
         name: Name,
         from_email: Email,
         contact: Contact,
-        title: Title,
         message: Message,
         date: Date,
         time: Time,
@@ -26,7 +25,6 @@ export async function POST(req: NextRequest) {
         Name,
         Email,
         Contact,
-        Title,
         Message,
         Date,
         Time,
@@ -50,6 +48,26 @@ export async function POST(req: NextRequest) {
     // Add rows
     data.forEach((item: any) => {
       worksheet.addRow(item);
+    });
+
+    // Adjust column widths
+    worksheet.columns.forEach((column) => {
+      if (column) {
+        if (column.header === "Message") {
+          // Set a fixed width of 70 for the "Message" column
+          column.width = 70;
+        } else {
+          // Dynamically adjust width for other columns
+          let maxLength = 10; // Set a minimum width for each column
+          column.eachCell?.({ includeEmpty: true }, (cell) => {
+            if (cell.value) {
+              const cellLength = cell.value.toString().length;
+              maxLength = Math.max(maxLength, cellLength);
+            }
+          });
+          column.width = maxLength + 2; // Adding padding for readability
+        }
+      }
     });
 
     // Write to buffer

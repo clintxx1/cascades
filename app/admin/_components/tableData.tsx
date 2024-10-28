@@ -46,7 +46,6 @@ export default function TableData({ data }: { data: Form[] }) {
               <TableCell>{form.name}</TableCell>
               <TableCell>{form.from_email}</TableCell>
               <TableCell>{form.contact}</TableCell>
-              <TableCell>{form.title}</TableCell>
               <TableCell>{form.message}</TableCell>
               <TableCell>{form.date}</TableCell>
               <TableCell>{form.time}</TableCell>
@@ -94,10 +93,6 @@ export default function TableData({ data }: { data: Form[] }) {
                 </div>
               </div>
               <div className="flex md:flex-row flex-col md:items-center items-start justify-between gap-3">
-                <div className="flex items-center justify-start gap-2">
-                  <p className="font-semibold">Title:</p>
-                  <p>{form.title}</p>
-                </div>
                 <div className="flex items-center justify-start gap-2">
                   <p className="font-semibold">Date:</p>
                   <p>{form.date}</p>

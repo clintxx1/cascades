@@ -530,7 +530,6 @@ export const ADMIN_FORM_TABLE_HEADER = [
   "Name",
   "Email",
   "Contact",
-  "Title",
   "Message",
   "Date",
   "Time",

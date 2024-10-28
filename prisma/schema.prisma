@@ -31,7 +31,6 @@ model Form {
   name       String
   from_email String
   contact    String
-  title      String
   message    String
   date       String
   time       String

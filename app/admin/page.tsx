@@ -25,14 +25,14 @@ export default function Admin() {
   const searchParams = useSearchParams();
   const { replace } = useRouter();
   const pathname = usePathname();
-  const params = new URLSearchParams(searchParams);
+  const params = new URLSearchParams(searchParams.toString());
   const search = params.get("search") || "";
 
   useDebounce(
     () => {
       handleSearch();
     },
-    1000,
+    500,
     [search]
   );
 
