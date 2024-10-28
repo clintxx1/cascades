@@ -96,31 +96,7 @@ export default function Features() {
       </div>
       <div className="flex items-center justify-center">
         <Image
-          src={
-            "https://ik.imagekit.io/cascades/cascades/features/Featurepic1.png"
-          }
-          alt="Image 1"
-          width={1024}
-          height={442}
-          className="object-contain"
-        />
-      </div>
-      {/* <div className="py-5">
-        <Image
-          src={
-            "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
-          }
-          alt="longDiv"
-          width={1024}
-          height={8}
-          className="w-full h-[6px] my-12 lg:px-8 lg:object-cover md:object-cover object-contain"
-        />
-      </div> */}
-      <div className="flex items-center justify-center">
-        <Image
-          src={
-            "https://ik.imagekit.io/cascades/cascades/features/Featurepic2.png"
-          }
+          src={"https://ik.imagekit.io/cascades/cascades/features/Features.png"}
           alt="Image 1"
           width={1024}
           height={442}
