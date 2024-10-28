@@ -18,6 +18,7 @@ export async function GET(request: Request) {
       where: {
         name: {
           contains: search,
+          mode: "insensitive",
         },
       },
       orderBy: {
