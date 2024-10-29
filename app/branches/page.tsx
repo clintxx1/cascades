@@ -22,7 +22,7 @@ export default function Branches() {
         image={"https://ik.imagekit.io/cascades/cascades/branches/p2.png"}
         name="Cascades Hiraya"
         branch="Mandaluyong Branch"
-        address="276 Sto. Rosario Plainview, Mandaluyong City"
+        address="286 Sto. Rosario Plainview, Mandaluyong City"
       />
       <BranchCard
         image={"https://ik.imagekit.io/cascades/cascades/branches/p3.png"}

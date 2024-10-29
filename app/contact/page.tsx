@@ -37,7 +37,7 @@ export default function Contact() {
           />
           <Details
             label="Elementary Campus Address:"
-            value="276 Sto. Rosario Plainview, Mandaluyong City"
+            value="286 Sto. Rosario Plainview, Mandaluyong City"
           />
           <br />
           <br />
