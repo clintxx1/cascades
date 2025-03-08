@@ -79,4 +79,6 @@ export type BranchCardProps = {
   name: string;
   branch: string;
   address: string;
+  email?: string;
+  contactNumber?: string;
 };

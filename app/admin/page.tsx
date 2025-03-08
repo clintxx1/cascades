@@ -17,6 +17,7 @@ import Link from "next/link";
 import useDebounce from "@/hooks/useDebounce";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function Admin() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -27,13 +28,16 @@ export default function Admin() {
   const pathname = usePathname();
   const params = new URLSearchParams(searchParams.toString());
   const search = params.get("search") || "";
+  const limit = Number(params.get("limit") || 1000);
+  const branch = params.get("branch") || "None";
+  const orderBy = params.get("sort") || "desc";
 
   useDebounce(
     () => {
-      handleSearch();
+      refetchFormQuery();
     },
     500,
-    [search]
+    [orderBy, branch, search]
   );
 
   useEffect(() => {
@@ -84,7 +88,7 @@ export default function Admin() {
     }
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     const searchResult = e.target.value;
     if (searchResult) {
       params.set("search", searchResult);
@@ -94,10 +98,40 @@ export default function Admin() {
     replace(`${pathname}?${params.toString()}`);
   };
 
-  const handleSearch = async () => {
+  const handleLimitChange = (e:string) => {
+    const limitRes = e;
+    if (limitRes) {
+      params.set("limit", limitRes);
+    } else {
+      params.delete("limit");
+    }
+    replace(`${pathname}?${params.toString()}`);
+  };
+
+  const handleFilterByBranchChange = (e:string) => {
+    const branch = e;
+    if (branch && branch !== "None") {
+      params.set("branch", branch);
+    } else {
+      params.delete("branch");
+    }
+    replace(`${pathname}?${params.toString()}`);
+  };
+
+  const handleSortByChange = (e:string) => {
+    const sort = e;
+    if (sort) {
+      params.set("sort", sort);
+    } else {
+      params.delete("sort");
+    }
+    replace(`${pathname}?${params.toString()}`);
+  };
+
+  const refetchFormQuery = async () => {
     try {
       const res = await fetch(
-        `/api/form?sort=asc${params.toString() && `&${params.toString()}`}`,
+        `/api/form?${params.toString() && `&${params.toString()}`}`,
         {
           method: "GET",
           headers: {
@@ -107,7 +141,6 @@ export default function Admin() {
       );
       if (res.status === 200) {
         const { data } = await res.json();
-        console.log(data, "hmm");
         setFormList(data);
       }
     } catch (error) {
@@ -156,14 +189,64 @@ export default function Admin() {
             )}
           </Button>
         </div>
-        <div className="flex items-center relative p-1">
-          <Search className="absolute left-3 h-5 w-5" />
-          <Input
-            className="pl-10 py-2 lg:w-[30%] md:w-[50%] w-full focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
-            placeholder="Search by Name"
-            onChange={handleChange}
-            defaultValue={search}
-          />
+        <div className="flex lg:items-end lg:flex-row flex-col gap-4">
+          <div className="w-full lg:w-auto">
+            <label htmlFor="search" className="text-sm">Search:</label>
+            <div className="flex items-center relative pt-1">
+              <Search className="absolute left-3 h-5 w-5" />
+              <Input
+                name="search"
+                className="pl-10 py-2 w-full focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                placeholder="Search by Name"
+                onChange={handleSearch}
+                defaultValue={search}
+              />
+            </div>
+          </div>
+          <div className="flex items-end gap-4 w-full">
+            <div className="w-full lg:w-auto">
+              <label htmlFor="filter" className="text-sm">Filter by Branch:</label>
+              <Select name="filter" defaultValue={branch} onValueChange={handleFilterByBranchChange}>
+                <SelectTrigger>
+                  <SelectValue  placeholder="Select branch" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="None">None</SelectItem>
+                  <SelectItem value="Preschool: Mandaluyong">Preschool: Mandaluyong</SelectItem>
+                  <SelectItem value="Elementary: Mandaluyong">Elementary: Mandaluyong</SelectItem>
+                  <SelectItem value="Preschool: Silang Cavite">Preschool: Silang Cavite</SelectItem>
+                  <SelectItem value="Preschool: Tomas Morato, Quezon City">Preschool: Tomas Morato, Quezon City</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            {/* TODO: Uncomment when needed and add pagination */}
+            {/* <div className="w-full lg:w-auto">
+              <label htmlFor="limit" className="text-sm">Limit</label>
+              <Select name="limit" defaultValue={limit.toString()} onValueChange={handleLimitChange}>
+                <SelectTrigger >
+                  <SelectValue placeholder="Select limit" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="10">10</SelectItem>
+                  <SelectItem value="20">20</SelectItem>
+                  <SelectItem value="50">50</SelectItem>
+                  <SelectItem value="100">100</SelectItem>
+                </SelectContent>
+              </Select>
+            </div> */}
+            <div className="w-full lg:w-auto">
+              <label htmlFor="order" className="text-sm">Sort by:</label>
+              <Select name="order" defaultValue={orderBy.toString()} onValueChange={handleSortByChange}>
+                <SelectTrigger >
+                  <SelectValue placeholder="Select limit" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="desc">Latest</SelectItem>
+                  <SelectItem value="asc">Oldest</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
         </div>
         <TableData data={formList} />
         <Dialog open={isOpen}>
