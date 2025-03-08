@@ -527,6 +527,7 @@ export const ADMIN_FORM_TABLE_HEADER = [
   "Entry ID",
   "Form",
   "Category",
+  "Branch",
   "Name",
   "Email",
   "Contact",

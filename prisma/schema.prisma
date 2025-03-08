@@ -28,6 +28,7 @@ model Form {
   id         String   @id @default(cuid())
   form_name  String
   categories String
+  branch     String?
   name       String
   from_email String
   contact    String
