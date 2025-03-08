@@ -28,11 +28,25 @@ export default function PromoSection({ classname }: { classname?: string }) {
               Payment Terms Option
             </p>
             <InfoCard
-              className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
-              title="One Year Payment"
-              titleCN="lg:w-[300px] w-full"
-              description="Maximum of 8% discount only (enrolled for one whole year)"
-              descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
+              className="w-full py-2"
+              title=""
+              titleCN=""
+              description="Annual"
+              descriptionCN="!w-full lg:text-start text-center"
+            />
+            <InfoCard
+              className="w-full py-2"
+              title=""
+              titleCN=""
+              description="Semi- Annual"
+              descriptionCN="!w-full lg:text-start text-center"
+            />
+            <InfoCard
+              className="w-full py-2"
+              title=""
+              titleCN=""
+              description="Monthly"
+              descriptionCN="!w-full lg:text-start text-center"
             />
           </div>
           <Image
@@ -44,7 +58,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
             alt="divider"
             className="w-full h-[8px] lg:object-cover md:object-cover object-contain"
           />
-          <div>
+          {/* <div>
             <p className="lg:text-3xl text-3xl lg:text-start text-center font-semibold">
               5 years old below
             </p>
@@ -76,8 +90,8 @@ export default function PromoSection({ classname }: { classname?: string }) {
               description="No Discount"
               descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
-          </div>
-          <Image
+          </div> */}
+          {/* <Image
             src={
               "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
             }
@@ -85,12 +99,40 @@ export default function PromoSection({ classname }: { classname?: string }) {
             height={8}
             alt="divider"
             className="w-full h-[8px] lg:object-cover md:object-cover object-contain"
-          />
+          /> */}
           <div>
             <p className="lg:text-3xl text-3xl lg:text-start text-center font-semibold">
               Special Discount Offers
             </p>
             <InfoCard
+              className="w-full pb-2"
+              title=""
+              titleCN=""
+              description="*3% Sibling Discount (applied to the 2nd child’s fee)"
+              descriptionCN="!w-full lg:text-start text-center"
+            />
+            <InfoCard
+              className="w-full py-2"
+              title=""
+              titleCN=""
+              description="*3% Early Bird Discount"
+              descriptionCN="!w-full lg:text-start text-center"
+            />
+            <InfoCard
+              className="w-full py-2"
+              title=""
+              titleCN=""
+              description="*3% PWD Discount (with valid PWD ID)"
+              descriptionCN="!w-full lg:text-start text-center"
+            />
+            <InfoCard
+              className="w-full py-2"
+              title=""
+              titleCN=""
+              description="(Maximum of 6% discount only)"
+              descriptionCN="!w-full lg:text-start text-center"
+            />
+            {/* <InfoCard
               className="flex lg:flex-row md:flex-row flex-col lg:gap-8 md:gap-8 gap-2 lg:items-start md:items-start items-center lg:pl-10 md:pl-10 pl-0"
               title="Early Bird Discount"
               titleCN="lg:w-[300px] w-full"
@@ -117,7 +159,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
               titleCN="lg:w-[300px] w-full"
               description="30% Discount for 5-9 years old (Elementary level)"
               descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
-            />
+            /> */}
           </div>
           {/* <Image
             src={
