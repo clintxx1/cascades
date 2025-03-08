@@ -15,6 +15,16 @@ Create a local db (optional):
 npx prisma migrate dev
 ```
 
+Update prisma schema:
+```bash
+npx prisma generate
+```
+
+Push prisma schema to production:
+```bash
+npx prisma db push
+```
+
 Run the development server:
 
 ```bash
