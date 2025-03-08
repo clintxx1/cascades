@@ -26,6 +26,11 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { LoaderCircle } from "lucide-react";
 const FormSchema = z.object({
+  branch: z
+    .string({
+      required_error: "Please select a branch.",
+    })
+    .min(1),
   categories: z
     .string({
       required_error: "Please select a category.",
@@ -59,6 +64,7 @@ export default function InquiryForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
+      branch: "",
       categories: "",
       name: "",
       from_email: "",
@@ -124,6 +130,7 @@ export default function InquiryForm() {
 
         if (inquiry.status === 200) {
           form.reset({
+            branch: "",
             categories: "",
             name: "",
             from_email: "",
@@ -179,7 +186,38 @@ export default function InquiryForm() {
                     <SelectItem value="Book a Tour">Book a Tour</SelectItem>
                   </SelectContent>
                 </Select>
-                <FormMessage />
+                <FormMessage className="text-xs italic" />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="branch"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Branch</FormLabel>
+                <Select onValueChange={field.onChange} value={field.value}>
+                  <FormControl>
+                    <SelectTrigger className="w-full lg:text-[20px] lg:leading-[36px] leading-8">
+                      <SelectValue placeholder="Select branch" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem value="Preschool: Mandaluyong">
+                      Preschool: Mandaluyong
+                    </SelectItem>
+                    <SelectItem value="Elementary: Mandaluyong">
+                      Elementary: Mandaluyong
+                    </SelectItem>
+                    <SelectItem value="Elementary: Mandaluyong">
+                      Preschool: Silang Cavite
+                    </SelectItem>
+                    <SelectItem value="Preschool: Tomas Morato, Quezon City">
+                      Preschool: Tomas Morato, Quezon City
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+                <FormMessage className="text-xs italic" />
               </FormItem>
             )}
           />
@@ -196,7 +234,7 @@ export default function InquiryForm() {
                     className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                   />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-xs italic" />
               </FormItem>
             )}
           />
@@ -214,7 +252,7 @@ export default function InquiryForm() {
                     className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                   />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-xs italic" />
               </FormItem>
             )}
           />
@@ -231,7 +269,7 @@ export default function InquiryForm() {
                     className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                   />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-xs italic" />
               </FormItem>
             )}
           />
@@ -248,10 +286,27 @@ export default function InquiryForm() {
                     className="w-full lg:text-[20px] lg:leading-[36px] leading-8"
                   />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-xs italic" />
               </FormItem>
             )}
           />
+          <div className="text-xs italic pt-4 text-justify">
+            <p>
+              Data Privacy Disclaimer:
+              <br />
+              <br />
+              We value your privacy and are committed to protecting your
+              personal information. We adhere to all relevant data privacy laws
+              and regulations to ensure your data is securely handled. Any
+              personal information you provide will only be used for the purpose
+              for which it was collected and will never be shared with third
+              parties without your consent, except as required by law.
+              <br />
+              <br />
+              By using our website, you agree to our privacy practices. For more
+              details, please refer to our full privacy policy.
+            </p>
+          </div>
           <div className="flex items-center lg:justify-end justify-center pt-4">
             <Button
               type="submit"

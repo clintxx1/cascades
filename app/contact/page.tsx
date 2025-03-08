@@ -31,7 +31,7 @@ export default function Contact() {
             label="Pre-school Campus Address:"
             value="
               6 Silangan St. Barangka Drive Mandaluyong City<br/><br/>
-              74 Tomas Morato Avenue, Sacred Heart Quezon City<br/><br/>
+              Unit 6, GF Creekside Square, 74 Tomas Morato Ave. Quezon City<br/><br/>
               Likha Village, Lot 2 Biluso Poblacion, Silang Cavite
             "
           />
@@ -44,14 +44,14 @@ export default function Contact() {
           <Details label="Office Hours:" value="9:00am to 5:00pm" />
           <br />
           <br />
-          <Details
+          {/* <Details
             label="Viber/SMS Contact Number:"
             value="<a href='tel:+63-927-029-3996'>+63 927-029-3996</a>"
           />
           <Details
             label="Email Address:"
             value="<a href='mailto:admission@cascades.ph'>admission@cascades.ph</a>"
-          />
+          /> */}
           <div className="py-8">
             <Image
               src={
@@ -62,7 +62,7 @@ export default function Contact() {
               alt="divider"
             />
           </div>
-          <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-3xl">
+          {/* <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-3xl">
             Finance Department Information
           </h2>
           <Details
@@ -72,7 +72,7 @@ export default function Contact() {
           <Details
             label="Email Address:"
             value="<a href='mailto:finance@cascades.ph'>finance@cascades.ph</a>"
-          />
+          /> */}
           <h2 className="text-darkLiver leading-[52px] font-semibold lg:text-[42px] text-3xl">
             Human Resource Department Information
           </h2>
