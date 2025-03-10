@@ -47,7 +47,9 @@ export default function TableData({ data }: { data: Form[] }) {
               <TableCell>{form.name}</TableCell>
               <TableCell>{form.from_email}</TableCell>
               <TableCell>{form.contact}</TableCell>
-              <TableCell>{form.message}</TableCell>
+              <TableCell className="whitespace-pre-line">
+                {form.message}
+              </TableCell>
               <TableCell>{form.date}</TableCell>
               <TableCell>{form.time}</TableCell>
             </TableRow>
@@ -94,7 +96,7 @@ export default function TableData({ data }: { data: Form[] }) {
                 </div>
               </div>
               <div className="flex md:flex-row flex-col md:items-center items-start justify-between gap-3">
-              <div className="flex items-center justify-start gap-2">
+                <div className="flex items-center justify-start gap-2">
                   <p className="font-semibold">Branch:</p>
                   <p>{form.branch ?? "N/A"}</p>
                 </div>
@@ -116,7 +118,9 @@ export default function TableData({ data }: { data: Form[] }) {
                     <ChevronRight className="h-6 w-6 shrink-0 transition-transform duration-200" />
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-justify">{form.message}</p>
+                    <p className="text-justify whitespace-pre-line">
+                      {form.message}
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

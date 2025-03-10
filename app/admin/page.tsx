@@ -17,7 +17,13 @@ import Link from "next/link";
 import useDebounce from "@/hooks/useDebounce";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function Admin() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -98,7 +104,7 @@ export default function Admin() {
     replace(`${pathname}?${params.toString()}`);
   };
 
-  const handleLimitChange = (e:string) => {
+  const handleLimitChange = (e: string) => {
     const limitRes = e;
     if (limitRes) {
       params.set("limit", limitRes);
@@ -108,7 +114,7 @@ export default function Admin() {
     replace(`${pathname}?${params.toString()}`);
   };
 
-  const handleFilterByBranchChange = (e:string) => {
+  const handleFilterByBranchChange = (e: string) => {
     const branch = e;
     if (branch && branch !== "None") {
       params.set("branch", branch);
@@ -118,7 +124,7 @@ export default function Admin() {
     replace(`${pathname}?${params.toString()}`);
   };
 
-  const handleSortByChange = (e:string) => {
+  const handleSortByChange = (e: string) => {
     const sort = e;
     if (sort) {
       params.set("sort", sort);
@@ -189,9 +195,11 @@ export default function Admin() {
             )}
           </Button>
         </div>
-        <div className="flex lg:items-end lg:flex-row flex-col gap-4">
+        <div className="flex lg:items-end lg:flex-row flex-col gap-4 px-2 lg:px-0">
           <div className="w-full lg:w-auto">
-            <label htmlFor="search" className="text-sm">Search:</label>
+            <label htmlFor="search" className="text-sm">
+              Search:
+            </label>
             <div className="flex items-center relative pt-1">
               <Search className="absolute left-3 h-5 w-5" />
               <Input
@@ -205,17 +213,31 @@ export default function Admin() {
           </div>
           <div className="flex items-end gap-4 w-full">
             <div className="w-full lg:w-auto">
-              <label htmlFor="filter" className="text-sm">Filter by Branch:</label>
-              <Select name="filter" defaultValue={branch} onValueChange={handleFilterByBranchChange}>
+              <label htmlFor="filter" className="text-sm">
+                Filter by Branch:
+              </label>
+              <Select
+                name="filter"
+                defaultValue={branch}
+                onValueChange={handleFilterByBranchChange}
+              >
                 <SelectTrigger>
-                  <SelectValue  placeholder="Select branch" />
+                  <SelectValue placeholder="Select branch" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="None">None</SelectItem>
-                  <SelectItem value="Preschool: Mandaluyong">Preschool: Mandaluyong</SelectItem>
-                  <SelectItem value="Elementary: Mandaluyong">Elementary: Mandaluyong</SelectItem>
-                  <SelectItem value="Preschool: Silang Cavite">Preschool: Silang Cavite</SelectItem>
-                  <SelectItem value="Preschool: Tomas Morato, Quezon City">Preschool: Tomas Morato, Quezon City</SelectItem>
+                  <SelectItem value="Preschool: Mandaluyong">
+                    Preschool: Mandaluyong
+                  </SelectItem>
+                  <SelectItem value="Elementary: Mandaluyong">
+                    Elementary: Mandaluyong
+                  </SelectItem>
+                  <SelectItem value="Preschool: Silang Cavite">
+                    Preschool: Silang Cavite
+                  </SelectItem>
+                  <SelectItem value="Preschool: Tomas Morato, Quezon City">
+                    Preschool: Tomas Morato, Quezon City
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -235,9 +257,15 @@ export default function Admin() {
               </Select>
             </div> */}
             <div className="w-full lg:w-auto">
-              <label htmlFor="order" className="text-sm">Sort by:</label>
-              <Select name="order" defaultValue={orderBy.toString()} onValueChange={handleSortByChange}>
-                <SelectTrigger >
+              <label htmlFor="order" className="text-sm">
+                Sort by:
+              </label>
+              <Select
+                name="order"
+                defaultValue={orderBy.toString()}
+                onValueChange={handleSortByChange}
+              >
+                <SelectTrigger>
                   <SelectValue placeholder="Select limit" />
                 </SelectTrigger>
                 <SelectContent>
