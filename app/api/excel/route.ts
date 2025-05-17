@@ -11,6 +11,7 @@ export async function POST(req: NextRequest) {
       ({
         entry_id: Entry,
         form_name: Form,
+        branch: Branch,
         categories: Category,
         name: Name,
         from_email: Email,
@@ -21,6 +22,7 @@ export async function POST(req: NextRequest) {
       }) => ({
         Entry,
         Form,
+        Branch,
         Category,
         Name,
         Email,
@@ -43,6 +45,33 @@ export async function POST(req: NextRequest) {
         width: 20,
       }));
       worksheet.columns = columns;
+
+      // Style the header row
+      const headerRow = worksheet.getRow(1);
+      headerRow.eachCell((cell) => {
+        // Make text bold
+        cell.font = {
+          bold: true,
+        };
+        // Add yellow background
+        cell.fill = {
+          type: "pattern",
+          pattern: "solid",
+          fgColor: { argb: "FFFFFF00" }, // Yellow color (ARGB format)
+        };
+        // Add a border
+        cell.border = {
+          top: { style: "thin" },
+          left: { style: "thin" },
+          bottom: { style: "thin" },
+          right: { style: "thin" },
+        };
+        // Center align the text
+        cell.alignment = {
+          vertical: "middle",
+          horizontal: "center",
+        };
+      });
     }
 
     // Add rows
