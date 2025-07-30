@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import { SchoolMap } from "./_components/map";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import InquiryForm from "./_components/inquiryForm";
 import { Details } from "../_components/details";
 import { lato } from "@/lib/fonts";
@@ -53,7 +53,7 @@ export default function Contact() {
             value="<a href='mailto:admission@cascades.ph'>admission@cascades.ph</a>"
           /> */}
           <div className="py-8">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
               }

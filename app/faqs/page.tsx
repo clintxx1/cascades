@@ -1,6 +1,6 @@
 import InfoCard from "@/components/infoCard";
 import { Metadata } from "next";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import Link from "next/link";
 import React from "react";
 import { lato } from "@/lib/fonts";
@@ -50,7 +50,7 @@ export default function Faqs() {
         </div>
       </div>
       <div className="my-16">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
           }

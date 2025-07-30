@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 import InfoCard from "@/components/infoCard";
 import Link from "next/link";
@@ -75,7 +75,7 @@ export default function PrimaryProgram() {
         chance of getting the career they truly want to pursue.
       </p>
       <div className="pb-20 m-0">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
@@ -87,7 +87,7 @@ export default function PrimaryProgram() {
       </div>
       {/* PRESCHOOL */}
       <div className="flex flex-col gap-4 w-fulll">
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
           alt={"primaryLogo"}
           width={64}
@@ -99,7 +99,7 @@ export default function PrimaryProgram() {
         </p>
         <div className="w-full flex sm:flex-row flex-col sm:items-start items-center justify-center gap-20">
           <div className="space-y-6">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/programs/pre-1.png"
               }
@@ -118,7 +118,7 @@ export default function PrimaryProgram() {
             </div>
           </div>
           <div className="space-y-6">
-            <Image
+            <LazyImage
               src={"https://ik.imagekit.io/cascades/cascades/programs/pre2.png"}
               alt={"image1"}
               width={250}
@@ -176,7 +176,7 @@ export default function PrimaryProgram() {
       </div>
       {/* ELEMENTARY */}
       <div className="flex flex-col gap-4 w-fulll">
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
           alt={"primaryLogo"}
           width={64}
@@ -188,7 +188,7 @@ export default function PrimaryProgram() {
         </p>
         <div className="w-full flex sm:flex-row flex-col sm:items-start items-center justify-center gap-20">
           <div className="space-y-6">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/programs/elem1.png"
               }
@@ -208,7 +208,7 @@ export default function PrimaryProgram() {
             </div>
           </div>
           <div className="space-y-6">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/programs/elem2.png"
               }
@@ -229,8 +229,7 @@ export default function PrimaryProgram() {
           </div>
         </div>
         {/* <div className="w-full flex items-center justify-center">
-          <Image
-            src={"https://ik.imagekit.io/cascades/cascades/programs/Pic2.png"}
+          <LazyImage src={"https://ik.imagekit.io/cascades/cascades/programs/Pic2.png"}
             alt={"image1"}
             width={600}
             height={300}
@@ -264,8 +263,7 @@ export default function PrimaryProgram() {
       {/* <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-0">
         <div className="mt-24">
           <div className="flex flex-col gap-4 w-fulll">
-            <Image
-              src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
+            <LazyImage src={"https://ik.imagekit.io/cascades/cascades/Group-3-Copy.png"}
               alt={"primaryLogo"}
               width={64}
               height={64}
@@ -275,8 +273,7 @@ export default function PrimaryProgram() {
               PRESCHOOL
             </p>
             <div className="w-full bg-red-300">
-              <Image
-                src={
+              <LazyImage src={
                   "https://ik.imagekit.io/cascades/cascades/programs/Pic1.png"
                 }
                 alt={"image1"}
@@ -302,8 +299,7 @@ export default function PrimaryProgram() {
         </div>
         <div className="lg:space-y-14 flex lg:flex-col flex-col-reverse">
           <div className="lg:w-[700px] w-full object-contain">
-            <Image
-              src={
+            <LazyImage src={
                 "https://ik.imagekit.io/cascades/cascades/primary_banner_2x-1024x502.jpg"
               }
               alt={"image1"}
@@ -322,7 +318,7 @@ export default function PrimaryProgram() {
       </div> */}
       <PromoSection />
       <div className="flex lg:flex-row flex-col items-center justify-start w-full gap-12 pb-20">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/home_experience@2x.jpg"
           }

@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { BranchCardProps } from "@/types";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 
 export function BranchCard({
@@ -13,7 +13,7 @@ export function BranchCard({
 }: BranchCardProps) {
   return (
     <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-start lg:gap-10 md:gap-10 sm:gap-10 py-2">
-      <Image
+      <LazyImage
         src={image}
         alt={"image1"}
         width={200}

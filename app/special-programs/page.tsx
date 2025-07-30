@@ -1,6 +1,6 @@
 import InfoCard from "@/components/infoCard";
 import PromoSection from "@/components/promoSection";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 import { lato } from "@/lib/fonts";
 import { Metadata } from "next";
@@ -17,7 +17,7 @@ export default function SpecialPrograms() {
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
         <div className="mt-24">
           <div className="flex items-end justify-start gap-5">
-            <Image
+            <LazyImage
               src={"https://ik.imagekit.io/cascades/cascades/Group-3-1.png"}
               alt={"primaryLogo"}
               width={64}
@@ -54,7 +54,7 @@ export default function SpecialPrograms() {
           />
         </div>
         <div className="relative">
-          <Image
+          <LazyImage
             src={
               "https://ik.imagekit.io/cascades/cascades/secondary_banner_2x-1024x521.jpg"
             }

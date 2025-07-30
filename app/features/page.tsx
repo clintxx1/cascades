@@ -2,7 +2,7 @@ import React from "react";
 import { lato } from "@/lib/fonts";
 import CustomCarousel from "@/components/carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -46,8 +46,7 @@ export default function Features() {
       </div>
       {/* <div className="flex lg:flex-row flex-col-reverse items-center justify-between w-full gap-8 mt-14">
         <div className="space-y-8 w-full">
-          <Image
-            src={
+          <LazyImage src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider-copy-2.png"
             }
             width={208}
@@ -75,8 +74,7 @@ export default function Features() {
           </div>
         </div>
         <div className="w-full grid lg:place-items-start place-items-center">
-          <Image
-            src={"https://ik.imagekit.io/cascades/cascades/features/Pic1.png"}
+          <LazyImage src={"https://ik.imagekit.io/cascades/cascades/features/Pic1.png"}
             alt="Image 1"
             width={443}
             height={442}
@@ -84,7 +82,7 @@ export default function Features() {
         </div>
       </div> */}
       <div className="py-5">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
           }
@@ -95,7 +93,7 @@ export default function Features() {
         />
       </div>
       <div className="flex items-center justify-center">
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/features/Features.png"}
           alt="Image 1"
           width={1024}
@@ -104,7 +102,7 @@ export default function Features() {
         />
       </div>
       <div className="py-5">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
           }

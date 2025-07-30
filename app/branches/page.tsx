@@ -1,6 +1,6 @@
 import InfoCard from "@/components/infoCard";
 import PromoSection from "@/components/promoSection";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 import { lato } from "@/lib/fonts";
 import { Metadata } from "next";

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import { Details } from "../_components/details";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import { lato } from "@/lib/fonts";
 import Link from "next/link";
 import { BiSolidFilePdf } from "react-icons/bi";
@@ -19,7 +19,7 @@ export default function Calendar() {
         School Year 2024 - 2025
       </h2>
       <div className="py-8">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
@@ -60,7 +60,7 @@ export default function Calendar() {
         </a>
       </div>
       <div className="py-8">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
@@ -80,8 +80,7 @@ export default function Calendar() {
       (depending on slots availability)"
         />
         <div className="py-8">
-          <Image
-            src={
+          <LazyImage src={
               "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
             }
             alt="longDiv"
@@ -99,8 +98,7 @@ export default function Calendar() {
         value="Aug 26 - 30, 2019"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -117,8 +115,7 @@ export default function Calendar() {
         value="Oct 14 - Dec 20"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -136,8 +133,7 @@ export default function Calendar() {
         value="Dec 16 - 20"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -154,8 +150,7 @@ export default function Calendar() {
         value="Dec 21, 2019 - Jan 3, 2020"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -172,8 +167,7 @@ export default function Calendar() {
         value="Jan 4 - Mar 13, 2020"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -190,8 +184,7 @@ export default function Calendar() {
         value="Feb 2020 (to be finalized)"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -208,8 +201,7 @@ export default function Calendar() {
         value="Mar 14 - Jun 12, 2020"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -226,8 +218,7 @@ export default function Calendar() {
         value="Jun 13 - Aug 28, 2020"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="longDiv"
@@ -244,8 +235,7 @@ export default function Calendar() {
         value="Aug 29, 2020"
       />
       <div className="py-8">
-        <Image
-          src={
+        <LazyImage src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-2-1024x8.png"
           }
           alt="divider"
@@ -255,8 +245,7 @@ export default function Calendar() {
         />
       </div>
       <div className="my-16">
-        <Image
-          src={"https://ik.imagekit.io/cascades/cascades/Group-5-1024x6.png"}
+        <LazyImage src={"https://ik.imagekit.io/cascades/cascades/Group-5-1024x6.png"}
           width={1024}
           height={6}
           alt="longDiv1"

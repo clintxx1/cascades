@@ -1,12 +1,12 @@
 import { lato } from "@/lib/fonts";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import Link from "next/link";
 
 export default function ThirdSection() {
   return (
     <section className="lg:px-[10%] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full gap-12">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/home_experience@2x.jpg"
           }
@@ -16,7 +16,7 @@ export default function ThirdSection() {
           className="w-full flex-shrink-0 object-contain"
         />
         <div className="space-y-8">
-          <Image
+          <LazyImage
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2-1.png"
             }

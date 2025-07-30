@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import Link from "next/link";
 import { lato } from "@/lib/fonts";
 
@@ -15,7 +15,7 @@ export default function Scholarship() {
       </p>
       <div className="flex lg:flex-row flex-col items-start justify-center lg:gap-20 gap-10 w-full">
         <div className="grid lg:place-items-start place-items-center w-full">
-          <Image
+          <LazyImage
             src={"https://ik.imagekit.io/cascades/cascades/admissions/Pic1.png"}
             alt="Image 1"
             width={450}
@@ -47,7 +47,7 @@ export default function Scholarship() {
         </div>
       </div>
       <div className="my-16 lg:px-32">
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/Group-5-1024x6.png"}
           alt="longDiv1"
           width={1024}

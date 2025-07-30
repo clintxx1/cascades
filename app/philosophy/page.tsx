@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 import InfoCard from "@/components/infoCard";
 import { lato } from "@/lib/fonts";
@@ -30,7 +30,7 @@ export default function Philosophy() {
             citizenship and social responsibility.
           </p>
           <div className="mt-8 grid lg:place-items-start place-items-center">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/philosophy_banner_2x-861x1024.jpg"
               }
@@ -65,7 +65,7 @@ export default function Philosophy() {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div className="space-y-2">
           <div className="pt-14">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2-1.png"
               }
@@ -100,7 +100,7 @@ export default function Philosophy() {
         </div>
         <div>
           <div className="-mt-28">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/philosophy_principles_2x-1024x1016.png"
               }
@@ -134,7 +134,7 @@ export default function Philosophy() {
         </div>
       </div>
       <div className="py-9">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
           }
@@ -150,7 +150,7 @@ export default function Philosophy() {
         </p>
         <div className="flex lg:flex-row lg:gap-0 md:flex-row gap-5 flex-col items-center justify-around">
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
-            <Image
+            <LazyImage
               src={"https://ik.imagekit.io/cascades/cascades/philosophy/1.png"}
               alt="longDiv"
               width={1206}
@@ -159,7 +159,7 @@ export default function Philosophy() {
             />
           </div>
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
-            <Image
+            <LazyImage
               src={"https://ik.imagekit.io/cascades/cascades/philosophy/2.png"}
               alt="longDiv"
               width={1206}
@@ -168,7 +168,7 @@ export default function Philosophy() {
             />
           </div>
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/philosophy/3(updated).png"
               }
@@ -179,7 +179,7 @@ export default function Philosophy() {
             />
           </div>
           <div className="lg:w-[200px] md:w-[200px] w-full grid lg:place-items-start md:place-items-start place-items-center">
-            <Image
+            <LazyImage
               src={"https://ik.imagekit.io/cascades/cascades/philosophy/4.png"}
               alt="longDiv"
               width={1206}
@@ -190,7 +190,7 @@ export default function Philosophy() {
         </div>
       </div>
       <div className="py-9">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
           }

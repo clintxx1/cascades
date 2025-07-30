@@ -18,7 +18,7 @@ import { z } from "zod";
 import jwt from "jsonwebtoken";
 import { HomeIcon, Loader, Lock } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 
 const FormSchema = z.object({
   passkey: z
@@ -91,7 +91,7 @@ const AuthGuard = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex items-center flex-col md:gap-20 justify-center w-full h-screen overflow-hidden">
       <div className="font-semibold lg:text-[42px] text-3xl text-crystalBlue text-center grid place-items-center">
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/header_logo_large.png"}
           alt="cascades logo"
           className="block flex-shrink-0 h-20 w-20 object-contain"

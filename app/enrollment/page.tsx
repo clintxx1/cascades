@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 import { lato } from "@/lib/fonts";
 import InfoCard from "@/components/infoCard";
@@ -88,7 +88,7 @@ export default function Enrollment() {
         </div>
       </div>
       <div className="py-5">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
           }

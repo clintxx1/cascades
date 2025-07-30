@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { Card } from "../../components/card";
-import Link from "next/link";
+import { LazyImage } from "@/components/ui/lazy-image";
+import { Card } from "@/components/card";
 import { lato } from "@/lib/fonts";
+import Link from "next/link";
 
 export default function FirstSection() {
   const programItems = [
@@ -21,11 +21,12 @@ export default function FirstSection() {
   return (
     <section className="space-y-20 lg:w-fit w-full lg:px-[10%] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:gap-20 gap-10">
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/home/Pic1.png"}
           alt="Image 1"
           width={612}
           height={663}
+          priority={true}
           className="w-full flex-shrink-0 object-contain"
         />
         <div className="w-full space-y-8 grid lg:place-items-start place-items-center">
@@ -33,7 +34,7 @@ export default function FirstSection() {
             A reggio-approach in education
           </p>
 
-          <Image
+          <LazyImage
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
             }

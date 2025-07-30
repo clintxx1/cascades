@@ -1,5 +1,5 @@
 import { lato } from "@/lib/fonts";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import Link from "next/link";
 
 export default function SecondSection() {
@@ -7,7 +7,7 @@ export default function SecondSection() {
     <section className="py-20 lg:px-[10%] px-6 mx-auto">
       <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center w-full lg:gap-20 gap-10">
         <div className="space-y-8 w-full">
-          <Image
+          <LazyImage
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-1-1.png"
             }
@@ -39,7 +39,7 @@ export default function SecondSection() {
             </Link>
           </div>
         </div>
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/home/Pic2.png"}
           alt="Image 1"
           width={612}

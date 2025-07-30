@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import { Metadata } from "next";
 import { josefinSans, lato } from "@/lib/fonts";
 
@@ -15,7 +15,7 @@ export default function FoundersNote() {
             Founder&apos;s Note
           </p>
           <div className="flex lg:flex-col md:flex-row md:items-center flex-col lg:items-center gap-5">
-            <Image
+            <LazyImage
               src={"https://ik.imagekit.io/cascades/cascades/founder/Pic1.png"}
               width={350}
               height={350}

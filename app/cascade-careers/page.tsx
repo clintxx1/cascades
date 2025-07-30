@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 import Link from "next/link";
 import { lato } from "@/lib/fonts";
@@ -15,7 +15,7 @@ export default function CascadeCareers() {
       </p>
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
         <div className="grid lg:place-items-start place-items-center">
-          <Image
+          <LazyImage
             src={"https://ik.imagekit.io/cascades/cascades/careers/Pic.png"}
             alt="Image 1"
             width={612}
@@ -37,7 +37,7 @@ export default function CascadeCareers() {
             <a href="mailto:careers@cascades.ph">careers@cascades.ph</a>
           </p>
           <div className="gap-20 flex-col py-16 hidden lg:flex">
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
               }
@@ -46,8 +46,7 @@ export default function CascadeCareers() {
               alt="divider"
               className="lg:w-[470px] w-full h-[8px]"
             />
-            {/* <Image
-              src={
+            {/* <LazyImage src={
                 "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
               }
               width={470}
@@ -59,7 +58,7 @@ export default function CascadeCareers() {
         </div>
       </div>
       <div className="pt-24 pb-14">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
           }

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import Link from "next/link";
 import InfoCard from "@/components/infoCard";
 import { lato } from "@/lib/fonts";
@@ -53,7 +53,7 @@ export default function Approach() {
             collaborative learning environments, we aim to nurture active
             citizenship and social responsibility.
           </p>
-          <Image
+          <LazyImage
             src={
               "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
             }
@@ -68,7 +68,7 @@ export default function Approach() {
           />
         </div>
         <div className="mt-28 space-y-28 grid lg:place-items-start place-items-center">
-          <Image
+          <LazyImage
             src={"https://ik.imagekit.io/cascades/cascades/approach/Pic1.png"}
             alt="image 1"
             width={858}
@@ -76,7 +76,7 @@ export default function Approach() {
             className="object-contain lg:w-full md:w-[758px] w-[658px]"
           />
           <div>
-            <Image
+            <LazyImage
               src={
                 "https://ik.imagekit.io/cascades/cascades/header_copy_divider_XL_teal-2.png"
               }
@@ -101,7 +101,7 @@ export default function Approach() {
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
         <div className="mt-8">
-          <Image
+          <LazyImage
             src={"https://ik.imagekit.io/cascades/cascades/approach/Pic2.png"}
             alt="image 2"
             width={1024}
@@ -166,7 +166,7 @@ export default function Approach() {
             research within this atelier.
           </p>
         </div>
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/approach/a1.png"}
           alt="a1"
           width={600}
@@ -193,7 +193,7 @@ export default function Approach() {
             expand on their exploration of the materials and its possibilities.
           </p>
         </div>
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/approach/a2.png"}
           alt="a1"
           width={600}
@@ -219,7 +219,7 @@ export default function Approach() {
             books to aid in their discovery and research within this atelier.
           </p>
         </div>
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/approach/a3.png"}
           alt="a1"
           width={600}
@@ -247,7 +247,7 @@ export default function Approach() {
             incorporated to enrich their storytelling experiences.
           </p>
         </div>
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/approach/a4.png"}
           alt="a1"
           width={600}
@@ -255,7 +255,7 @@ export default function Approach() {
           className="object-contain lg:w-full md:w-[924px] w-[824px]"
         />
       </div>
-      <Image
+      <LazyImage
         src={
           "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
         }
@@ -280,7 +280,7 @@ export default function Approach() {
           </p>
         </div>
         <div className="lg:mt-28 space-y-28 lg:w-[75%] grid lg:place-items-start place-items-end w-full">
-          <Image
+          <LazyImage
             src={"https://ik.imagekit.io/cascades/cascades/approach/Pic3.png"}
             alt="image 1"
             width={2402}
@@ -289,7 +289,7 @@ export default function Approach() {
           />
         </div>
       </div>
-      <Image
+      <LazyImage
         src={
           "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-1024x7.png"
         }
@@ -299,7 +299,7 @@ export default function Approach() {
         className="w-full h-[6px] my-12"
       />
       <div className="flex lg:flex-row flex-col items-center justify-around pb-24 lg:gap-14 gap-2">
-        <Image
+        <LazyImage
           src={"https://ik.imagekit.io/cascades/cascades/approach/Pic4.png"}
           alt="image 3"
           width={304}

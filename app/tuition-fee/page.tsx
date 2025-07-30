@@ -5,7 +5,7 @@ import ClassSchedTable from "./_components/preschool/classScheduleTable";
 import PaymentTermsTable from "./_components/preschool/paytermTermsTable";
 import OptionalAddOnsTable from "./_components/preschool/optionalAddOns";
 import MonthlyTrialFeeTable from "./_components/preschool/monthlyTrialFees";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import ElemTuitionFeeTable from "./_components/elementary/tuitionFeeTable";
 import DetailedPaymentTermsTable from "./_components/elementary/paymentOptionsTable";
 import ScheduleTable from "./_components/bahaghari/scheduleTable";
@@ -26,7 +26,7 @@ export default function Tuition() {
         <MonthlyTrialFeeTable />
       </div>
       <div className="py-5">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
           }
@@ -45,7 +45,7 @@ export default function Tuition() {
         <DetailedPaymentTermsTable />
       </div>
       <div className="py-5">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
           }
@@ -65,7 +65,7 @@ export default function Tuition() {
         <OneTimePaymentTable />
       </div>
       <div className="py-5">
-        <Image
+        <LazyImage
           src={
             "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
           }
