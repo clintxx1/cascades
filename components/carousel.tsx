@@ -2,7 +2,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 
 export default function CustomCarousel() {
   const data = [
@@ -39,7 +39,7 @@ export default function CustomCarousel() {
       showThumbs={false}
     >
       {data.map((item) => (
-        <Image
+        <LazyImage
           key={item.key}
           width={892}
           height={1240}

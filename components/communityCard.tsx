@@ -1,8 +1,9 @@
 import React from "react";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import { CommunityCardProps, CommunityDataUIProps } from "@/types";
 import { cn } from "@/lib/utils";
 import { lato } from "@/lib/fonts";
+import { shouldPrioritizeImage } from "@/lib/image-utils";
 
 export default function CommunityCard({
   className,
@@ -25,16 +26,19 @@ export default function CommunityCard({
 }: CommunityCardProps) {
   const dataUI = (data: CommunityDataUIProps) => {
     const { image, title, name, description = "" } = data;
+    const priority = shouldPrioritizeImage(image || "");
+
     return (
       <div
         className={`flex lg:flex-row flex-col items-center gap-2 justify-center w-full ${isReversed && "flex-row-reverse"}`}
       >
         {image ? (
-          <Image
+          <LazyImage
             src={image}
             alt="image 3"
             height={350}
             width={350}
+            priority={priority}
             className={`${hasSecondData || hasThirdData ? "w-[200px] h-[200px] object-contain" : "w-[350px] h-[350px] object-contain"}`}
           />
         ) : null}
@@ -54,7 +58,7 @@ export default function CommunityCard({
   };
   return (
     <div className="py-6">
-      <Image
+      <LazyImage
         src={
           "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png"
         }

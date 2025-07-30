@@ -1,11 +1,11 @@
 import React from "react";
 import InfoCard from "./infoCard";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 
 export default function PromoSection({ classname }: { classname?: string }) {
   return (
     <div className={classname}>
-      <Image
+      <LazyImage
         src={
           "https://ik.imagekit.io/cascades/cascades/Group-5-1024x6.png?updatedAt=1713776075118"
         }
@@ -49,7 +49,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
               descriptionCN="!w-full lg:text-start text-center"
             />
           </div>
-          <Image
+          <LazyImage
             src={
               "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
             }
@@ -91,8 +91,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
               descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             />
           </div> */}
-          {/* <Image
-            src={
+          {/* <LazyImage src={
               "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
             }
             width={470}
@@ -161,8 +160,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
               descriptionCN="lg:w-[330px] w-full grid lg:place-items-start md:place-items-start place-items-center"
             /> */}
           </div>
-          {/* <Image
-            src={
+          {/* <LazyImage src={
               "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-10.png"
             }
             width={470}
@@ -193,7 +191,7 @@ export default function PromoSection({ classname }: { classname?: string }) {
           /> */}
         </div>
       </div>
-      <Image
+      <LazyImage
         src={
           "https://ik.imagekit.io/cascades/cascades/divider-XL-red-long-Copy-4-1024x7.png?updatedAt=1713776162507"
         }

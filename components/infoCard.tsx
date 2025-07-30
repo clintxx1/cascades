@@ -1,7 +1,7 @@
 import { lato } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { InfoCardProps } from "@/types";
-import Image from "next/image";
+import { LazyImage } from "@/components/ui/lazy-image";
 import React from "react";
 import {
   Accordion,
@@ -29,7 +29,7 @@ export default function InfoCard({
   return (
     <div className={cn("py-8 text-darkLiver", className)}>
       {hasHeader && headerImage ? (
-        <Image
+        <LazyImage
           src={headerImage}
           alt="divider"
           width={208}
