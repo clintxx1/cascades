@@ -73,11 +73,14 @@ export default function Navbar() {
         <div className={`flex-shrink-0 py-3 lg:block lg:py-5`}>
           <Link href={"/"}>
             <Image
-              src={"/images/cascades.png"}
+              src={
+                "https://ik.imagekit.io/cascades/cascades/Cascades%20School.png?updatedAt=1717728524956"
+              }
               alt="cascades logo"
               className="customImage flex-shrink-0 hidden lg:block"
               width={345}
               height={89}
+              priority={true}
             />
             <Image
               src={"https://ik.imagekit.io/cascades/header_logo_large.png"}
@@ -85,6 +88,7 @@ export default function Navbar() {
               className="block flex-shrink-0 h-12 w-12 lg:hidden object-contain"
               width={1272}
               height={1209}
+              priority={true}
             />
           </Link>
         </div>
