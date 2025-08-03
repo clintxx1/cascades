@@ -13,11 +13,37 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 import { ADMIN_FORM_TABLE_HEADER } from "@/lib/constants";
 import { Form } from "@prisma/client";
-import { ChevronDown, ChevronRight, Info } from "lucide-react";
+import { ChevronRight, Info } from "lucide-react";
+import { usePagination } from "@/hooks/usePagination";
 
 export default function TableData({ data }: { data: Form[] }) {
+  const {
+    currentData,
+    currentPage,
+    totalPages,
+    goToPage,
+    nextPage,
+    prevPage,
+    canGoNext,
+    canGoPrev,
+    startIndex,
+    endIndex,
+    totalItems,
+    itemsPerPage,
+    setItemsPerPage,
+  } = usePagination({ data, defaultItemsPerPage: 10 });
+
   if (!data.length) {
     return (
       <div className="flex items-center justify-center gap-2">
@@ -27,8 +53,71 @@ export default function TableData({ data }: { data: Form[] }) {
     );
   }
 
+  const generatePageNumbers = () => {
+    const pages = [];
+    const maxVisiblePages = 5;
+
+    if (totalPages <= maxVisiblePages) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (currentPage <= 3) {
+        for (let i = 1; i <= 4; i++) {
+          pages.push(i);
+        }
+        pages.push("ellipsis");
+        pages.push(totalPages);
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(1);
+        pages.push("ellipsis");
+        for (let i = totalPages - 3; i <= totalPages; i++) {
+          pages.push(i);
+        }
+      } else {
+        pages.push(1);
+        pages.push("ellipsis");
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+          pages.push(i);
+        }
+        pages.push("ellipsis");
+        pages.push(totalPages);
+      }
+    }
+
+    return pages;
+  };
+
   return (
-    <div>
+    <div className="space-y-4">
+      {/* Items per page selector */}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2 text-sm text-gray-600">
+          <span>
+            Showing {startIndex + 1} to {endIndex} of {totalItems} entries
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          <label htmlFor="itemsPerPage" className="text-sm text-gray-600">
+            Items per page:
+          </label>
+          <select
+            id="itemsPerPage"
+            value={itemsPerPage}
+            onChange={(e) => {
+              setItemsPerPage(Number(e.target.value));
+            }}
+            className="border border-gray-300 rounded px-2 py-1 text-sm"
+          >
+            <option value={5}>5</option>
+            <option value={10}>10</option>
+            <option value={20}>20</option>
+            <option value={50}>50</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Desktop Table */}
       <Table className="hidden lg:block">
         <TableHeader>
           <TableRow>
@@ -38,7 +127,7 @@ export default function TableData({ data }: { data: Form[] }) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data.map((form, index) => (
+          {currentData.map((form, index) => (
             <TableRow key={index}>
               <TableCell>{form.entry_id}</TableCell>
               <TableCell>{form.form_name}</TableCell>
@@ -56,13 +145,15 @@ export default function TableData({ data }: { data: Form[] }) {
           ))}
         </TableBody>
       </Table>
+
+      {/* Mobile Cards */}
       <div className="block lg:hidden rounded-lg border border-gray-400 p-5 space-y-5">
         <div className="space-y-2">
           <p className="text-2xl font-semibold">Inquiries</p>
-          <p className="text-sm">{`You have ${data.length} form submission(s).`}</p>
+          <p className="text-sm">{`You have ${totalItems} form submission(s).`}</p>
         </div>
         <>
-          {data.map((form) => (
+          {currentData.map((form) => (
             <div
               key={form.id}
               className={`border-t border-gray-400 p-2 w-full flex flex-col gap-3`}
@@ -128,6 +219,56 @@ export default function TableData({ data }: { data: Form[] }) {
           ))}
         </>
       </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-sm text-gray-600">
+            Showing {startIndex + 1} to {endIndex} of {totalItems} entries
+          </div>
+          <Pagination>
+            <PaginationContent>
+              <PaginationItem>
+                <PaginationPrevious
+                  onClick={prevPage}
+                  className={
+                    !canGoPrev
+                      ? "pointer-events-none opacity-50"
+                      : "cursor-pointer"
+                  }
+                />
+              </PaginationItem>
+
+              {generatePageNumbers().map((page, index) => (
+                <PaginationItem key={index}>
+                  {page === "ellipsis" ? (
+                    <PaginationEllipsis />
+                  ) : (
+                    <PaginationLink
+                      onClick={() => goToPage(page as number)}
+                      isActive={currentPage === page}
+                      className="cursor-pointer"
+                    >
+                      {page}
+                    </PaginationLink>
+                  )}
+                </PaginationItem>
+              ))}
+
+              <PaginationItem>
+                <PaginationNext
+                  onClick={nextPage}
+                  className={
+                    !canGoNext
+                      ? "pointer-events-none opacity-50"
+                      : "cursor-pointer"
+                  }
+                />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
+        </div>
+      )}
     </div>
   );
 }
