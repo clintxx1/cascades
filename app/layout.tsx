@@ -6,7 +6,7 @@ import { josefinSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Cascades School",
-  description: "cascades.ph",
+  description: "Cascades International School | A reggio-inspired school",
 };
 
 export default function RootLayout({
