@@ -1,36 +1,43 @@
 import { NextResponse } from "next/server";
-import sendgrid from "@sendgrid/mail";
+import { getInquiryHTML } from "@/components/emails/InquiryConfirmation";
+import { Resend } from "resend";
+import { getContactFormHTML } from "@/components/emails/ContactForm";
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    // Footer address
-    const address = {
-      Sender_Name: "Cascades PH",
-      Sender_Address: "6 Silangan St. Barangka Drive",
-      Sender_City: "Mandaluyong City",
-      Sender_State: "Philippines",
-      Sender_Zip: 1550,
-    };
-
-    // Payload for sendgrid
-    const msg = [
+    const toRecipient = await getInquiryHTML({
+      name: data.name,
+      categories: data.categories,
+      branch: data.branch,
+      email: data.from_email,
+      contact: data.contact,
+      message: data.message,
+    });
+    const toSender = await getContactFormHTML(data);
+    const payload = [
       {
-        to: process.env.SENDGRID_EMAIL_TO as string,
-        from: process.env.SENDGRID_EMAIL_FROM as string,
-        templateId: process.env.SENDGRID_SUBMISSION_TEMPLATE_ID as string,
-        dynamic_template_data: { ...data, ...address },
+        from: `"Cascades School Inc" <${process.env.EMAIL_USER}>`,
+        to: [data.from_email],
+        subject: "Thank you for your submission",
+        html: toRecipient,
       },
       {
-        to: data.from_email,
-        from: process.env.SENDGRID_EMAIL_FROM as string,
-        templateId: process.env.SENDGRID_REPLY_TEMPLATE_ID as string,
-        dynamic_template_data: { ...data, ...address },
+        from: `"Cascades School Inc" <${process.env.EMAIL_USER}>`,
+        to: [process.env.EMAIL_TO],
+        subject: "Contact Form - New Submission",
+        html: toSender,
       },
     ];
-    await sendgrid.send(msg);
+
+    const { error } = await resend.batch.send(payload);
+
+    if (error) {
+      return NextResponse.json({ message: error.message }, { status: 500 });
+    }
+
     return NextResponse.json(
       { message: "Email sent successfully" },
       { status: 200 }

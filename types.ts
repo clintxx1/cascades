@@ -82,3 +82,18 @@ export type BranchCardProps = {
   email?: string;
   contactNumber?: string;
 };
+export interface BaseEmailProps {
+  name: string;
+  email: string;
+  contact: string;
+  message: string;
+  categories: string;
+  branch: string;
+}
+
+export interface ContactFormEmailProps extends BaseEmailProps {
+  url: string;
+  entry_id: string;
+  date: string;
+  time: string;
+}
