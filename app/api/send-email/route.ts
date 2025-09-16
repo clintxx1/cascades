@@ -16,7 +16,10 @@ export async function POST(request: Request) {
       contact: data.contact,
       message: data.message,
     });
-    const toSender = await getContactFormHTML(data);
+    const toSender = await getContactFormHTML({
+      ...data,
+      email: data.from_email,
+    });
     const payload = [
       {
         from: `"Cascades School Inc" <${process.env.EMAIL_USER}>`,
