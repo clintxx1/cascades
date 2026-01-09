@@ -1,13 +1,13 @@
 import { useState, useMemo, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-interface UsePaginationProps {
-  data: any[];
+interface UsePaginationProps<T> {
+  data: T[];
   defaultItemsPerPage: number;
 }
 
-interface UsePaginationReturn {
-  currentData: any[];
+interface UsePaginationReturn<T> {
+  currentData: T[];
   currentPage: number;
   totalPages: number;
   goToPage: (page: number) => void;
@@ -22,10 +22,10 @@ interface UsePaginationReturn {
   setItemsPerPage: (itemsPerPage: number) => void;
 }
 
-export function usePagination({
+export function usePagination<T>({
   data,
   defaultItemsPerPage,
-}: UsePaginationProps): UsePaginationReturn {
+}: UsePaginationProps<T>): UsePaginationReturn<T> {
   const router = useRouter();
   const searchParams = useSearchParams();
 
