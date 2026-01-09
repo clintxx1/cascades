@@ -1,4 +1,5 @@
 import { lato } from "@/lib/fonts";
+import { createSanitizedMarkup } from "@/lib/sanitize";
 import { cn } from "@/lib/utils";
 import { InfoCardProps } from "@/types";
 import { LazyImage } from "@/components/ui/lazy-image";
@@ -23,9 +24,6 @@ export default function InfoCard({
   hasSubtitle = false,
   subtitle = "",
 }: InfoCardProps) {
-  const createMarkup = (htmlContent: string) => {
-    return { __html: htmlContent };
-  };
   return (
     <div className={cn("py-8 text-darkLiver", className)}>
       {hasHeader && headerImage ? (
@@ -43,7 +41,7 @@ export default function InfoCard({
           titleCN,
           `${hasHeader && "mt-8"}`
         )}
-        dangerouslySetInnerHTML={createMarkup(title)}
+        dangerouslySetInnerHTML={createSanitizedMarkup(title)}
       ></div>
       {hasSubtitle && (
         <p className="text-xs pl-6 pb-2 lg:text-start text-center">
@@ -61,7 +59,9 @@ export default function InfoCard({
               <AccordionTrigger
                 className={`${lato.className} font-normal lg:text-[20px] text-base `}
               >
-                <div dangerouslySetInnerHTML={createMarkup(item.label)}></div>
+                <div
+                  dangerouslySetInnerHTML={createSanitizedMarkup(item.label)}
+                ></div>
               </AccordionTrigger>
               <AccordionContent>
                 <div
@@ -69,7 +69,9 @@ export default function InfoCard({
                     `${lato.className} text-lg  lg:w-[500px] w-full border p-5 lg:text-start text-justify`,
                     descriptionCN
                   )}
-                  dangerouslySetInnerHTML={createMarkup(item.description)}
+                  dangerouslySetInnerHTML={createSanitizedMarkup(
+                    item.description
+                  )}
                 ></div>
               </AccordionContent>
             </AccordionItem>
@@ -81,7 +83,7 @@ export default function InfoCard({
             `${lato.className} lg:text-[20px] lg:leading-[36px] leading-8  lg:w-[500px] w-full lg:px-0 px-4 lg:text-start text-justify`,
             descriptionCN
           )}
-          dangerouslySetInnerHTML={createMarkup(description)}
+          dangerouslySetInnerHTML={createSanitizedMarkup(description)}
         ></div>
       )}
     </div>
