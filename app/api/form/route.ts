@@ -22,17 +22,13 @@ export async function GET(request: Request) {
     const skip = (page - 1) * pageSize;
 
     // Build where condition
-    const whereCondition: any = {
+    const whereCondition: Prisma.FormWhereInput = {
       name: {
         contains: search,
         mode: "insensitive",
       },
+      ...(branch && { branch }),
     };
-
-    // Add branch filter if provided
-    if (branch) {
-      whereCondition.branch = branch;
-    }
 
     // Get paginated data
     const data = await prisma.form.findMany({
