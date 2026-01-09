@@ -127,8 +127,8 @@ export default function TableData({ data }: { data: Form[] }) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {currentData.map((form, index) => (
-            <TableRow key={index}>
+          {currentData.map((form) => (
+            <TableRow key={form.id}>
               <TableCell>{form.entry_id}</TableCell>
               <TableCell>{form.form_name}</TableCell>
               <TableCell>{form.categories}</TableCell>
