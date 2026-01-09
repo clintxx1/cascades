@@ -1,12 +1,16 @@
 "use client";
 import { UseDebounce } from "@/types";
 import { debounce } from "lodash";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
 const useDebounce: UseDebounce = (callback, delay, dependencies) => {
+  // Use ref to always have the latest callback without recreating debounced function
+  const callbackRef = useRef(callback);
+  callbackRef.current = callback;
+
   const debouncedCallback = useMemo(
-    () => debounce(callback, delay),
-    [callback, delay]
+    () => debounce(() => callbackRef.current(), delay),
+    [delay]
   );
 
   useEffect(() => {
@@ -16,8 +20,6 @@ const useDebounce: UseDebounce = (callback, delay, dependencies) => {
       debouncedCallback.cancel();
     };
   }, [...dependencies]);
-
-  return [];
 };
 
 export default useDebounce;
