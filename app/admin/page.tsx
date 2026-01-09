@@ -84,6 +84,7 @@ export default function Admin() {
         document.body.appendChild(a);
         a.click();
         a.remove();
+        window.URL.revokeObjectURL(url);
       } else {
         console.error("Export failed");
       }
