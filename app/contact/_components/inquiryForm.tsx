@@ -22,7 +22,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import moment from "moment";
-import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { LoaderCircle } from "lucide-react";
 const FormSchema = z.object({
@@ -209,7 +208,7 @@ export default function InquiryForm() {
                     <SelectItem value="Elementary: Mandaluyong">
                       Elementary: Mandaluyong
                     </SelectItem>
-                    <SelectItem value="Elementary: Mandaluyong">
+                    <SelectItem value="Preschool: Silang Cavite">
                       Preschool: Silang Cavite
                     </SelectItem>
                     <SelectItem value="Preschool: Tomas Morato, Quezon City">
