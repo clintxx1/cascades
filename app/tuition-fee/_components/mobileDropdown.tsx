@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
+import { createSanitizedMarkup } from "@/lib/sanitize";
 import { cn } from "@/lib/utils";
 import { NavItem } from "@/types";
 import { ChevronDown } from "lucide-react";
@@ -19,9 +20,6 @@ export default function MobileDropdown({
     description: NavItem[];
   }[];
 }) {
-  const createMarkup = (htmlContent: string) => {
-    return { __html: htmlContent };
-  };
   return (
     <Accordion type="single" collapsible>
       {dropdownData.map((item, index) => (
@@ -29,7 +27,9 @@ export default function MobileDropdown({
           <AccordionTrigger
             className={`flex items-center text-start font-normal lg:text-lg text-base data-[state=open]:no-underline hover:font-normal`}
           >
-            <div dangerouslySetInnerHTML={createMarkup(item.label)}></div>
+            <div
+              dangerouslySetInnerHTML={createSanitizedMarkup(item.label)}
+            ></div>
             <ChevronDown className="h-6 w-6 shrink-0 transition-transform duration-200" />
           </AccordionTrigger>
           <AccordionContent className="space-y-4">
@@ -42,7 +42,7 @@ export default function MobileDropdown({
                       val.className
                     )}
                     key={val.page}
-                    dangerouslySetInnerHTML={createMarkup(val.label)}
+                    dangerouslySetInnerHTML={createSanitizedMarkup(val.label)}
                   ></div>
                 ))}
               </>
