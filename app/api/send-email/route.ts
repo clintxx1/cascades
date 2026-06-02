@@ -5,9 +5,21 @@ import { getContactFormHTML } from "@/components/emails/ContactForm";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Maps each branch (matching the values in the contact form's branch dropdown)
+// to the inbox that should receive its inquiries. Falls back to EMAIL_TO for
+// any unrecognized branch so submissions are never dropped.
+const BRANCH_EMAIL_MAP: Record<string, string> = {
+  "Preschool: Mandaluyong": "cascadesinternational@gmail.com",
+  "Elementary: Mandaluyong": "cascadeshiraya.admission@gmail.com",
+  "Preschool: Silang Cavite": "admissionsilang@cascades.ph",
+  "Preschool: Tomas Morato, Quezon City": "cascadeshiraya.admission@gmail.com",
+};
+
 export async function POST(request: Request) {
   try {
     const data = await request.json();
+    const branchRecipient =
+      BRANCH_EMAIL_MAP[data.branch] ?? process.env.EMAIL_TO;
     const toRecipient = await getInquiryHTML({
       name: data.name,
       categories: data.categories,
@@ -29,7 +41,7 @@ export async function POST(request: Request) {
       },
       {
         from: `"Cascades School Inc" <${process.env.EMAIL_USER}>`,
-        to: [process.env.EMAIL_TO],
+        to: [branchRecipient],
         subject: "Contact Form - New Submission",
         html: toSender,
       },
